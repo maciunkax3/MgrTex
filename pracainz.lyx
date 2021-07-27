@@ -1,0 +1,819 @@
+#LyX file created by tex2lyx 2.3
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin /home/maciek/Downloads/inz_szablon/
+\textclass article
+\begin_preamble
+% Nasza inÅ¼ynierka
+\usepackage{polski}% Å¼eby byÅy polskie napisy
+\usepackage{fontspec}% Å¼eby ustawiÄ czcionkÄ na systemowÄ (Arial)
+% do marginesÃ³w
+\usepackage{indentfirst}% Å¼eby pierwsze akapity teÅ¼ miaÅy wciÄcie
+\usepackage{titlesec}% Å¼eby formatowaÄ tytuÅy rozdziaÅÃ³w itd.
+\usepackage{secdot}% aby dodaÄ kropkÄ za numerkiem podrzodziaÅÃ³w i podpodrozdziaÅÃ³w
+\usepackage{chngcntr}% umoÅ¼liwia numerowanie obrazkÃ³w itp. wzglÄdem rozdziaÅu
+\usepackage{tocloft}% umoÅ¼liwia ustawienia dotyczÄce spisu treÅci i innych spisÃ³w
+\usepackage{tabu}% do tabel
+\usepackage[table,dvipsnames]{xcolor}% do kolorowania tabel
+\usepackage{tabularx}% do lepszych tabel
+% do bibliografii
+\usepackage{enumitem}% do modyfikacji listy (begin{itemize}, niepotrzebne odstÄpy przed i po)
+\usepackage{floatrow}% aby umoÅ¼liwiÄ wymuszenie poÅoÅ¼enia figury
+\usepackage{caption}% do zmiany podpisÃ³w tabel i obrazkÃ³w
+\usepackage{setspace}% rÃ³wnieÅ¼ do zmiany podpisÃ³w (konkretniej interlinii w podpisach - wymagany przez caption)
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{tabu}
+\usepackage{changepage}
+\usepackage{amsthm}
+\usepackage[final]{pdfpages}
+\usepackage{multirow}
+\usepackage[titletoc,title]{appendix}
+\usepackage{listings}
+\usepackage{dirtree}
+\usepackage{multicol}
+\usepackage{subcaption}
+\usepackage{afterpage}
+
+
+\usepackage{lipsum}% na potrzeby szablonu
+
+
+
+\newcommand{\myicon}[1]{{\color{#1}\rule{2ex}{2ex}}}
+\newcommand{\myfolder}[2]{\myicon{#1}\ {#2}}
+
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+\lstset{
+  backgroundcolor=\color{lbcolor},
+  tabsize=4,
+  language=C++,
+  captionpos=b,
+  tabsize=4,
+  frame=lines,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=5pt,
+  breaklines=true,
+  showstringspaces=false,
+  basicstyle=\linespread{0.94}\footnotesize\ttfamily,
+%  identifierstyle=\color{magenta},
+  keywordstyle=\color[rgb]{0,0,1},
+  commentstyle=\color{OliveGreen},
+  stringstyle=
+  }
+
+
+% Magia Å¼eby dodatki miaÅy ma poczÄtku "Dodatek X: ..."
+
+\renewcommand{\@redotocentry@pp}[1]{%
+  \let\oldacl@pp=\addcontentsline
+  \def\addcontentsline##1##2##3{%
+    \def\@pptempa{##1}\def\@pptempb{toc}%
+    \ifx\@pptempa\@pptempb
+      \def\@pptempa{##2}\def\@pptempb{#1}%
+      \ifx\@pptempa\@pptempb
+        \oldacl@pp{##1}{##2}{\appendixname\space ##3}%
+      \else
+        \oldacl@pp{##1}{##2}{\chaptertitlename\space ##3}% added \chaptertitlename
+      \fi
+    \else
+      \oldacl@pp{##1}{##2}{##3}%
+    \fi}
+}
+
+
+% to jest jakas magia, aby odczytac szerokoÅÄ longtable i ustawiÄ tÄ wartoÅÄ pÃ³Åºniej jako LTcapwidth (parametr kontrolujÄcy szerokoÅÄ captiona w longtable)
+% Creditsy i flaszkÄ proszÄ wysyÅaÄ do magika Heiko (http://compgroups.net/comp.text.tex/longtable-tablewidth/1922986)
+
+\newlength\LongtableWidth
+\newcommand*{\org@longtable}{}
+\let\org@longtable\longtable
+\def\longtable{%
+  \begingroup
+    \advance\c@LT@tables\@ne
+    \edef\x{LT@\romannumeral\c@LT@tables}%
+    \global\LongtableWidth\z@
+    \@ifundefined{\x}{%
+      % longtable width not available
+    }{%
+      \def\LT@entry##1##2{%
+        \global\advance\LongtableWidth##2\relax
+      }%
+      \@nameuse{\x}%
+    }%
+    % debug output
+    \typeout{* \x: \the\LongtableWidth}%
+  \endgroup
+  \ifdim\LongtableWidth>\z@
+    \setlength{\LTcapwidth}{\LongtableWidth}%
+  \fi
+  \org@longtable
+}
+
+
+\newcommand{\blankpage}{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+% Rozpocznij od nowa numerowanie rysunkÃ³w dla kaÅ¼dego rozdziaÅu (section).
+% Dodaje numer rozdziaÅu do numeru rysunku: nr_rozdzial.nr_rysunku_w_ramach_rozdzialu
+%
+% Å¹rÃ³dÅo: http://tex.stackexchange.com/questions/28333/continuous-v-per-chapter-section-numbering-of-figures-tables-and-other-docume
+\counterwithin{figure}{section}
+
+% to samo dla tabel
+\counterwithin{table}{section}
+
+% Å¼eby nie byÅo Rysunek tylko Rys
+\renewcommand{\figurename}{Rys.}
+
+% Å¼eby nie byÅo odstÄpÃ³w przed/po/w Årodku listy (itemize, ew. dodaÄ teÅ¼ dla enumerate?)
+\SetLabelAlign{parright}{\parbox[t]{\labelwidth}{\raggedleft#1}}
+\setlist[itemize]{noitemsep,nolistsep,topsep=0pt}
+\setlist[description]{noitemsep,nolistsep,topsep=0pt,style=multiline,align=parright}
+    
+% ustawiamy domyÅlny odstÄp przed i po pÅywajÄcymi elementami (tabele i obrazki) umieszczonymi w Årodku tekstu (flaga H) na 0
+\setlength{\intextsep}{0mm}
+\setlength{\textfloatsep}{0mm}
+
+% ustawiamy domyÅlnÄ czcionkÄ dla podpisÃ³w na small (9pt dla article 10pt) oraz interliniÄ na 1.0
+\captionsetup{font={small,stretch=1.0}}
+
+% wÅasny separator do podpisÃ³w (to, co jest po 'Rys. X.Y' - kropka, nazwana wewnÄtrznie jako 'dot')
+\DeclareCaptionLabelSeparator{dot}{. }
+\DeclareFloatVCode{6ptskip}{\vspace{6pt}}
+\DeclareFloatVCode{12ptskip}{\vspace{12pt}}
+
+% dla tabel: 0pt pod opisem, 6pt nad
+\captionsetup[table]{singlelinecheck=false} % nie wyÅrodkowywuj opisu w pojedynczej linii
+\captionsetup[table]{labelfont=bf,labelsep=dot} % pogrubienie nagÅÃ³wka podpisu (Tabela X.Y) i zakonczenie jej wczesniej zdefiniowana kropkÄ
+\floatsetup[table]{font={small,stretch=1.0},capposition=top,captionskip=0pt,precode=12ptskip,postcode=12ptskip} % nie wiem dlaczego, aby otrzymac odstep 6pt przed tabela, trzeba tutaj dac 12pt :/
+
+\setlength{\LTpre}{12pt}
+\setlength{\LTpost}{12pt}
+
+\tabulinesep=2.0mm % wziÄte z czapy, ale wyglÄda dobrze (minimalny odstÄp miÄdzy poczÄtkkiem i koÅcem wierwsza a jego zawartoÅciÄ - przydaje siÄ w przypadku zawijanych wierszy)
+
+% dla obrazkÃ³w: 6pt nad opisem, 12pt pod
+\captionsetup[figure]{justification=centering} % inaczej niz w tabelach - zawsze centruj podpis
+\captionsetup[figure]{labelsep=dot} % uÅ¼yj kropki jako separatora ale nie pogrubiaj
+\floatsetup[figure]{capposition=bottom,captionskip=6pt,precode=12ptskip,postcode=12ptskip}
+
+% koment do poniÅ¼szych: bfseries oznacza pogrubienie, itshape kursywÄ, mdseries normalnÄ
+% large = 12pt, small = 9pt (zaleÅ¼ne od ustawionego u gÃ³ry podstawowego 10pt),
+% normalsize podstawowy rozmiar czyli 10pt
+
+% formatowanie tytuÅÃ³w rozdziaÅÃ³w (tutaj nazwane sekcjami)
+
+
+\newcommand{\setappendix}{Dodatek~\thesection:}
+\newcommand{\setchapter}{\thesection.}
+\titleformat{\section}{\bfseries\large}{%
+  \ifnum\pdfstrcmp{\@currenvir}{appendices}=0
+    \setappendix
+  \else
+    \setchapter
+  \fi}{0.5em}{\MakeUppercase}
+
+
+	
+% formatowanie tytuÅÃ³w podrozdziaÅÃ³w (tutaj nazwane podsekcjami)
+\titleformat*{\subsection}{\normalsize\bfseries\itshape}
+\sectiondot{subsection}
+
+% formatowanie tytuÅÃ³w punktÃ³w podrozdziaÅÃ³w (tutaj nazwane podpodsekcjami)
+\titleformat*{\subsubsection}{\normalsize\itshape}
+\sectiondot{subsubsection}
+
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+\titlespacing*{\subsection}{0pt}{12pt}{6pt}
+\titlespacing*{\subsubsection}{0pt}{12pt}{6pt}
+
+% SPIS TREÅCI
+
+% Å¼eby w spisie treÅci byÅy teÅ¼ kropki po numerkach rozdziaÅÃ³w i podrozdziaÅÃ³w itd.
+\renewcommand{\cftsecaftersnum}{.}
+\renewcommand{\cftsubsecaftersnum}{.}
+\renewcommand{\cftsubsubsecaftersnum}{.}
+% Å¼eby napis SPIS TREÅCI byÅ wielkimi literami, pogrubiony itd
+\renewcommand{\cfttoctitlefont}{\normalfont\large\bfseries\MakeUppercase}
+% Å¼eby tytuÅy rozdziaÅÃ³w w spisie oraz numery stron nie byÅy pogrubione
+\renewcommand{\cftsecfont}{\normalfont}
+\renewcommand{\cftsecpagefont}{\normalfont}
+% Å¼eby dla rozdziaÅÃ³w teÅ¼ byÅy kropki od napisu do numeru strony
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+% odstÄpy miÄdzy akapitami 6pt
+\setlength{\cftbeforesecskip}{6pt}
+\setlength{\cftbeforesubsecskip}{6pt}
+\setlength{\cftbeforesubsubsecskip}{6pt}
+% Å¼eby kropki od napisu do numeru strony byÅy gÄstsze
+\renewcommand{\cftdotsep}{0}
+
+% SPISY
+% zmiana nazwy, czcionki, marginesu i separatora dla listy figur
+\renewcommand{\listfigurename}{Wykaz rysunkÃ³w}
+\renewcommand{\cftloftitlefont}{\normalfont\large\bfseries\MakeUppercase}
+\setlength{\cftbeforefigskip}{6pt}
+\renewcommand{\cftfigaftersnum}{.}
+
+\setlength{\cftfignumwidth}{1.1cm}
+
+% zmiana nazwa, czcionki, marginesu i separatora dla listy tabel
+\renewcommand{\listtablename}{Wykaz tabel}
+\renewcommand{\cftlottitlefont}{\normalfont\large\bfseries\MakeUppercase}
+\setlength{\cftbeforetabskip}{6pt}
+\renewcommand{\cfttabaftersnum}{.}
+
+\setlength{\cfttabnumwidth}{1.1cm}
+
+% zmiana nazwy z 'Bibliografia' na 'Wykaz literatury'
+\DefineBibliographyStrings{polish}{references = {Wykaz literatury}}
+\DeclareFieldFormat{labelnumberwidth}{#1\adddot\midsentence}
+
+% ustawienie marginesÃ³w
+
+
+          % wciÄcie przed akapitem
+\renewcommand{\baselinestretch}{1.5}    % interlinia
+               % odlegÅoÅÄ pomiÄdzy akapitami
+
+% Å¼eby nie byÅo wdÃ³w i sierot (linii samotnych ale nie sÅÃ³w!)
+\widowpenalty10000
+\clubpenalty10000
+
+% komenda ignorujÄca cos w srodku tekstu (do naszych komentarzy)
+\newcommand{\ignore}[2]{\hspace{0in}#2}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definicja}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Komentarz}
+
+
+
+
+
+\end_preamble
+\options hidelinks
+\use_default_options false
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "Arial"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 10
+\spacing single
+\use_hyperref true
+\pdf_bookmarks 0
+\pdf_bookmarksnumbered 0
+\pdf_bookmarksopen 0
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks 0
+\pdf_pdfborder 0
+\pdf_colorlinks 0
+\pdf_backref section
+\pdf_pdfusetitle 0
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine biblatex
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\biblio_options backend=bibtex,language=polish
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\fontcolor #ff0000
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 1.25cm
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% wÅaÅciwy poczÄtek dokumentu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+includepdf{meta/StronaTytulowa_nrindeksu.pdf}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+includepdf{meta/Oswiadczenie_nrindeksu.pdf}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setcounter{page}{3}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% rozpoczecie od strony 3
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+preview false
+filename "meta/streszczenie.lyx"
+
+\end_inset
+
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+preview false
+filename "meta/abstract.lyx"
+
+\end_inset
+
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+preview false
+filename "meta/spis_tresci.lyx"
+
+\end_inset
+
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+preview false
+filename "meta/wykaz_wazniejszych_oznaczen_i_skrotow.lyx"
+
+\end_inset
+
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%tutaj rozdzialy
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+preview false
+filename "rozdzialy/1-wstep.lyx"
+
+\end_inset
+
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+preview false
+filename "rozdzialy/2-rozdzial.lyx"
+
+\end_inset
+
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset FormulaMacro
+\renewcommand{\baselinestretch}{1.0}
+\end_inset
+
+
+\size normal
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% Å¼eby w wykazach byÅa pojedyncza interlinia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+addcontentsline{toc}{section}{Wykaz literatury}
+\end_layout
+
+\end_inset
+
+  
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintAll"
+bibfiles "meta/bibliografia"
+options ""
+
+\end_inset
+
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+addcontentsline{toc}{section}{
+\backslash
+listfigurename}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+addcontentsline{toc}{section}{
+\backslash
+listtablename}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+
+\begin_inset FormulaMacro
+\renewcommand{\baselinestretch}{1.5}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% powrÃ³t do interlinii 1.5 na wypadek dodatkÃ³w
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% nie dodawaj obrazkÃ³w i tabel z dodatkÃ³w do list powyÅ¼ej
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+let
+\backslash
+svaddcontentsline
+\backslash
+addcontentsline
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\renewcommand{\addcontentsline}[3]{%
+  \ifthenelse{\equal{#1}{lof}}{}%
+  {\ifthenelse{\equal{#1}{lot}}{}{\svaddcontentsline{#1}{#2}{#3}}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{appendices}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+addtocontents{toc}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+protect
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setcounter{tocdepth}{1}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+preview false
+filename "dodatki/przykladowy_dodatek.lyx"
+
+\end_inset
+
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{appendices}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+
+\begin_inset Note Note
+status open
+\begin_layout Plain Layout
+
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "meta/bibliografia"
+
+\end_inset
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,134 @@
+Number of platforms                               1
+  Platform Name                                   QUALCOMM Snapdragon(TM)
+  Platform Vendor                                 QUALCOMM
+  Platform Version                                OpenCL 2.0 QUALCOMM build: commit #2df12b3 changeid #I07da2d9908 Date: 10/04/18 Thu Local Branch:  Remote Branch:
+  Platform Profile                                FULL_PROFILE
+  Platform Extensions                           
+
+  Platform Name                                   QUALCOMM Snapdragon(TM)
+Number of devices                                 1
+  Device Name                                     QUALCOMM Adreno(TM)
+  Device Vendor                                   QUALCOMM
+  Device Vendor ID                                0xbf4d3c4b
+  Device Version                                  OpenCL 2.0 Adreno(TM) 506
+  Driver Version                                  OpenCL 2.0 QUALCOMM build: commit #2df12b3 changeid #I07da2d9908 Date: 10/04/18 Thu Local Branch:  Remote Branch:  Compiler E031.36.02.00
+  Device OpenCL C Version                         OpenCL C 2.0 Adreno(TM) 506
+  Device Type                                     GPU
+  Device Profile                                  FULL_PROFILE
+  Device Available                                Yes
+  Compiler Available                              Yes
+  Linker Available                                Yes
+  Max compute units                               1
+  Max clock frequency                             1MHz
+  Device Partition                                (core)
+    Max number of sub-devices                     1
+    Supported partition types                     None
+    Supported affinity domains                    (n/a)
+  Max work item dimensions                        3
+  Max work item sizes                             1024x1024x1024
+  Max work group size                             1024
+  Preferred work group size multiple (kernel)     1024
+  Preferred / native vector sizes               
+    char                                                 1 / 1
+    short                                                1 / 1
+    int                                                  1 / 1
+    long                                                 1 / 0
+    half                                                 1 / 1        (cl_khr_fp16)
+    float                                                1 / 1
+    double                                               0 / 0        (n/a)
+  Half-precision Floating-point support           (cl_khr_fp16)
+    Denormals                                     No
+    Infinity and NANs                             Yes
+    Round to nearest                              Yes
+    Round to zero                                 No
+    Round to infinity                             Yes
+    IEEE754-2008 fused multiply-add               No
+    Support is emulated in software               No
+  Single-precision Floating-point support         (core)
+    Denormals                                     No
+    Infinity and NANs                             Yes
+    Round to nearest                              Yes
+    Round to zero                                 No
+    Round to infinity                             Yes
+    IEEE754-2008 fused multiply-add               No
+    Support is emulated in software               No
+    Correctly-rounded divide and sqrt operations  No
+  Double-precision Floating-point support         (n/a)
+  Address bits                                    64, Little-Endian
+  Global memory size                              1875912704 (1.747GiB)
+  Error Correction support                        No
+  Max memory allocation                           468978176 (447.3MiB)
+  Unified memory for Host and Device              Yes
+  Shared Virtual Memory (SVM) capabilities        (core)
+    Coarse-grained buffer sharing                 Yes
+    Fine-grained buffer sharing                   No
+    Fine-grained system sharing                   No
+    Atomics                                       No
+  Minimum alignment for any data type             128 bytes
+  Alignment of base address                       1024 bits (128 bytes)
+  Page size (QCOM)                                4096 bytes
+  External memory padding (QCOM)                  0 bytes
+  Preferred alignment for atomics               
+    SVM                                           128 bytes
+    Global                                        0 bytes
+    Local                                         0 bytes
+  Max size for global variable                    65536 (64KiB)
+  Preferred total size of global vars             1048576 (1024KiB)
+  Global Memory cache type                        Read/Write
+  Global Memory cache size                        16384 (16KiB)
+  Global Memory cache line size                   64 bytes
+  Image support                                   Yes
+    Max number of samplers per kernel             16
+    Max size for 1D images from buffer            134217728 pixels
+    Max 1D or 2D image array size                 2048 images
+    Base address alignment for 2D image buffers   64 bytes
+    Pitch alignment for 2D image buffers          64 pixels
+    Max 2D image size                             16384x16384 pixels
+    Max 3D image size                             16384x16384x2048 pixels
+    Max number of read image args                 128
+    Max number of write image args                64
+    Max number of read/write image args           64
+  Max number of pipe args                         16
+  Max active pipe reservations                    4096
+  Max pipe packet size                            1024
+  Local memory type                               Local
+  Local memory size                               32768 (32KiB)
+  Max number of constant args                     8
+  Max constant buffer size                        65536 (64KiB)
+  Max size of kernel argument                     1024
+  Queue properties (on host)                    
+    Out-of-order execution                        Yes
+    Profiling                                     Yes
+  Queue properties (on device)                  
+    Out-of-order execution                        Yes
+    Profiling                                     Yes
+    Preferred size                                655376 (640KiB)
+    Max size                                      655376 (640KiB)
+  Max queues on device                            1
+  Max events on device                            1024
+  Prefer user sync for interop                    No
+  Profiling timer resolution                      1000ns
+  Execution capabilities                        
+    Run OpenCL kernels                            Yes
+    Run native kernels                            No
+  printf() buffer size                            1048576 (1024KiB)
+  Built-in kernels                                (n/a)
+  Device Extensions                               cl_khr_3d_image_writes cl_img_egl_image cl_khr_byte_addressable_store cl_khr_depth_images cl_khr_egl_event cl_khr_egl_image cl_khr_fp16 cl_khr_gl_sharing cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_image2d_from_buffer cl_khr_mipmap_image cl_khr_srgb_image_writes cl_khr_subgroups cl_qcom_create_buffer_from_image cl_qcom_ext_host_ptr cl_qcom_ion_host_ptr cl_qcom_perf_hint cl_qcom_read_image_2x2 cl_qcom_android_native_buffer_host_ptr cl_qcom_protected_context cl_qcom_priority_hint cl_qcom_compressed_yuv_image_read cl_qcom_compressed_image
+
+NULL platform behavior
+  clGetPlatformInfo(NULL, CL_PLATFORM_NAME, ...)  No platform
+  clGetDeviceIDs(NULL, CL_DEVICE_TYPE_ALL, ...)   No platform
+  clCreateContext(NULL, ...) [default]            No platform
+  clCreateContext(NULL, ...) [other]              Success [P0]
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_DEFAULT)  Success (1)
+    Platform Name                                 QUALCOMM Snapdragon(TM)
+    Device Name                                   QUALCOMM Adreno(TM)
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_CPU)  No devices found in platform
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_GPU)  Success (1)
+    Platform Name                                 QUALCOMM Snapdragon(TM)
+    Device Name                                   QUALCOMM Adreno(TM)
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_ACCELERATOR)  No devices found in platform
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_CUSTOM)  Invalid device type for platform
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_ALL)  Success (1)
+    Platform Name                                 QUALCOMM Snapdragon(TM)
+    Device Name                                   QUALCOMM Adreno(TM)

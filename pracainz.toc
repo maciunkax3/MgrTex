@@ -1,0 +1,83 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Wykaz ważniejszych oznaczeń i skrótów}{7}{Doc-Start}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Wprowadzenie}{8}{section.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Cel pracy}{8}{subsection.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Wstęp do Api OpenCL}{9}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Linkowanie biblioteki OpenCL na platformie Android}{9}{subsection.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Typowy przebieg aplikacji OpenCL}{10}{subsection.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Możliwości i ograniczenia sprzętowe}{12}{subsection.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Specyfika testowanych Urządzeń}{15}{section.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Pierwsza sekcja}{15}{subsection.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.1}Podsekcja}{15}{subsubsection.3.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.2}I kolejna podsekcja}{16}{subsubsection.3.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Druga sekcja}{17}{subsection.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.1}Podsekcja sekcji drugiej}{17}{subsubsection.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.2}Kod}{18}{subsubsection.3.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Testy Performancowe OpenCL na Mobilkach}{20}{section.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Pierwsza sekcja}{20}{subsection.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.1}Podsekcja}{20}{subsubsection.4.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.2}I kolejna podsekcja}{21}{subsubsection.4.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Druga sekcja}{22}{subsection.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.1}Podsekcja sekcji drugiej}{22}{subsubsection.4.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.2}Kod}{23}{subsubsection.4.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Aplikacje wykorzystujące OpenCl Przypadki Użycia}{25}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Pierwsza sekcja}{25}{subsection.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.1}Podsekcja}{25}{subsubsection.5.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.2}I kolejna podsekcja}{26}{subsubsection.5.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Druga sekcja}{27}{subsection.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.1}Podsekcja sekcji drugiej}{27}{subsubsection.5.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.2}Kod}{28}{subsubsection.5.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Analiza Wyników, Wnioski}{30}{section.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1}Pierwsza sekcja}{30}{subsection.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.1}Podsekcja}{30}{subsubsection.6.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.2}I kolejna podsekcja}{31}{subsubsection.6.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2}Druga sekcja}{32}{subsection.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.2.1}Podsekcja sekcji drugiej}{32}{subsubsection.6.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.2.2}Kod}{33}{subsubsection.6.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Wykaz literatury}{35}{lstnumber.-7.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Wykaz rysunków}{35}{lstnumber.-7.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Wykaz tabel}{36}{lstnumber.-7.8}%
+\defcounter {refsection}{0}\relax 
+\setcounter {tocdepth}{1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Dodatek \numberline {A}Przykładowy dodatek}{37}{appendix.1.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Rozdzia\PlPrIeC {\l } \numberline {A.1}Sekcja}{37}{subsection.1.A.1}%
