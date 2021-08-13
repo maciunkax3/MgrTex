@@ -33,4 +33,13 @@ W wynuku działania takiego kodu w buforze znajdować się bedzie 1024 elementy 
 \subsection{Możliwości i ograniczenia sprzętowe}
 Każde urządzenie posiada ograniczenia związane ze specyfiką implementacji sterownika oraz barkiem zasobów sprzętowych. By dowiedziec się jakie są maksymalne dostępne wartosci np dotyczące rozmiaru pamięci, ilości poszczególnych obiektów w kernelu czy maksymalnej liczbie dostępnych work itemów w ramak lokalnej work grupy możemy odpytać sterownik wołając clGetDeviceInfo podając konkretny parametr. Dzięki temu wykonywana aplikacja może dostosować się do ograniczeń sprzętowych. Oto wynik działania aplikacji "clinfo", która wypisuje wszystkie odstępne informacje o urządzeniu. W tym wypadku jest to telefon Xiaomi Mi a2 lite z procesorem graficznym Adreno 506
  \lstinputlisting{listings/clinfo.log}
+ \subsection{Pomiary czasu wykonywania kerneli}
+ Standard OpenCL zapewnia mechanizm do odczytywania stempli czasu z poszczególnych etapów wykonywania kernela. Służy do tego obiekt typu cl\_event stworzony przez funkcje clCreateUserEvent. Obiekt taki może zostać przekazany jako argument funkcj, która zostanie wykonana na urzadzeniu np clEnqueueNDRangeKernel czy clWnqueueWriteBuffer.
+ Po wykonaniu kernela z obiektu eventa mozna odczytać stemple czasu z jego wykonania. By wydobyc wartości należy zawołać clGetEventProfilingInfo przekazujac jako argument obiekt eventu oraz jeden z czterech paramterów 
+ \begin{itemize}
+     \item CL\_PROFILING\_COMMAND\_QUEUED wartość opisuje czas urządzenia w którym komenda została dodana do kolejki.
+     \item CL\_PROFILING\_COMMAND\_SUBMIT wartośc opisuje czas urządzenia w którym komenda została wysłana do urządzenia na którym zostanie wykonana.
+     \item CL\_PROFILING\_COMMAND\_START wartośc opisuje czas urządzenia w którym rozpoczęte zostało wykonywanie komenty na urządzeniu.
+     \item CL\_PROFILING\_COMMAND\_END wartośc opisuje czas urządzenia w którym wykonywanie komendy zostaje zakończone.
+\end{itemize}
 

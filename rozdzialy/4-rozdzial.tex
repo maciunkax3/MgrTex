@@ -1,65 +1,31 @@
 \section[Testy Performancowe OpenCL na Mobilkach]{Testy Performancowe OpenCL na Mobilkach}
 
-\subsection[Pierwsza sekcja]{Pierwsza sekcja}
-\subsubsection{Podsekcja}
-\lipsum[6]
+\subsection[Pomiar Mocy Obliczeniowej]{Pomiar Mocy Obliczeniowej}
+Pomiary mocy obliczeniowej zostaną przeprowadzone za pomocą następującego testu.
+Wykonany zostanie jeden z poniższych kerneli. Wykożystane zostaną wektorowe typy danych. Dla każdego z tych kerneli liczba wykonanych operaci zmienno przecinkowych powinna byc taka sama i wynosić 4096 dla pojedynczego work itemu. W przykładowo kernelu flops\_float1 operacja mad zostanie wykonana 2048 razy funkcja ta składa się z pojednyczego mnożenia i dodawania.
 
-\begin{figure}[H]
-	\includegraphics[scale=0.8]{imgs/eti.png}
-	\caption{Logo WETI}
-\end{figure}
+\lstinputlisting{listings/flops_kernels.cl}
 
-\lipsum[3]
+Argument kernela \_A to przykładowa, zmienno przecinkowa wartość początkowa. W przeprowadzonych testach rozmiar lokalnej work grupy to maksymalny możliwy rozmiar dla kernela. Natomiast rozmiar globalnej work grupy to najwiekszy mozliwy rozmiar lokalnej grupy przemnozony rzez liczbe dostępnych jednostek wykonawczych razy 2048.
 
-\begin{figure}[H]
-	\includegraphics[scale=0.8]{imgs/pg.jpg}
-	\caption{Logo PG}
-\end{figure}
+Uzyskany wynik przedstawiony zostaje w jedonstce FLOPS jest to jedostka określająca liczbe wykonanych operacji zmienno przecinkowych na sekunde. W tym tescie wartość w FLOPS otrzymamy przez pomnorzenie liczby globalnych work itemow przez liczbe wykonywanych zmienno przecinkowych operacji w każdym z nich, a następnie podzielenie uzyskanej wartości przez czas w jakim te się wykonywały. Do zmierzenia czasu wykorzystano obiekt tyu cl\_event. Po wykoniu kernela zostały odczyane wartości CL\_PROFILING\_COMMAND\_START i CL\_PROFILING\_COMMAND\_END. Różnica tych wartości to czas wykonywania funkcji na urządzeniu.
 
-\lipsum[7]
+Analogiczne kernele zostaną wykorzystane do przetestowania innych typów danych takich jak inteager half i double, jeśli te są wspierane przez testowane urządzenie.
 
-\subsubsection{I kolejna podsekcja}
-\lipsum[2]
+\subsection[Przepływ pamięci]{Przepływ pamięci}
+Zbadane zostało jak szybko dane zostają kopiowane pomiędzy różnymi obszarami pamięci. Do przetestowania został użyty prosty kernel.
 
-\begin{table}
-\caption{Przykład krótkiej tabeli}
-\label{tabela_1}
-\begin{tabu} to \textwidth {| p{2cm} | p{2cm} | X |}
-\hline
-\rowcolor{lightgray} Nagłówek 1 & Nagłówek 2 & Nagłówek 3 \\ \hline
-1 & lubię plaki & \lipsum[2] \\ \hline
-2 & a ja nie & \lipsum[2] \\ \hline
-\end{tabu}
-\end{table}
+\lstinputlisting{listings/copy_kernel.cl}
+ 
+W wykonywanym kernelu dla pojedynczego work itemu kopiowana jest jedna komórka pamięci z bufora src do dst. Typ pojednyczego elementu bufora jest definiowany na etapie kompilacji. W tym przykladzie moze byc to jedna z vektorowych wersji typu float.
 
-\lipsum[3]
+W tescie stworzone zostają dwa bufory pierwszy posiada inicjalne dane a drugi jest pusty. Po wykonaniu kernela W drugim buforze znajdują się dane z pierwszego. Zebrane informacje o czasie z obiektu typu cl\_event pozwalają nam obliczyc z jaką predkością w bytach na sekunde dochodzi o transferu pamięci.
+Analogicznie kernele używające buforów pamięci o typie danych integer half czy double zostaną także rzetestowane.
 
-\subsection[Druga sekcja]{Druga sekcja}
-\subsubsection{Podsekcja sekcji drugiej}
-\lipsum[4]
+\subsection[Czas Oczekiwania na wykonanie kernela]{Czas Oczekiwania na wykonanie kernela}
+W celu sprawdzenia czasu oczekiwania na rozpoczęcie wykonywania kernela, wykonany został następujący test. Wykonany jest dowolny kernel w testowanym scenariuszu następujący.
 
-\begin{longtabu} to \textwidth {| p{2cm} | X |}
-\caption{Przykład długiej tabeli} \label{tabela_2} \\[-2mm] %-2mm jest wymagane, poniewaz caption w longtabu jest uznawany jako wiersz i działa na niego ustawione ograniczenie min. 2mm odstępu przed następnym wierszem
-\hline
-\rowcolor{lightgray} Nagłówek 1 & Nagłówek 2 \\ \hline
-\endfirsthead
+\lstinputlisting{listings/increment.cl}
 
-\rowcolor{lightgray} Nagłówek 1 & Nagłówek 2 \\ \hline
-\endhead
+Po wykonaniu kernela odczytane zostały wartości CL\_PROFILING\_COMMAND\_QUEUED i CL\_PROFILING\_COMMAND\_START. Różnica tych dwóch to czas potrzebny przesłanie kernela do urządzenia i rozpoczęcie jego wykonania.	
 
-1 & \lipsum[5] \\ \hline
-2 & \lipsum[5] \\ \hline
-3 & \lipsum[5] \\ \hline
-4 & \lipsum[5] \\ \hline
-5 & \lipsum[5] \\ \hline
-6 & \lipsum[5] \\ \hline
-\end{longtabu}
-
-\lipsum[3]
-
-\subsubsection{Kod}
-\lipsum[2]
-
-\lstinputlisting{listings/main.cpp}
-
-\lipsum[2]
