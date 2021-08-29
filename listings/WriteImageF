@@ -1,0 +1,1 @@
+write_imagef(img, (int2)(gidX, gidY), (float4)(((float)(R)/ (float)(255)), ((float)(G)/ (float)(255)), ((float)(B)/ (float)(255)), 1.0));

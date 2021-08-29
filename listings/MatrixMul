@@ -1,0 +1,9 @@
+__kernel void matrixMul(__global int *A, __global int *B, __global int *dst, int N, int M){
+    uint gidX = get_global_id(0);
+    uint gidY = get_global_id(1);
+    int tmp = 0;
+    for(int k =0;k<N;k++){
+        tmp += A[(gidY * N) + k] * B[(k * M) +gidX];
+    }
+    dst[gidY*M+gidX] = tmp;
+}

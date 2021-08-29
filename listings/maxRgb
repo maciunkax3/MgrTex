@@ -1,0 +1,22 @@
+__kernel void imageRgbMax(__write_only image2d_t dst ,__read_only image2d_t src){
+    int gidX = get_global_id(0);
+    int gidY = get_global_id(1);
+    const int2 coord = (int2)(gidX, gidY);
+    const float4 pixel = read_imagef(src, coord);
+
+    float max = pixel.x;
+    if(max < pixel.y){
+        max = pixel.y;
+    }
+    if(max < pixel.z){
+        max = pixel.z;
+    }
+
+    if(pixel.x < max)
+        pixel.x = 0.0;
+    if(pixel.y < max)
+        pixel.y = 0.0;
+    if(pixel.z < max)
+        pixel.z = 0.0;
+    write_imagef(dst, coord, pixel);
+}

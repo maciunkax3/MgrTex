@@ -1,0 +1,5 @@
+GLES20.glTexSubImage2D(GLES20.GL_TEXTURE_2D, 0,
+                0, 0,
+                size.x, size.y,
+                GLES20.GL_RGBA, GLES20.GL_UNSIGNED_BYTE,
+                ByteBuffer.wrap(texture_data));

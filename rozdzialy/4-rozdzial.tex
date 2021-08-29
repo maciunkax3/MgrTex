@@ -27,5 +27,66 @@ W celu sprawdzenia czasu oczekiwania na rozpoczęcie wykonywania kernela, wykona
 
 \lstinputlisting{listings/increment.cl}
 
-Po wykonaniu kernela odczytane zostały wartości CL\_PROFILING\_COMMAND\_QUEUED i CL\_PROFILING\_COMMAND\_START. Różnica tych dwóch to czas potrzebny przesłanie kernela do urządzenia i rozpoczęcie jego wykonania.	
+Po wykonaniu kernela odczytane zostały wartości CL\_PROFILING\_COMMAND\_QUEUED i CL\_PROFILING\_COMMAND\_START. Różnica tych dwóch to czas potrzebny przesłanie kernela do urządzenia i rozpoczęcie jego wykonania. Kernel taki zostaje wykonany określoną ilość razy a wynik końcowy zostaje uśredniony.
+\subsection[Transfer pamięci wbudowanymi funkcjami]{Transfer pamięci wbudowanymi funkcjami}
+Do przetransferowania danych do bufora i z bufora pamieci w OpenCL możemy nastepujace funckje:
+ \begin{itemize}
+	\item \textbf{clEnqueueReadBuffer} Po wykonaniu tej funkcji dane z pod wskazanej pamięciu zostaną zapisane w podanym buforze, który potem może być wykożystany w wykonywanym kernelu.
+	\item \textbf{clEnqueueReadBuffer} Kopiuje dane w drugą stronę. Z bufora do wskazanego obszaru pamięci, dzięki temu możemy odczyać dane po wykonaniu kerneli na urządzeniu.
+	\item \textbf{clEnqueueMapBuffer} Funkcja zwroci wskaźnik na pamięć pod którą została zmapowana pamięć z bufora
+	\item \textbf{clEnqueueUnmapMemObject} Funkcja ta zmapuje pamięć z pod wskaźnika zwroconego z clEnqueueMapBuffer lub clEnqueueMapImage do wskazanego bufora lub obrazka.
+\end{itemize}
+Wyżej wskazane funkcje wykonane zostaną określonoą ilość razy, a z obiektu event zostaną zebrane dane dotyczące czasu wykonania. Uśredniony wynik z wykonania funkcji pokaże w jakim czasie urządzenie jest wstanie transferować dane pomiędzy kodem pamięcią po stronie apliacji a pamięcią po stronie urządenia.
+\subsection[Mnożenie macierzy]{Mnożenie Macierzy}
+Iloczyn macierzy to działanie matematyczne, które można w łatwy sposób podzielić na części, które mogą wykonywać się równolegle. Wyliczenie każdego elementu macierzy wynikowej może odbywać się niezależnie od innych. Zaimplementowano test, który wylicza każdy element w wynikowej maierzy jako osobny work item. Iloczyn macierzy przy urzyciu OpenCL moze byc wykonany za pomocą następującego kernela
+\lstinputlisting{listings/MatrixMul}
+W zbudowanym tescie wykonywany jest iloczyn dwóch macierzy o rozmiarach 1024x1024. Zmierzony zostaje czas w jakim udało sie je przez siebie przemnożyć. Operacja wykonana jest określoną liczbe razy a wartość końcowa jest średnią z tych wykonań. Eksperyment powtórzony jest dla kilku rozmiarów lokalnych work grup. W zależności od właściwości urządzenia pierwsze wykonanie będzie miało maksymalną możliwą wartość lokalnej work grpuy w wymiarze X. W kolejnym ykonaniu wartośc w wymiarze X zmniejszona bedzei dwkrotnie, natomiast w wymiarze Y będzie ona dwukrotnie zwiększona. W kolejnych iteracjach procedura wygląda tak samo, aż rozmiar work grupy w wymiarze X osiągnie wartość 1. Test ten zailustruje, jak dobór rozmiaru work grupy może mieć wpływ na czas wykonania kernela.
+\subsection[OpenCL do filtorwania obrazu z cameraApi]{OpenCL do filtorwania obrazu z cameraApi}
+Do wyswietlania obrazu z kamery na ekranie urządzenia z androidem, wykorzystała zostana prosta aplikacja, która przekazuje teksture z openGL do obiektu kamery jako previewTexture tekstura tworzna w następujący sposób.
+\lstinputlisting{listings/createTextureExternal.txt}
+ Tekstura przekazana do kamery jest aktualizowana co każdą klatkę. Odswieżenie obiektu obrazka powoduje wywołanie metody ktora wyrenderuje uzyskany obrazek i go wyświetli. Odpowiedzialny za to jest ten fragment kodu.
+ 
+\lstinputlisting{listings/drawImage.txt}
+Kod ten wywoła vertex shader a nastepnie fragment shader, dzięki temu wyświetlone zostaną dwa trójkąty wypełnione zawartością obrazka.
+\lstinputlisting{listings/shaders.txt}
+Powyższy kod sprawia, że obraz z kamery jest wyświetlany na ekranie urządzenia. Jest to bazowa aplikacja, dzięki której możemy zweryfikować jak bardzo wykonywane kernele OpenCL używające pokazywanego obrazka wpłyną na ilość wyswietlanych klatek na sekundę.
+\subsubsection[Konwersja obrazu z kamery do RGB w aplikacji]{Konwersja obrazu z kamery do RGB w aplikacji}
+Standard OpenCL umożliwia prace na obrazkach w kernelach, jednakrze te muszą być w formacie RGBA lub podobnych zawierające kanał czwerwony zielony i niebieski. Niestety obraz z kamery zazwyczaj dostępny jset tylko w mediowym formacie YUV. Dlatego by móc wykorzystać obraz z kamery w kernelu OpenCL musimy przechwycić dane w formacie YUV a następnie przepisać je na format RGBA. W tym celu modyfikujemy kod bazowej aplikacji by ta tworzyła texturę typu GL\_TEXTURE\_2D zamiast GL\_TEXTURE\_EXTERNAL\_OES. Dane o obrazie zarejestroanym z kamery przechwytujemy funkcją onPreviewFrame, która zostaje ustawiona jako previewCallback w obiekcie kamery. W tablicy byte[] data, przekazanej jako pierwszy argment znajduje sie obrazek w formacie YUV. Konwersja z formatu YUV do RGBA wyglada następująco.
+\lstinputlisting{listings/yuvToRgba}. Po wykonaniu tej funkcji w tablicy rgb[] znajduje sie obraz w formacie RGBA. W celu zaktualizowania danych w naszej wyświetlanej tekstórze wołamy następującą metodę. 
+\lstinputlisting{listings/UpdateTexture}
+Po jej wykonaniu dane z tablicy texture\_data, w którym znajduje sie obrazek w formacie RGBA, zostaną umieszczone w wyświetlanej teksturze.
+Wykonywanie konwersji do RGBA po stronie aplikacji jest duzym obciążeniem wydajnościowym. By poprawić wydajność, konwersja została wykonywana przez kernel w OpenCL. Po stronie OpenCL stworzone zostają dwa bufory, do pierwszego kopiujemy dane z kamery, po wykonaniu dane z drugiego bufora kopiowane są tablicy, która później zostanie wpisana do tekstury.
 
+Następnym usparwnieniem jest pisanie do wyswietlanej tekstury bezpośrenio z wykonywanego kernela. Dzięki temu oszczędzamy czas potrzebny na skopiowanie danych po wykonaniu kernela a następnie kopiowania ich do tekstury. Wystarczy, że kontekst OpenCL zostanie stworzony w oparciu o uchwyty na kontekstu OpenGLa, a do kernela zostanie przekazany sharowany image. Różnicą wykonywanego kernela od wyej prezentowanego kodu po stronie aplikacji są deklaracja kernela, która wygląda następująco.
+\lstinputlisting{listings/OclConversionDeclaration}
+By wyliczone wartości pixela zapisać w obiekcie obrazka należy sprowadzić je do postaci zdenoramlizowanej tj. do wartości z przedziału 0-1, a następnie wpisać je do obrazka funkcją write\_imagef.
+\lstinputlisting{listings/WriteImageF}
+Oto podgląd kamery po konwersji do RGB
+\begin{figure}[H]
+	\includegraphics[scale=0.16]{imgs/preview.png}
+	\caption{Podgląd Kamery}
+\end{figure}
+\subsubsection[Filtr Max Rgb]{Filtr Max Rgb}
+Filtr Max RGB pozwala zwizualizować, który kanał posiada największą wartość dla danego pixela. By wykorzystać go przy wyśietlaniu obrazu z kamery należy uruchomić następujący kernel
+\lstinputlisting{listings/maxRgb}
+Filtr ten wybiera kanał z największą wartością i zeruje wartości w pozostałych. OpenCL nie pozwala na uzywanie toego samego obrazka do czytania i pisania. Daltego do kernela przekazane zostają dwa obrazki. Pierwszy z możliwością zapisu, jest to obrazek wynikowy, później wyświetlony. Drugi to obrazek z możliwością odczytu posiadający dane obrazu z kamery urządzenia. Podgląd kamery po zastosowaniu filtru wygląda następująco.
+\begin{figure}[H]
+	\includegraphics[scale=0.16]{imgs/maxRgb.png}
+	\caption{Filtr Max Rgb}
+\end{figure}
+\subsubsection[Podgląd w skali szarości]{Podgląd w skali szarości}
+Filtr pozwalający przedstawić obraz w skali szarości. By użyć filtra należy wykonać następujący kernel
+\lstinputlisting{listings/grayScale.txt}
+Kernel ten wylicza średnią wartość wszystkich kanałów, następnie tę wartość przypisuje każdemu z nich. Podgląd z kamery z tym filtrem wyglada następujaco
+\begin{figure}[H]
+	\includegraphics[scale=0.16]{imgs/BlackWhite.png}
+	\caption{Podgląd w skali szarości}
+\end{figure}
+\subsubsection[Filtr Uśredniający]{Filtr Uśredniający}
+Filtr Uśredniający polega na wyliczeniu wartości pixela na podstawie uśrednionej wartości pixeli sąsiadujących. Dzięki temu filtrowi dochodzi zmiejszenia różnic między sąsiednimi pixelami, przez co dochodzi do rozycia obrazu i zmniejszenia kontrastu. Kernel nakładający filtr uśredniający wygląda następująco.
+\lstinputlisting{listings/avgFilter}
+Kernel ten wylicza średnią wartość pixeli w kwadracie 5x5 i wpisuje tą wartość do obrazka wynikowego. Dla każdego pixela zdjęcia źródłowego zostaje wyliczona jedna uśredniona wartość. Podgląd kamery z tym filtrem wygląda tak.
+\begin{figure}[H]
+	\includegraphics[scale=0.16]{imgs/avgFilter.png}
+	\caption{Podgląd z filtrem uśredniającym}
+\end{figure}

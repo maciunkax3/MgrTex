@@ -1,0 +1,6 @@
+        imageObj = clCreateFromGLTexture(context,
+                                  CL_MEM_WRITE_ONLY,
+                                  GL_TEXTURE_2D,
+                                  0,
+                                  texture_id,
+                                  &status);

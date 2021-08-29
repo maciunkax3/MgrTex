@@ -1,0 +1,17 @@
+__kernel void avgFilter(__write_only image2d_t dst ,__read_only image2d_t src){
+    int gidX = get_global_id(0);
+    int gidY = get_global_id(1);
+    int width = get_image_width(src);
+    int height = get_image_height(src);
+    float4 value = (float4)(0.0, 0.0, 0.0, 0.0);
+    for (int i = -2; i< 3;i++) {
+        for(int j = -2;j < 3; j++){
+            if(gidX + j < 0 || gidX + j > width)
+                continue;
+            if(gidY + i < 0 || gidY + i > height)
+                continue;
+            value += read_imagef(src, (int2)(gidX + j, gidY + i));
+        }
+    }
+    write_imagef(dst, (int2)(gidX, gidY), (float4)(value.x/25, value.y/25, value.z/25, 1.0));
+}

@@ -16,64 +16,56 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4}Pomiary czasu wykonywania kerneli}{14}{subsection.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Specyfika testowanych Urządzeń}{15}{section.3}%
+\contentsline {subsection}{\numberline {2.5}Wspoldzielenie obiektów pomiędzy OpenCL i OpenGL}{14}{subsection.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Pierwsza sekcja}{15}{subsection.3.1}%
+\contentsline {section}{\numberline {3}Specyfika testowanych Urządzeń}{16}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1}Podsekcja}{15}{subsubsection.3.1.1}%
+\contentsline {section}{\numberline {4}Testy Performancowe OpenCL na Mobilkach}{17}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2}I kolejna podsekcja}{16}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {4.1}Pomiar Mocy Obliczeniowej}{17}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Druga sekcja}{17}{subsection.3.2}%
+\contentsline {subsection}{\numberline {4.2}Przepływ pamięci}{18}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.1}Podsekcja sekcji drugiej}{17}{subsubsection.3.2.1}%
+\contentsline {subsection}{\numberline {4.3}Czas Oczekiwania na wykonanie kernela}{19}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.2}Kod}{18}{subsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {4.4}Transfer pamięci wbudowanymi funkcjami}{19}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Testy Performancowe OpenCL na Mobilkach}{20}{section.4}%
+\contentsline {subsection}{\numberline {4.5}Mnożenie macierzy}{20}{subsection.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Pomiar Mocy Obliczeniowej}{20}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.6}OpenCL do filtorwania obrazu z cameraApi}{21}{subsection.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Przepływ pamięci}{21}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.6.1}Konwersja obrazu z kamery do RGB w aplikacji}{22}{subsubsection.4.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Czas Oczekiwania na wykonanie kernela}{22}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.6.2}Filtr Max Rgb}{24}{subsubsection.4.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Aplikacje wykorzystujące OpenCl Przypadki Użycia}{23}{section.5}%
+\contentsline {subsubsection}{\numberline {4.6.3}Podgląd w skali szarości}{25}{subsubsection.4.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Pierwsza sekcja}{23}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {4.6.4}Filtr Uśredniający}{26}{subsubsection.4.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1}Podsekcja}{23}{subsubsection.5.1.1}%
+\contentsline {section}{\numberline {5}Aplikacje wykorzystujące OpenCl Przypadki Użycia}{28}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.2}I kolejna podsekcja}{24}{subsubsection.5.1.2}%
+\contentsline {section}{\numberline {6}Analiza Wyników, Wnioski}{29}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Druga sekcja}{25}{subsection.5.2}%
+\contentsline {subsection}{\numberline {6.1}Pierwsza sekcja}{29}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.1}Podsekcja sekcji drugiej}{25}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Podsekcja}{29}{subsubsection.6.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.2}Kod}{26}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {6.1.2}I kolejna podsekcja}{30}{subsubsection.6.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Analiza Wyników, Wnioski}{28}{section.6}%
+\contentsline {subsection}{\numberline {6.2}Druga sekcja}{31}{subsection.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Pierwsza sekcja}{28}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.2.1}Podsekcja sekcji drugiej}{31}{subsubsection.6.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.1}Podsekcja}{28}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Kod}{32}{subsubsection.6.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.2}I kolejna podsekcja}{29}{subsubsection.6.1.2}%
+\contentsline {section}{Wykaz literatury}{34}{lstnumber.-20.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Druga sekcja}{30}{subsection.6.2}%
+\contentsline {section}{Wykaz rysunków}{34}{lstnumber.-20.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.1}Podsekcja sekcji drugiej}{30}{subsubsection.6.2.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.2}Kod}{31}{subsubsection.6.2.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Wykaz literatury}{33}{lstnumber.-9.8}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Wykaz rysunków}{33}{lstnumber.-9.8}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Wykaz tabel}{34}{lstnumber.-9.8}%
+\contentsline {section}{Wykaz tabel}{35}{lstnumber.-20.8}%
 \defcounter {refsection}{0}\relax 
 \setcounter {tocdepth}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Dodatek \numberline {A}Przykładowy dodatek}{35}{appendix.1.A}%
+\contentsline {section}{Dodatek \numberline {A}Przykładowy dodatek}{36}{appendix.1.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Rozdzia\PlPrIeC {\l } \numberline {A.1}Sekcja}{35}{subsection.1.A.1}%
+\contentsline {subsection}{Rozdzia\PlPrIeC {\l } \numberline {A.1}Sekcja}{36}{subsection.1.A.1}%

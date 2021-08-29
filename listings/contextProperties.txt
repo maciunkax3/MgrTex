@@ -1,0 +1,6 @@
+        cl_context_properties props[] =
+                {   CL_GL_CONTEXT_KHR,   (cl_context_properties) ctx,
+                    CL_EGL_DISPLAY_KHR,  (cl_context_properties) dis,
+                    CL_CONTEXT_PLATFORM, 0,
+                    0
+                 };

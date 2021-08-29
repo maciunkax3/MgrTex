@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.17)  13 AUG 2021 18:31
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.17)  29 AUG 2021 18:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -960,20 +960,7 @@ File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 Writing index file pracainz.idx
 \@quotelevel=\count462
 \@quotereset=\count463
-(./pracainz.aux
-
-LaTeX Warning: Label `tabela_1' multiply defined.
-
-
-LaTeX Warning: Label `tabela_2' multiply defined.
-
-
-LaTeX Warning: Label `tabela_1' multiply defined.
-
-
-LaTeX Warning: Label `tabela_2' multiply defined.
-
-)
+(./pracainz.aux)
 \openout1 = `pracainz.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 261.
@@ -1214,8 +1201,59 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [12])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13])
-[14] (./rozdzialy/3-rozdzial.tex
+ [13]
+(./listings/contextProperties.txt) (./listings/sharedImage)) [14] [15]
+(./rozdzialy/3-rozdzial.tex) [16] (./rozdzialy/4-rozdzial.tex
+(./listings/flops_kernels.cl
+Underfull \vbox (badness 3343) has occurred while \output is active []
+
+ [17])
+Overfull \hbox (73.16545pt too wide) in paragraph at lines 11--12
+\TU/Arial(0)/m/n/10 niu kernela zostały odczyane wartości CL_PROFILING_COMMAND_
+START i CL_PROFILING_COMMAND_END.
+ []
+
+(./listings/copy_kernel.cl [18]) (./listings/increment.cl)
+Overfull \hbox (4.47285pt too wide) in paragraph at lines 30--31
+[]\TU/Arial(0)/m/n/10 Po wykonaniu kernela odczytane zostały wartości CL_PROFIL
+ING_COMMAND_QUEUED
+ []
+
+[19] (./listings/MatrixMul)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+(./listings/createTextureExternal.txt) (./listings/drawImage.txt) [21]
+(./listings/shaders.txt) (./listings/yuvToRgba [22]) (./listings/UpdateTexture)
+(./listings/oclConversionDeclaration)
+Underfull \vbox (badness 4001) has occurred while \output is active []
+
+ [23]
+(./listings/WriteImageF)
+File: imgs/preview.png Graphic file (type bmp)
+<imgs/preview.png>
+ (./listings/maxRgb)
+File: imgs/maxRgb.png Graphic file (type bmp)
+<imgs/maxRgb.png>
+
+Underfull \vbox (badness 1502) has occurred while \output is active []
+
+ [24]
+(./listings/grayScale.txt)
+File: imgs/BlackWhite.png Graphic file (type bmp)
+<imgs/BlackWhite.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25]
+(./listings/avgFilter)
+File: imgs/avgFilter.png Graphic file (type bmp)
+<imgs/avgFilter.png>
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26]
+[27] (./rozdzialy/5-rozdzial.tex) [28] (./rozdzialy/6-rozdzial.tex
 File: imgs/eti.png Graphic file (type bmp)
 <imgs/eti.png>
 File: imgs/pg.jpg Graphic file (type bmp)
@@ -1223,7 +1261,7 @@ File: imgs/pg.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15]
+ [29]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -1231,62 +1269,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16]
+ [30]
 * LT@i: 426.79135pt
-[17] (./listings/main.cpp
+[31] (./listings/main.cpp
 Underfull \vbox (badness 1533) has occurred while \output is active []
 
- [18]))
-[19] (./rozdzialy/4-rozdzial.tex (./listings/flops_kernels.cl
-Underfull \vbox (badness 3343) has occurred while \output is active []
-
- [20])
-Overfull \hbox (73.16545pt too wide) in paragraph at lines 11--12
-\TU/Arial(0)/m/n/10 niu kernela zostały odczyane wartości CL_PROFILING_COMMAND_
-START i CL_PROFILING_COMMAND_END.
- []
-
-(./listings/copy_kernel.cl [21]) (./listings/increment.cl)
-Overfull \hbox (4.47285pt too wide) in paragraph at lines 30--31
-[]\TU/Arial(0)/m/n/10 Po wykonaniu kernela odczytane zostały wartości CL_PROFIL
-ING_COMMAND_QUEUED
- []
-
-) [22] (./rozdzialy/5-rozdzial.tex
-File: imgs/eti.png Graphic file (type bmp)
-<imgs/eti.png>
-File: imgs/pg.jpg Graphic file (type bmp)
-<imgs/pg.jpg>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [24]
-* LT@ii: 426.79135pt
-[25] (./listings/main.cpp
-Underfull \vbox (badness 1533) has occurred while \output is active []
-
- [26]))
-[27] (./rozdzialy/6-rozdzial.tex
-File: imgs/eti.png Graphic file (type bmp)
-<imgs/eti.png>
-File: imgs/pg.jpg Graphic file (type bmp)
-<imgs/pg.jpg>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29]
-* LT@iii: 426.79135pt
-[30] (./listings/main.cpp
-Underfull \vbox (badness 1533) has occurred while \output is active []
-
- [31]))
-[32]
+ [32]))
+[33]
 
 LaTeX Warning: Empty bibliography on input line 284.
 
@@ -1294,24 +1283,30 @@ LaTeX Warning: Empty bibliography on input line 284.
 \tf@lof=\write7
 \openout7 = `pracainz.lof'.
 
- [33] (./pracainz.lot)
+ [34] (./pracainz.lot)
 \tf@lot=\write8
 \openout8 = `pracainz.lot'.
 
- [34] (./dodatki/przykladowy_dodatek.tex) [35]
+ [35] (./dodatki/przykladowy_dodatek.tex) [36]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 310.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 310.
  (./pracainz.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 310.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 310.
-Package rerunfilecheck Info: File `pracainz.out' has not changed.
-(rerunfilecheck)             Checksum: D554D3EB16327BD581539E17E0440058;712.
 
+
+Package rerunfilecheck Warning: File `pracainz.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `pracainz.out':
+(rerunfilecheck)             Before: 0A3482CF7C4E10DD06531ED84595BD63;715
+(rerunfilecheck)             After:  935B2BC78174DC544EB00F9F329B00D3;715.
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
@@ -1323,12 +1318,12 @@ Package logreq Info: Writing requests to 'pracainz.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25700 strings out of 481745
- 467691 string characters out of 5935956
+ 25977 strings out of 481745
+ 472268 string characters out of 5935956
  1392784 words of memory out of 5000000
- 42288 multiletter control sequences out of 15000+600000
+ 42527 multiletter control sequences out of 15000+600000
  534713 words of font info for 55 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
  43i,15n,67p,1936b,1685s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on pracainz.pdf (33 pages).
+Output written on pracainz.pdf (34 pages).

@@ -1,0 +1,8 @@
+__kernel void blackWhite(__write_only image2d_t dst ,__read_only image2d_t src){
+    int gidX = get_global_id(0);
+    int gidY = get_global_id(1);
+    const int2 coord = (int2)(gidX, gidY);
+    const float4 pixel = read_imagef(src, coord);
+    float value = (pixel.x + pixel.y + pixel.z) / 3;
+    write_imagef(dst, coord, (float4)(value, value, value, 1.0));
+}
