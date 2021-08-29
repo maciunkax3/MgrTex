@@ -16,23 +16,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4}Pomiary czasu wykonywania kerneli}{14}{subsection.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5}Wspoldzielenie obiektów pomiędzy OpenCL i OpenGL}{14}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.5}Współdzielenie obiektów pomiędzy OpenCL i OpenGL}{14}{subsection.2.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Specyfika testowanych Urządzeń}{16}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Testy Performancowe OpenCL na Mobilkach}{17}{section.4}%
+\contentsline {section}{\numberline {4}Testy Wydajnościowe OpenCL na Urządzeniach z systemem Android}{17}{section.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1}Pomiar Mocy Obliczeniowej}{17}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Przepływ pamięci}{18}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Przepływ pamięci}{19}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3}Czas Oczekiwania na wykonanie kernela}{19}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Transfer pamięci wbudowanymi funkcjami}{19}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.4}Transfer pamięci wbudowanymi funkcjami}{20}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.5}Mnożenie macierzy}{20}{subsection.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6}OpenCL do filtorwania obrazu z cameraApi}{21}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.6}OpenCL do filtrowania obrazu z cameraApi}{21}{subsection.4.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.6.1}Konwersja obrazu z kamery do RGB w aplikacji}{22}{subsubsection.4.6.1}%
 \defcounter {refsection}{0}\relax 

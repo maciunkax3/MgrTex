@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.17)  29 AUG 2021 18:12
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.17)  29 AUG 2021 21:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1205,22 +1205,30 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 (./listings/contextProperties.txt) (./listings/sharedImage)) [14] [15]
 (./rozdzialy/3-rozdzial.tex) [16] (./rozdzialy/4-rozdzial.tex
 (./listings/flops_kernels.cl
-Underfull \vbox (badness 3343) has occurred while \output is active []
+Underfull \vbox (badness 6396) has occurred while \output is active []
 
  [17])
-Overfull \hbox (73.16545pt too wide) in paragraph at lines 11--12
-\TU/Arial(0)/m/n/10 niu kernela zostały odczyane wartości CL_PROFILING_COMMAND_
-START i CL_PROFILING_COMMAND_END.
+Overfull \hbox (87.06682pt too wide) in paragraph at lines 11--12
+\TU/Arial(0)/m/n/10 naniu kernela zostały odczytane wartości CL_PROFILING_COMMA
+ND_START i CL_PROFILING_COMMAND_END.
  []
 
-(./listings/copy_kernel.cl [18]) (./listings/increment.cl)
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+(./listings/copy_kernel.cl) (./listings/increment.cl)
 Overfull \hbox (4.47285pt too wide) in paragraph at lines 30--31
 []\TU/Arial(0)/m/n/10 Po wykonaniu kernela odczytane zostały wartości CL_PROFIL
 ING_COMMAND_QUEUED
  []
 
-[19] (./listings/MatrixMul)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Underfull \vbox (badness 2318) has occurred while \output is active []
+
+ [19]
+(./listings/MatrixMul)
+Underfull \vbox (badness 5245) has occurred while \output is active []
 
  [20]
 (./listings/createTextureExternal.txt) (./listings/drawImage.txt) [21]
@@ -1235,11 +1243,7 @@ File: imgs/preview.png Graphic file (type bmp)
  (./listings/maxRgb)
 File: imgs/maxRgb.png Graphic file (type bmp)
 <imgs/maxRgb.png>
-
-Underfull \vbox (badness 1502) has occurred while \output is active []
-
- [24]
-(./listings/grayScale.txt)
+ [24] (./listings/grayScale.txt)
 File: imgs/BlackWhite.png Graphic file (type bmp)
 <imgs/BlackWhite.png>
 
@@ -1300,13 +1304,10 @@ Package rerunfilecheck Warning: File `pracainz.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `pracainz.out':
-(rerunfilecheck)             Before: 0A3482CF7C4E10DD06531ED84595BD63;715
-(rerunfilecheck)             After:  935B2BC78174DC544EB00F9F329B00D3;715.
+(rerunfilecheck)             Before: 935B2BC78174DC544EB00F9F329B00D3;715
+(rerunfilecheck)             After:  C93C1C978C8A22A4F0F2D1A4ABC09DD0;727.
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
@@ -1324,6 +1325,6 @@ Here is how much of TeX's memory you used:
  42527 multiletter control sequences out of 15000+600000
  534713 words of font info for 55 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
- 43i,15n,67p,1936b,1685s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,15n,67p,1944b,1685s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on pracainz.pdf (34 pages).
