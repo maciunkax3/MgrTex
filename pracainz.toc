@@ -42,30 +42,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.6.4}Filtr Uśredniający}{26}{subsubsection.4.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Aplikacje wykorzystujące OpenCl Przypadki Użycia}{28}{section.5}%
+\contentsline {section}{\numberline {5}Analiza Wyników, Wnioski}{28}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Analiza Wyników, Wnioski}{29}{section.6}%
+\contentsline {subsection}{\numberline {5.1}Wyniki Mocy Obliczeniowej}{28}{subsection.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Pierwsza sekcja}{29}{subsection.6.1}%
+\contentsline {subsection}{\numberline {5.2}Wyniki Przeplywu Pamięci}{30}{subsection.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.1}Podsekcja}{29}{subsubsection.6.1.1}%
+\contentsline {subsection}{\numberline {5.3}Czas Oczekiwania na wykonanie}{32}{subsection.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.2}I kolejna podsekcja}{30}{subsubsection.6.1.2}%
+\contentsline {subsection}{\numberline {5.4}Transfery Pamieci Aplikacja-Urządzenie}{32}{subsection.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Druga sekcja}{31}{subsection.6.2}%
+\contentsline {subsection}{\numberline {5.5}Mnożenie Macierzy}{34}{subsection.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.1}Podsekcja sekcji drugiej}{31}{subsubsection.6.2.1}%
+\contentsline {subsection}{\numberline {5.6}OpenCL z Kamera Api}{35}{subsection.5.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.2}Kod}{32}{subsubsection.6.2.2}%
+\contentsline {section}{\numberline {6}Aplikacje wykorzystujące OpenCl Przypadki Użycia}{36}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Wykaz literatury}{34}{lstnumber.-20.8}%
+\contentsline {section}{Wykaz literatury}{37}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Wykaz rysunków}{34}{lstnumber.-20.8}%
+\contentsline {section}{Wykaz rysunków}{37}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Wykaz tabel}{35}{lstnumber.-20.8}%
+\contentsline {section}{Wykaz tabel}{38}{section.6}%
 \defcounter {refsection}{0}\relax 
 \setcounter {tocdepth}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Dodatek \numberline {A}Przykładowy dodatek}{36}{appendix.1.A}%
+\contentsline {section}{Dodatek \numberline {A}Przykładowy dodatek}{39}{appendix.1.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Rozdzia\PlPrIeC {\l } \numberline {A.1}Sekcja}{36}{subsection.1.A.1}%
+\contentsline {subsection}{Rozdzia\PlPrIeC {\l } \numberline {A.1}Sekcja}{39}{subsection.1.A.1}%

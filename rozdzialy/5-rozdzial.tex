@@ -1,2 +1,370 @@
-\section[Aplikacje wykorzystujące OpenCl Przypadki Użycia]{Aplikacje wykorzystujące OpenCl Przypadki Użycia}
+\section[Analiza Wyników, Wnioski]{Analiza Wyników, Wnioski}
+W tym rozdziale opisane zostały wyniki testów opisanych w rozdziale 4, na urządzeniach opisanych w rozdiale 3.
+\subsection[Wyniki Mocy Obliczeniowej]{Wyniki Mocy Obliczeniowej}
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[
+  ybar=.2cm,
+  height=7cm,
+  width=15cm,
+  xlabel=Typy,
+  ylabel=HOPS,
+  legend style={at={(0.5,-0.12)},anchor=north},
+  nodes near coords,
+  xticklabels from table={charts/HalfPerf.dat}{Type},xtick=data]
+\addplot[fill=blue] table [y=$Q_B$,x=X]{charts/HalfPerf.dat};
+\addlegendentry{Xiaomi MI A2 Lite}
+\addplot[fill=orange] table [y=$Q_C$,x=X]{charts/HalfPerf.dat};
+\addlegendentry{HTC 820}
+\addplot[fill=yellow]  table [y=$Q_D$,x=X]{charts/HalfPerf.dat};
+\addlegendentry{Huawei p20 lite}
+\addplot[fill=green]  table [y=$Q_E$,x=X]{charts/HalfPerf.dat};
+\addlegendentry{Xiaomi Redmi Note 7}
+\end{axis}
+\end{tikzpicture}
+\caption{Typ Half Moc Obliczeniowa}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[
+  ybar=.2cm,
+  height=7cm,
+  width=15cm,
+  xlabel=Typy,
+  ylabel=IOPS,
+  legend style={at={(0.5,-0.12)},anchor=north},
+  nodes near coords,
+  xticklabels from table={charts/IntPerf.dat}{Type},xtick=data]
+\addplot[fill=blue] table [y=$Q_B$,x=X]{charts/IntPerf.dat};
+\addlegendentry{Xiaomi MI A2 Lite}
+\addplot[fill=orange] table [y=$Q_C$,x=X]{charts/IntPerf.dat};
+\addlegendentry{HTC 820}
+\addplot[fill=yellow]  table [y=$Q_D$,x=X]{charts/IntPerf.dat};
+\addlegendentry{Huawei p20 lite}
+\addplot[fill=green]  table [y=$Q_E$,x=X]{charts/IntPerf.dat};
+\addlegendentry{Xiaomi Redmi Note 7}
+\end{axis}
+\end{tikzpicture}
+\caption{Typ Int Moc Obliczeniowa}
+\end{figure}
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[
+  ybar=.2cm,
+  height=7cm,
+  width=15cm,
+  xlabel=Typy,
+  ylabel=FLOPS,
+  legend style={at={(0.5,-0.12)},anchor=north},
+  nodes near coords,
+  xticklabels from table={charts/FloatPerf.dat}{Type},xtick=data]
+\addplot[fill=blue] table [y=$Q_B$,x=X]{charts/FloatPerf.dat};
+\addlegendentry{Xiaomi MI A2 Lite}
+\addplot[fill=orange] table [y=$Q_C$,x=X]{charts/FloatPerf.dat};
+\addlegendentry{HTC 820}
+\addplot[fill=yellow]  table [y=$Q_D$,x=X]{charts/FloatPerf.dat};
+\addlegendentry{Huawei p20 lite}
+\addplot[fill=green]  table [y=$Q_E$,x=X]{charts/FloatPerf.dat};
+\addlegendentry{Xiaomi Redmi Note 7}
+\end{axis}
+\end{tikzpicture}
+\caption{Typ Float Moc Obliczeniowa}
+\end{figure}
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[
+  ybar=.2cm,
+  height=7cm,
+  width=15cm,
+  xlabel=Typy,
+  ylabel=DOPS,
+  legend style={at={(0.5,-0.12)},anchor=north},
+  nodes near coords,
+  xticklabels from table={charts/DoublePerf.dat}{Type},xtick=data]
+\addplot[fill=yellow]  table [y=$Q_D$,x=X]{charts/DoublePerf.dat};
+\addlegendentry{Huawei p20 lite}
+\end{axis}
+\end{tikzpicture}
+\caption{Typ Double Moc Obliczeniowa}
+\end{figure}
+
+\subsection[Wyniki Przeplywu Pamięci]{Wyniki Przeplywu Pamięci}
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[
+  ybar=.2cm,
+  height=7cm,
+  width=15cm,
+  xlabel=Typy,
+  ylabel=GB/s,
+  legend style={at={(0.5,-0.12)},anchor=north},
+  nodes near coords,
+  xticklabels from table={charts/HalfBandwith.dat}{Type},xtick=data]
+\addplot[fill=blue] table [y=$Q_B$,x=X]{charts/HalfBandwith.dat};
+\addlegendentry{Xiaomi MI A2 Lite}
+\addplot[fill=orange] table [y=$Q_C$,x=X]{charts/HalfBandwith.dat};
+\addlegendentry{HTC 820}
+\addplot[fill=yellow]  table [y=$Q_D$,x=X]{charts/HalfBandwith.dat};
+\addlegendentry{Huawei p20 lite}
+\addplot[fill=green]  table [y=$Q_E$,x=X]{charts/HalfBandwith.dat};
+\addlegendentry{Xiaomi Redmi Note 7}
+\end{axis}
+\end{tikzpicture}
+\caption{Typ Half Przepływ Pamięci}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[
+  ybar=.2cm,
+  height=7cm,
+  width=15cm,
+  xlabel=Typy,
+  ylabel=GB/s,
+  legend style={at={(0.5,-0.12)},anchor=north},
+  nodes near coords,
+  nodes near coords,
+  xticklabels from table={charts/IntBandwith.dat}{Type},xtick=data]
+\addplot[fill=blue] table [y=$Q_B$,x=X]{charts/IntBandwith.dat};
+\addlegendentry{Xiaomi MI A2 Lite}
+\addplot[fill=orange] table [y=$Q_C$,x=X]{charts/IntBandwith.dat};
+\addlegendentry{HTC 820}
+\addplot[fill=yellow]  table [y=$Q_D$,x=X]{charts/IntBandwith.dat};
+\addlegendentry{Huawei p20 lite}
+\addplot[fill=green]  table [y=$Q_E$,x=X]{charts/IntBandwith.dat};
+\addlegendentry{Xiaomi Redmi Note 7}
+\end{axis}
+\end{tikzpicture}
+\caption{Typ Int Przepływ Pamięci}
+\end{figure}
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[
+  ybar=.2cm,
+  height=7cm,
+  width=15cm,
+  xlabel=Typy,
+  ylabel=GB/s,
+  legend style={at={(0.5,-0.12)},anchor=north},
+  nodes near coords,
+  xticklabels from table={charts/FloatBandwith.dat}{Type},xtick=data]
+\addplot[fill=blue] table [y=$Q_B$,x=X]{charts/FloatBandwith.dat};
+\addlegendentry{Xiaomi MI A2 Lite}
+\addplot[fill=orange] table [y=$Q_C$,x=X]{charts/FloatBandwith.dat};
+\addlegendentry{HTC 820}
+\addplot[fill=yellow]  table [y=$Q_D$,x=X]{charts/FloatBandwith.dat};
+\addlegendentry{Huawei p20 lite}
+\addplot[fill=green]  table [y=$Q_E$,x=X]{charts/FloatBandwith.dat};
+\addlegendentry{Xiaomi Redmi Note 7}
+\end{axis}
+\end{tikzpicture}
+\caption{Typ Float Przepływ Pamięci}
+\end{figure}
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[
+  ybar=.2cm,
+  height=7cm,
+  width=15cm,
+  xlabel=Typy,
+  ylabel=GB/s,
+  legend style={at={(0.5,-0.12)},anchor=north},
+  nodes near coords,
+  xticklabels from table={charts/DoubleBandwith.dat}{Type},xtick=data]
+\addplot[fill=yellow]  table [y=$Q_D$,x=X]{charts/DoubleBandwith.dat};
+\addlegendentry{Huawei p20 lite}
+\end{axis}
+\end{tikzpicture}
+\caption{Typ Double Przepływ Pamięci}
+\end{figure}
+
+\subsection[Czas Oczekiwania na wykonanie]{Czas Oczekiwania na wykonanie}
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[ybar,
+  xmin=-1,
+  xmax= 6,
+  ylabel=us,
+  ymin=0,
+  xticklabels ={,,},
+  nodes near coords,
+  legend pos=outer north east,xtick=data]
+\addplot[fill=blue] table [y=$Q_B$,x=X]{charts/latency.dat};
+\addlegendentry{Xiaomi MI A2 Lite}
+\addplot[fill=orange] table [y=$Q_C$,x=X]{charts/latency.dat};
+\addlegendentry{HTC 820}
+\addplot[fill=yellow]  table [y=$Q_D$,x=X]{charts/latency.dat};
+\addlegendentry{Huawei p20 lite}
+\addplot[fill=green]  table [y=$Q_E$,x=X]{charts/latency.dat};
+\addlegendentry{Xiaomi Redmi Note 7}
+\end{axis}
+\end{tikzpicture}
+\caption{Czas oczekiwania na wykonanie}
+\end{figure}
+
+\subsection[Transfery Pamieci Aplikacja-Urządzenie]{Transfery Pamieci Aplikacja-Urządzenie}
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[ybar=.7cm,
+  ylabel=GB/s,
+  ymin=0,
+  xticklabels ={,,},
+  nodes near coords,
+  legend pos=outer north east,xtick=data]
+\addplot[fill=blue] table [y=$Q_B$,x=X]{charts/read.dat};
+\addlegendentry{Xiaomi MI A2 Lite}
+\addplot[fill=orange] table [y=$Q_C$,x=X]{charts/read.dat};
+\addlegendentry{HTC 820}
+\addplot[fill=yellow]  table [y=$Q_D$,x=X]{charts/read.dat};
+\addlegendentry{Huawei p20 lite}
+\addplot[fill=green]  table [y=$Q_E$,x=X]{charts/read.dat};
+\addlegendentry{Xiaomi Redmi Note 7}
+\end{axis}
+\end{tikzpicture}
+\caption{czas wykonywania clEnqueueReadBuffer}
+\end{figure}
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[ybar=.7cm,
+%  ymode=log,
+  ylabel=GB/s,
+  ymin=0,
+  xticklabels ={,,},
+  nodes near coords,
+  legend pos=outer north east,xtick=data]
+\addplot[fill=blue] table [y=$Q_B$,x=X]{charts/write.dat};
+\addlegendentry{Xiaomi MI A2 Lite}
+\addplot[fill=orange] table [y=$Q_C$,x=X]{charts/write.dat};
+\addlegendentry{HTC 820}
+\addplot[fill=yellow]  table [y=$Q_D$,x=X]{charts/write.dat};
+\addlegendentry{Huawei p20 lite}
+\addplot[fill=green]  table [y=$Q_E$,x=X]{charts/write.dat};
+\addlegendentry{Xiaomi Redmi Note 7}
+\end{axis}
+\end{tikzpicture}
+\caption{czas wykonywania clEnqueueWriteBuffer}
+\end{figure}
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[ybar,
+  ylabel=GB/s,
+  xmin = 0,
+  xmax=3,
+  nodes near coords,
+  legend pos=outer north east,
+  xticklabels from table={charts/MapUnmap.dat}{Operation},xtick=data]
+\addplot[fill=blue] table [y=$Q_B$,x=X]{charts/MapUnmap.dat};
+\addlegendentry{Xiaomi MI A2 Lite}
+\addplot[fill=orange] table [y=$Q_C$,x=X]{charts/MapUnmap.dat};
+\addlegendentry{HTC 820}
+\addplot[fill=yellow]  table [y=$Q_D$,x=X]{charts/MapUnmap.dat};
+\addlegendentry{Huawei p20 lite}
+\addplot[fill=green]  table [y=$Q_E$,x=X]{charts/MapUnmap.dat};
+\addlegendentry{Xiaomi Redmi Note 7}
+\end{axis}
+\end{tikzpicture}
+\caption{czas wykonywania Map unMap}
+\end{figure}
+
+\subsection[Mnożenie Macierzy]{Mnożenie Macierzy}
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[
+  xlabel=LWS,
+  ymode=log,
+  point meta=rawy,
+  height=7cm,
+  width=15cm,
+  ylabel=s,
+  legend style={at={(0.5,-0.12)},anchor=north},
+  nodes near coords,
+  xticklabels from table={charts/MatrixMul.dat}{LWS},xtick=data]
+\addplot[blue,thick,mark=square*] table [y=$Q_B$,x=X]{charts/MatrixMul.dat};
+\addlegendentry{Xiaomi MI A2 Lite}
+\addplot[orange,thick,mark=square*] table [y=$Q_C$,x=X]{charts/MatrixMul.dat};
+\addlegendentry{HTC 820}
+\addplot[green, ,thick,mark=square*]  table [y=$Q_E$,x=X]{charts/MatrixMul.dat};
+\addlegendentry{Xiaomi Redmi Note 7}
+\end{axis}
+\end{tikzpicture}
+\caption{Mnożenie macierzy(Max Lws 1024)}
+\end{figure}
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[
+  xlabel=LWS,
+  ymode=log,
+  point meta=rawy,
+  height=7cm,
+  width=15cm,
+  ylabel=s,
+  legend style={at={(0.5,-0.12)},anchor=north},
+  nodes near coords,
+  xticklabels from table={charts/MatrixMul256.dat}{LWS},xtick=data]
+\addplot[yellow,thick,mark=square*] table [y=$Q_D$,x=X]{charts/MatrixMul256.dat};
+\addlegendentry{Huawei p20 lite}
+\end{axis}
+\end{tikzpicture}
+\caption{Mnożenie macierzy(Max Lws 256)}
+\end{figure}
+\subsection[OpenCL z Kamera Api]{OpenCL z Kamera Api}
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[
+  ybar=.2cm,
+  height=7cm,
+  width=15cm,
+  ylabel=FPs,
+  legend style={at={(0.5,-0.12)},anchor=north},
+  nodes near coords,
+  xticklabels from table={charts/BasicMedia.dat}{Test},xtick=data]
+\addplot[fill=blue] table [y=$Q_B$,x=X]{charts/BasicMedia.dat};
+\addlegendentry{Xiaomi MI A2 Lite}
+\addplot[fill=orange] table [y=$Q_C$,x=X]{charts/BasicMedia.dat};
+\addlegendentry{HTC 820}
+\addplot[fill=yellow]  table [y=$Q_D$,x=X]{charts/BasicMedia.dat};
+\addlegendentry{Huawei p20 lite}
+\addplot[fill=green]  table [y=$Q_E$,x=X]{charts/BasicMedia.dat};
+\addlegendentry{Xiaomi Redmi Note 7}
+\end{axis}
+\end{tikzpicture}
+\caption{Konwersja do RGB}
+\end{figure}
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[
+  ybar=.2cm,
+  height=7cm,
+  width=15cm,
+  ylabel=FPs,
+  legend style={at={(0.5,-0.12)},anchor=north},
+  nodes near coords,
+  xticklabels from table={charts/Filters.dat}{Filtr},xtick=data]
+\addplot[fill=blue] table [y=$Q_B$,x=X]{charts/Filters.dat};
+\addlegendentry{Xiaomi MI A2 Lite}
+\addplot[fill=orange] table [y=$Q_C$,x=X]{charts/Filters.dat};
+\addlegendentry{HTC 820}
+\addplot[fill=green]  table [y=$Q_E$,x=X]{charts/Filters.dat};
+\addlegendentry{Xiaomi Redmi Note 7}
+\end{axis}
+\end{tikzpicture}
+\caption{Konwersja do RGB}
+\end{figure}
+
 

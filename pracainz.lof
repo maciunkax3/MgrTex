@@ -8,6 +8,34 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Podgląd z filtrem uśredniającym\relax }}{27}{figure.caption.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Logo WETI\relax }}{29}{figure.caption.5}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Typ Half Moc Obliczeniowa\relax }}{28}{figure.caption.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Logo PG\relax }}{30}{figure.caption.6}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Typ Int Moc Obliczeniowa\relax }}{28}{figure.caption.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Typ Float Moc Obliczeniowa\relax }}{29}{figure.caption.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Typ Double Moc Obliczeniowa\relax }}{29}{figure.caption.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Typ Half Przepływ Pamięci\relax }}{30}{figure.caption.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Typ Int Przepływ Pamięci\relax }}{30}{figure.caption.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Typ Float Przepływ Pamięci\relax }}{31}{figure.caption.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Typ Double Przepływ Pamięci\relax }}{31}{figure.caption.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Czas oczekiwania na wykonanie\relax }}{32}{figure.caption.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces czas wykonywania clEnqueueReadBuffer\relax }}{32}{figure.caption.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces czas wykonywania clEnqueueWriteBuffer\relax }}{33}{figure.caption.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.12}{\ignorespaces czas wykonywania Map unMap\relax }}{33}{figure.caption.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Mnożenie macierzy(Max Lws 1024)\relax }}{34}{figure.caption.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Mnożenie macierzy(Max Lws 256)\relax }}{34}{figure.caption.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Konwersja do RGB\relax }}{35}{figure.caption.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Konwersja do RGB\relax }}{35}{figure.caption.20}%
