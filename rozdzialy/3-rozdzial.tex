@@ -1,2 +1,52 @@
 \section[Specyfika testowanych Urządzeń]{Specyfika testowanych Urządzeń}
+Ze względu na ograniczenia związane ze zurzyciem energii, urządznia mobilne są nie często wykorzystywane do większych zadań obliczeniowych. Zwykle praca procesorów graficznych wykożystywana jest głównie do wspierania aplikacji graficznych. Procesory Graficzne działają w modelu prztwarzania pojedynczą intrukcją kliku elementów pamięci (SIMD). Tak by móc jedną instrukcje w tym samym czasie wykonać na przykład na kilku pixelach z obrazka. 
+\begin{figure}[H]
+	\includegraphics[scale=0.16]{imgs/SIMD2.svg.png}
+	\caption{SIMD}
+\end{figure}
 
+\subsection[Porownanie Graficznych Procesorów Mobilnych]{Porownanie Graficznych Procesorów Mobilnych}
+Dwoma głównymi producentami procesorów graficznych na mobilne platformy są Qualc om produkujący procesory Adreno i ARM tworzący GPU o nazwie Mali. 
+Oto podstawowe wady i zalety wymienionych produktów.
+\begin{itemize}
+	\item Adreno zalety:
+	\begin{itemize}
+		\item Lepszy Performance
+		\item Wspiera nowsze Api
+		\item Mniej się przegrzewa
+	\end{itemize}
+	\item Adreno wady:
+	\begin{itemize}
+		\item Droższy
+		\item Mniej zoptymalizowany
+		\item Słabszy przy renderowaniu.
+	\end{itemize}
+	\item Mali zalety:
+	\begin{itemize}
+		\item Bardziej rozpowszechnione, więc lepeiej zoptyamlizowane.
+		\item Niższa cena
+		\item Większe częstotliwości zegara
+		\item Szybsze renderowanie.
+	\end{itemize}
+	\item Mali wady:
+	\begin{itemize}
+		\item Gorszy prerformance
+		\item Gorszy support Api
+		\item Bardziej się grzeje.
+	\end{itemize}
+\end{itemize}
+	
+	
+\subsection[Urządzenia wykorzystane do testowania]{Urządzenia wykorzystane do testowania}
+\subsubsection[Xiaomi Mi A2 Lite]{Xiaomi Mi A2 Lite}
+Jest to telefon z lipca 2018 roku. Posiadający ośmio rdzeniowy procesor Cortex A53, z częstotliwością zegara 2.0GHz. Pamięć systemowa urządzenia to 3GB. Umieszczono w nim Procesor graficzny Adreno 506. Procesor ten posiada 96 jednostek mogących jednocześnie wykonywać wątki na urządzeniu. Częstotliwość zegara procesora wynosi 650MHz. Dodatkowo posiada on 128 KB pamięci wbudowanej w chip GPU oraz 8KB, jest to pamięć typu LPDDR3 933MHz i przepustowosci 7.4GB/s pamieci cache. Wspiera następujące API: Vulkan 1.0, OpenGL 3.2, DX11, OpenCL 2.0. Tenefon Posiada system operacyjny Android w wejsji 10. Sterownik OpenCL na urządzeniu jest w wersji \#7331a27 z 11/13/19, posiada wsparcie dla typu zmienno przecikowego Half, oarz dla współdzielenia zasobów z OpenGL. Nie posiada wsparcia dla tyów zmienno rzecinkowych podwójnej precyzji Double.
+\subsubsection[Hawei P20 Lite]{Hawei P20 Lite}
+Jest to Urządzenie z marca 2018 roku. Wyposarzone jest w 8 rdzeniowy procesor 4x2.36 GHz Cortex-A53 + 4x1.7 GHz Cortex-A53. Posiada on 4GB pamięci systemowej. Wbudowany procesor grafczny to Mali-T830 MP2, procesor posiada dwie jednostki wykonawcze. Wg danych producenta pojedyncza jednostka w tym prcesorze może maksymalnie wykonywać 256 wątków. Częstotliwość zegara wynosi 650MHz, posiada 16KB pamięci cache, jest to pamięć LPDDR3 o częstotliosci 933MHz i przepustowości do 14.9 GB/s. Wspiera nasępujące Api: Vulkan 1.0, OpenCL 1.2, OpenGL 3.2. Wpiera typ Half oraz Double, nie wspiera współdzielenia zasobów z OpenGL. Teleon działa z systemem operacyjnym Android w wersji 8
+\subsubsection[HTC Desire 820]{HTC Desire 820}
+Telefon z 2014 roku, wyposażony w procesor osmio rdzeniowy 1,7 GHz quad-core Cortex-A53 + 1 GHz quad-core Cortex-A53. Posiada 2GB pamięci RAM. Posiada procesor graficzny Adreno 405. Gpu może wykonywać na raz 48 wątków, dodatowo posiada 256KB pamięci dedykowanej. Wykożystano pamięć typu LPDDR3 z częstotliwością 666.5MHz i szybkosci 5.3GB/s Wspierane przez urządzenia Api to: OpenGL 3.2, OpenCL 1.2, DX11. Telefon Dla Systemu Android w wersji 5 posiada sterownik OpenCL w wersji z 29.04.15, a z androidem 6 w wejsji z 23.03.2016. Wspiera typ Half, nie wspiera Double, możliwe do wykożystania rozszerzenie współdzielenia zasobów między OpenCL i OpenGL.
+\subsubsection[Xiaomi Redmi Note 7]{Xiaomi Redmi Note 7}
+Telefon wydany na początku 2019 roku. Posiada procesor ośmio rdzeniowy Qualcomm Kryo 260 z częstotliwością do 2,2 GHz. Wyposażony w 6GB pamięci systemowej. Dodatkowo posiada Procesor graficzny Adreno 512. GPU działa z czętotliwością 850MHz posiada 256KB pamięci dedykowanej i 16KB cache, pamięć typu LPDDR4 o częstotliwości 1866MHz i przepustowości do 29.8GB/s. Może wykonywać na raz 128 wątków. Telefon dziala z systemem android w wersji 10, posiada sterownik OpenCL w wersji:\#9b15012 z 09/17/20.Wsiera Api Vulkan 1.0, OpenGL 3.2, DX11, OpenCL 2.0. OpenCL nie wspiera typu double, ale wspiera typ Half oraz wspoldzielenie zasobów z OpenGL.
+\subsubsection[Samsung Galaxy A70]{Samsung Galaxy A70}
+To urządzenie, którego premiwra odyła się na początku 2019 roku. wyposażony w procesor ośmiordzeniowy Kryo 460 z częstotliwością zegara do 2 GHz. Posiada 6GB pamięci RAM. Dodatkowo posiada porcesor graficzny Adreno 612 o częstotliwoąsi 845Mhz, 128 wątkach, wbudowanej pamięci 256KB i 16KB pamieci cache, jest to pamięć typu LPDDR4X o częstotliwości 1866MHz i przepustowosci do 14.9GB/s. Android w wersji 10 ze sterownikiem OpenCL w wersji \#e1ac91e z 11/17/20. Wspiera typ Half, nie wspiera Double, możliwe do wykożystania rozszerzenie współdzielenia zasobów między OpenCL i OpenGL.
+\subsubsection[Porównanie]{Porównanie}
+Zdecydwoanie urządzeniem z najsłabszymi parametrami jest HTC Desire 820. Xiaomi Mi A2 Lite oraz Huawei P20 lite posiadają konkurencyjne paramtetry, jednak są urządzeiami posiadające podzespoły od różnyc producentów. Najmocniejszymi są Redmi Note 7, który ma najszybszą pamięć oraz najszybciej pracujący procesor, oraz SAmsung Galaxy A70, który ma najnowszy procesor graficzny.

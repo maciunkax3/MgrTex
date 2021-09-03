@@ -5,7 +5,11 @@ OpenCL czyli Open Compute Language to standard tworzony obecnie przez grupę Khr
 \subsection{Linkowanie biblioteki OpenCL na platformie Android}
 Aplikacje zwykle nie linkują się bezpośrednio ze sterownikiem posiadającym kompletną implementację api. Do tego wykorzystywana jest dodatkowa biblioteka która wyszukuje implementacji sterownika dla wszystkich platform na urządzeniu. Dzięki wykorzystaniu takiej ładującej biblioteki Aplikacja może używać każdej dostępnej platformy wspierającej to Api, oraz nie jest na sztywno połączona z jednym sterownikiem w określonej wersji.
 Niestety nie istnieje binarna wersja takiej biblioteki dla systemu Android. Istnieje możliwość połączenia natywnej biblioteki ze sterownikiem znajdującym się w urządzeniu, jednak wadą takiego rozwiązania jest konieczność pobrania z urządzenia pliku binarnego z implementacją OpenCL oraz wszystkich zależnych od niej sterowników. Takie rozwiązanie powoduje, że skompilowana aplikacja będzie działać jedynie na urządzeniu, z którego zostały pobrane biblioteki.
-Innym rozwiązaniem jest pobranie źródeł z kodem biblioteki ładującej, zbudowanie biblioteki i połączenie jej z aplikacją. Sterownik który będzie łączył program z implementacją OpenCL ma zapisane domyślne ścieżki w których mogą znajdować sie biblioteka OpenCL. Istnieje również możliwość zdefiniowania zmiennej środowiskowej w której wskazujemy lokalizację z której chcemy by sterownik został załadowany. Wadą takiego rozwiązania jest konieczność kompilacji takiej biblioteki, natomiast dzięki temu możemy zbudować aplikację działającą na wielu urządzeniach.
+Innym rozwiązaniem jest pobranie źródeł z kodem biblioteki ładującej, zbudowanie biblioteki i połączenie jej z aplikacją. Sterownik który będzie łączył program z implementacją OpenCL ma zapisane domyślne ścieżki w których mogą znajdować sie biblioteka OpenCL. Istnieje również możliwość zdefiniowania zmiennej środowiskowej w której wskazujemy lokalizację z której chcemy by sterownik został załadowany. Wadą takiego rozwiązania jest konieczność kompilacji takiej biblioteki, natomiast dzięki temu możemy zbudować aplikację działającą na wielu urządzeniach. POniższy obrazek ilustruje w jaki sposób aplikacje łączą się z implementacją sterownika dla konkretnego urządzenia. Aplikacja może odpytać każde urządzenie o jego właściwości, a następnie wybrać te na którym uruchomi sie dalsza część aplikacji.
+\begin{figure}[H]
+	\includegraphics[scale=0.4]{imgs/icdLoader.png}
+	\caption{Loader}
+\end{figure}
 https://github.com/krrishnarraj/libopencl-stub
 
 \subsection{Typowy przebieg aplikacji OpenCL}
@@ -13,10 +17,11 @@ Poniżej widać jak wygląda przebieg prostego programu wykoystującego Api Open
 
 \lstinputlisting{listings/sample_cl.cpp}
 
-Pierwszym krokiem jest zawołanie \textbf{clGetPlatformIDs}. Podając drugi argument czyli cl\_platform\_id\* jako null, do trzeciego argumentu jakim jest cl\_uint\* zostanie wpisana liczba dostępnych na urządzeniu platform wspierajacych OpenCL.
+Pierwszym krokiem jest zawołanie \textbf{clGetPlatformIDs}. Podając drugi argument czyli cl\_platform\_id\* jako null, do trzeciego argumentu jakim jest cl\_uint\* zostanie wpisana liczba dostępnych na urządzeniu platform wspierajacych OpenCL(NVidia/Intel/Arm/Qualcom).
 Drugie wywołanie clGetPlatformIDs wpisze informacje o podanej liczbie platform i zapisze je w tablicy podanej w drugim argumencie.
+Następnie po wybraniu platformy, której chcemy używać pobieramy obiekt Device wolajac clGetDeviceIDs, który zwraca liste urządzeń dla danego typu(CPU/GPU/FPGA)
 W tej pracy w testowanych aplikacjach na system android wykorzystywany będzie CL\_DEVICE\_TYPE\_GPU, który jako jedyny jest dostępny na testowanych przeze mnie urządzeniach.
-Posiadając obiekt device, wołając \textbf{clCreateContext} możemy stworzyć context w ramach którego możliwe jest zarządzanie później stworzonymi obiektami na określonych przy tworzeniu contextu urządzeniach. 
+Posiadając obiekt device, wołając \textbf{clCreateContext} możemy stworzyć context w ramach którego możliwe jest zarządzanie później stworzonymi obiektami na określonych przy tworzeniu contextu urządzeniach.
 Dalej w przykładowym kodzie stworzona jest kolajka \textbf{clCreateCommandQueue} kolejka powstaje w ramach contextu na konkretny device. Później na tym obiekcie kolejkowane będą zadania takie jak transfery pamięci czy wykonywane funkcje. W zależności czy kolejka zostanie stworzona z flagą CL\_QUEUE\_OUT\_OF\_ORDER\_EXEC\_MODE\_ENABLE lub bez niej, zadania te będą mogły być wykonywane równolegle, lub jedno po drugim w kolejności dodania do kolejki.
 Kolejnym krokiem w powyższym kodzie jest stworzenie obiektu programu używając \textbf{clCreateProgramWithSource} lub \textbf{clCreateProgramWithBinary} pierwsza stworzy program zawierający nie skompilowany kod w języku OpenCL C, natomiast druga stworzy obiekt z binarnej wersji, wcześniej skompilowanej. Do stworzenia programu ze źródeł przekazywany jest ciąg znaków zawierający kernele, czyli funkcje które mogą zostać wykonane na urządzeniu.
 Do wykonania inkrementacji każdego elementu bufora w przykładzie użyty zostanie następujący kernel
@@ -27,7 +32,11 @@ Następnym wykonanym krokiem jest stworzeniem obiektu bufora poprzez \textbf{clC
 Następnie zostaje wykonane \textbf{clEnqueueMapBuffer} funkcja ta mapuje konkretny bufor na obszar pamięci dostępny z poziomu aplikacji. W tym przypadku w pamięci pod zwróconym wskaźnikiem ustawiamy w każdym bajcie wartość 13.
 Aby przesłać pamięć z powrotem do obiektu bufora dostępnego z poziomu urządzenia na którym będzie wykonywany kernel wołamy \textbf{clEnqueueUnmapMemObject}.
 Tak przygotowany bufor z danymi możemy ustawić jako argument kernela wołając \textbf{clSetKernelArg} podając w argumentach kernel, który w którym chcemy ustawić argument, index argumentu, jego typ oraz wskaźnik na obiekt który będzie argumentem funkcji.
-Funkcja która uruchomi wykonanie kernela na wskazanym wcześniej urządzeniu jest \textbf{clEnqueueNDRangeKernel}, która umieści w kolejce do wykonywania wskazany kernel. W tym momencie podane jest także w ilu wymiarach odbędzie sie wykonywanie, podana jest wielkość lokalnej i globalnej work grupy.
+Funkcja która uruchomi wykonanie kernela na wskazanym wcześniej urządzeniu jest \textbf{clEnqueueNDRangeKernel}, która umieści w kolejce do wykonywania wskazany kernel. W tym momencie podane jest także w ilu wymiarach odbędzie sie wykonywanie, podana jest wielkość lokalnej i globalnej work grupy. Rozmiar globalnej work grupy definuje ilosc wątków, które zostaną wykonane. Podział work grup i work itemów pokazuje poniższy obrazzek.
+\begin{figure}[H]
+	\includegraphics[scale=0.4]{imgs/WorkDims.jpg}
+	\caption{Wielowymiarowy ND Range}
+\end{figure}
 Na samym końcu zawłoane zostaje \textbf{clFinish}, jest to funkcja blokująca po wykonaniu której mamy pewność, że wszystkie zakolejkowane na konkretnej kolejce operacje zostały wykonane.
 W wyniku działania takiego kodu w buforze znajdować się będzie 1024 elementy o wartości 13131314.
 \subsection{Możliwości i ograniczenia sprzętowe}

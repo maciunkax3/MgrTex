@@ -1,0 +1,56 @@
+
+Platform: QUALCOMM Snapdragon(TM)
+  Device: QUALCOMM Adreno(TM)
+    Driver version  : OpenCL 2.0 QUALCOMM build: commit #e1ac91e changeid #I2b3b5fbd00 Date: 11/17/20 Tue Local Branch:  Remote Branch:  Compiler E031.37.12.02 (Android)
+    Compute units   : 1
+    Clock frequency : 1 MHz
+
+    Global memory bandwidth (GBPS)
+      float   : 6.74
+      float2  : 10.06
+      float4  : 11.04
+      float8  : 7.67
+      float16 : 3.72
+
+    Single-precision compute (GFLOPS)
+      float   : 78.85
+      float2  : 86.15
+      float4  : 79.07
+      float8  : 91.33
+      float16 : 90.95
+
+    Half-precision compute (GFLOPS)
+      half   : 134.66
+      half2  : 156.17
+      half4  : 168.99
+      half8  : 175.16
+      half16 : 176.79
+
+    No double precision support! Skipped
+
+    Integer compute (GIOPS)
+      int   : 22.59
+      int2  : 23.13
+      int4  : 23.35
+      int8  : 15.50
+      int16 : 17.99
+
+    Integer compute Fast 24bit (GIOPS)
+      int   : 76.56
+      int2  : 47.02
+      int4  : 64.93
+      int8  : 67.71
+      int16 : 62.74
+
+    Transfer bandwidth (GBPS)
+      enqueueWriteBuffer              : 5.33
+      enqueueReadBuffer               : 5.04
+      enqueueWriteBuffer non-blocking : 3.73
+      enqueueReadBuffer non-blocking  : 3.86
+      enqueueMapBuffer(for read)      : 1556.55
+        memcpy from mapped ptr        : 5.59
+      enqueueUnmap(after write)       : 2596.67
+        memcpy to mapped ptr          : 5.79
+
+    Kernel launch latency : 314.83 us
+

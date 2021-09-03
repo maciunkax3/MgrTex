@@ -1,5 +1,5 @@
-X	Filtr	$Q_B$	$Q_C$	$Q_E$
-4	NoFilter	26	20	30
-1	MaxRgb	26	20	30
-2	Grayscale	25	20	29
-3	Avg	11	9	22
+X	Filtr	$Q_B$	$Q_C$	$Q_E$ $Q_F$
+4	NoFilter	26	20	30	30
+1	MaxRgb	26	20	30	30
+2	Grayscale	25	20	29	30
+3	Avg	11	9	22	17
