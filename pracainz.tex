@@ -11,7 +11,7 @@
 \usepackage{tabu}                     % do tabel
 \usepackage[table,dvipsnames]{xcolor} % do kolorowania tabel
 \usepackage{tabularx}                 % do lepszych tabel
-\usepackage[backend=bibtex,language=polish]{biblatex} % do bibliografii
+\usepackage[backend=biber,language=polish]{biblatex} % do bibliografii
 \usepackage{enumitem}                 % do modyfikacji listy (begin{itemize}, niepotrzebne odstępy przed i po)
 \usepackage{floatrow}                 % aby umożliwić wymuszenie położenia figury
 \usepackage{caption}                  % do zmiany podpisów tabel i obrazków
@@ -256,7 +256,7 @@
 \theoremstyle{remark}
 \newtheorem*{remark}{Komentarz}
 
-\bibliography{meta/bibliografia}
+\addbibresource{meta/bibliografia.bib}
 \makeindex
 
 \begin{document}   % właściwy początek dokumentu

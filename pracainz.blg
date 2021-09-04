@@ -1,0 +1,17 @@
+[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
+[0] Config.pm:307> INFO - Logfile is 'pracainz.blg'
+[102] biber:322> INFO - === sob wrz  4, 2021, 10:44:03
+[125] Biber.pm:415> INFO - Reading 'pracainz.bcf'
+[213] Biber.pm:940> INFO - Using all citekeys in bib section 0
+[233] Biber.pm:4256> INFO - Processing section 0
+[233] Utils.pm:75> INFO - Globbing data source 'meta/bibliografia.bib'
+[233] Utils.pm:91> INFO - Globbed data source 'meta/bibliografia.bib' to meta/bibliografia.bib
+[246] Biber.pm:4455> INFO - Looking for bibtex format file 'meta/bibliografia.bib' for section 0
+[247] bibtex.pm:1653> INFO - LaTeX decoding ...
+[253] bibtex.pm:1471> INFO - Found BibTeX data source 'meta/bibliografia.bib'
+[300] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[300] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[301] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[301] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[306] bbl.pm:652> INFO - Writing 'pracainz.bbl' with encoding 'UTF-8'
+[308] bbl.pm:755> INFO - Output to pracainz.bbl
