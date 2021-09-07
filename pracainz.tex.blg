@@ -1,5 +1,0 @@
-[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
-[0] Config.pm:307> INFO - Logfile is 'pracainz.tex.blg'
-[98] biber:322> INFO - === sob wrz  4, 2021, 10:33:31
-[189] Utils.pm:309> ERROR - Cannot find 'pracainz.tex.bcf'!
-[190] Biber.pm:132> INFO - ERRORS: 1

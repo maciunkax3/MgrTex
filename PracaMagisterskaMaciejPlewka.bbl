@@ -1,0 +1,417 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Adreno}{online}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(dostęp: 07.09.2021)}
+      \field{title}{Adreno}
+      \field{year}{2021}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Adreno
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Adreno
+      \endverb
+    \endentry
+    \entry{Loader}{online}{}
+      \name{author}{1}{}{%
+        {{hash=caed47cb61058649a8a4e422d8959666}{%
+           family={Ashbaugh},
+           familyi={A\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{caed47cb61058649a8a4e422d8959666}
+      \strng{fullhash}{caed47cb61058649a8a4e422d8959666}
+      \strng{bibnamehash}{caed47cb61058649a8a4e422d8959666}
+      \strng{authorbibnamehash}{caed47cb61058649a8a4e422d8959666}
+      \strng{authornamehash}{caed47cb61058649a8a4e422d8959666}
+      \strng{authorfullhash}{caed47cb61058649a8a4e422d8959666}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(dostęp: 07.09.2021)}
+      \field{title}{OpenCL on Linux}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://bashbaug.github.io/opencl/2019/07/06/OpenCL-On-Linux.html
+      \endverb
+      \verb{url}
+      \verb https://bashbaug.github.io/opencl/2019/07/06/OpenCL-On-Linux.html
+      \endverb
+    \endentry
+    \entry{LoaderStub}{online}{}
+      \name{author}{1}{}{%
+        {{hash=91803c68975a7b5332aee49778bde32a}{%
+           family={Bhat},
+           familyi={B\bibinitperiod},
+           given={Krishnaraj},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{91803c68975a7b5332aee49778bde32a}
+      \strng{fullhash}{91803c68975a7b5332aee49778bde32a}
+      \strng{bibnamehash}{91803c68975a7b5332aee49778bde32a}
+      \strng{authorbibnamehash}{91803c68975a7b5332aee49778bde32a}
+      \strng{authornamehash}{91803c68975a7b5332aee49778bde32a}
+      \strng{authorfullhash}{91803c68975a7b5332aee49778bde32a}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(dostęp: 07.09.2021)}
+      \field{title}{libopencl-stub}
+      \field{year}{2021}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://github.com/krrishnarraj/libopencl-stub
+      \endverb
+      \verb{url}
+      \verb https://github.com/krrishnarraj/libopencl-stub
+      \endverb
+    \endentry
+    \entry{CameraApi}{online}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(dostęp: 07.09.2021)}
+      \field{title}{Camera API}
+      \field{year}{2021}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://developer.android.com/guide/topics/media/camera
+      \endverb
+      \verb{url}
+      \verb https://developer.android.com/guide/topics/media/camera
+      \endverb
+    \endentry
+    \entry{CLGLSharing}{online}{}
+      \field{sortinit}{c}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(dostęp: 07.09.2021)}
+      \field{journaltitle}{Khronos Group}
+      \field{title}{cl\_khr\_gl\_sharing(3) Manual Page}
+      \field{year}{2020}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.khronos.org/registry/OpenCL/sdk/2.2/docs/man/html/cl_khr_gl_sharing.html
+      \endverb
+      \verb{url}
+      \verb https://www.khronos.org/registry/OpenCL/sdk/2.2/docs/man/html/cl_khr_gl_sharing.html
+      \endverb
+    \endentry
+    \entry{Lit4}{article}{}
+      \name{author}{4}{}{%
+        {{hash=04aaff0b31eb3a461679ccee78e975ff}{%
+           family={Fang},
+           familyi={F\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=044f98dcc344819e103613bbe3ed5abf}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d6eab3f022aa676ad7dd8374888863f8}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=cc4aadc875d7abdbaf96dfa4a83d8b77}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Z},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{ec6374107941b305366b4b974cb0f35e}
+      \strng{fullhash}{04ee708714ef7bbd0e0143265e862a8a}
+      \strng{bibnamehash}{ec6374107941b305366b4b974cb0f35e}
+      \strng{authorbibnamehash}{ec6374107941b305366b4b974cb0f35e}
+      \strng{authornamehash}{ec6374107941b305366b4b974cb0f35e}
+      \strng{authorfullhash}{04ee708714ef7bbd0e0143265e862a8a}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{A Survey, preprint,}
+      \field{title}{Parallel Programming Models for Heterogeneous Many-Cores}
+      \field{year}{2020}
+      \true{nocite}
+    \endentry
+    \entry{Flops}{online}{}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(dostęp: 07.09.2021)}
+      \field{title}{FLOPS}
+      \field{year}{2021}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://pl.wikipedia.org/wiki/FLOPS
+      \endverb
+      \verb{url}
+      \verb https://pl.wikipedia.org/wiki/FLOPS
+      \endverb
+    \endentry
+    \entry{EGL20}{online}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(dostęp: 07.09.2021)}
+      \field{title}{GLES20}
+      \field{year}{2021}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://developer.android.com/reference/android/opengl/GLES20
+      \endverb
+      \verb{url}
+      \verb https://developer.android.com/reference/android/opengl/GLES20
+      \endverb
+    \endentry
+    \entry{Graysale}{online}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(dostęp: 07.09.2021)}
+      \field{title}{Grayscale to RGB Conversion}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.tutorialspoint.com/dip/grayscale_to_rgb_conversion.htm
+      \endverb
+      \verb{url}
+      \verb https://www.tutorialspoint.com/dip/grayscale_to_rgb_conversion.htm
+      \endverb
+    \endentry
+    \entry{OpenCLProgramingGuide}{online}{}
+      \field{sortinit}{h}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(dostęp: 07.09.2021)}
+      \field{journaltitle}{Advanced Micro Devices}
+      \field{title}{https://rocmdocs.amd.com/en/latest/Programming_Guides/Opencl-programming-guide.html}
+      \field{year}{2021}
+    \endentry
+    \entry{Tensor}{online}{}
+      \name{author}{2}{}{%
+        {{hash=34ea7cffda58c3dbe4f6a54a086b1f5f}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Juhyun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f655d7160acdff030daa9c3de9170e15}{%
+           family={Sarokin},
+           familyi={S\bibinitperiod},
+           given={Raman},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{8c6dec190b73698612abc8e14d4f42c7}
+      \strng{fullhash}{8c6dec190b73698612abc8e14d4f42c7}
+      \strng{bibnamehash}{8c6dec190b73698612abc8e14d4f42c7}
+      \strng{authorbibnamehash}{8c6dec190b73698612abc8e14d4f42c7}
+      \strng{authornamehash}{8c6dec190b73698612abc8e14d4f42c7}
+      \strng{authorfullhash}{8c6dec190b73698612abc8e14d4f42c7}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(dostęp: 07.09.2021)}
+      \field{title}{Even Faster Mobile GPU Inference with OpenCL}
+      \field{year}{2020}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://blog.tensorflow.org/2020/08/faster-mobile-gpu-inference-with-opencl.html
+      \endverb
+      \verb{url}
+      \verb https://blog.tensorflow.org/2020/08/faster-mobile-gpu-inference-with-opencl.html
+      \endverb
+    \endentry
+    \entry{Mali}{online}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(dostęp: 07.09.2021)}
+      \field{title}{Mali (GPU)}
+      \field{year}{2021}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Mali_(GPU)
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Mali_(GPU)
+      \endverb
+    \endentry
+    \entry{Lit2}{article}{}
+      \name{author}{1}{}{%
+        {{hash=22c7481fea18e2881175ee813d3bd8c4}{%
+           family={Munshi},
+           familyi={M\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{22c7481fea18e2881175ee813d3bd8c4}
+      \strng{fullhash}{22c7481fea18e2881175ee813d3bd8c4}
+      \strng{bibnamehash}{22c7481fea18e2881175ee813d3bd8c4}
+      \strng{authorbibnamehash}{22c7481fea18e2881175ee813d3bd8c4}
+      \strng{authornamehash}{22c7481fea18e2881175ee813d3bd8c4}
+      \strng{authorfullhash}{22c7481fea18e2881175ee813d3bd8c4}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Khronos OpenCL Working Group}
+      \field{title}{The OpenCL Specification}
+      \field{year}{2012}
+      \true{nocite}
+    \endentry
+    \entry{AdrenoVsMali}{article}{}
+      \name{author}{1}{}{%
+        {{hash=2ff19733391542cf848cf05bebf8d16f}{%
+           family={Parapathil},
+           familyi={P\bibinitperiod},
+           given={Basim},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{2ff19733391542cf848cf05bebf8d16f}
+      \strng{fullhash}{2ff19733391542cf848cf05bebf8d16f}
+      \strng{bibnamehash}{2ff19733391542cf848cf05bebf8d16f}
+      \strng{authorbibnamehash}{2ff19733391542cf848cf05bebf8d16f}
+      \strng{authornamehash}{2ff19733391542cf848cf05bebf8d16f}
+      \strng{authorfullhash}{2ff19733391542cf848cf05bebf8d16f}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{tecvalue.com}
+      \field{title}{Adreno VS Mali | Which is Better for Me?}
+      \field{year}{2021}
+      \true{nocite}
+    \endentry
+    \entry{MaxRgb}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ad5eaecc2721564034f710ce9a318887}{%
+           family={Rosebrock},
+           familyi={R\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ad5eaecc2721564034f710ce9a318887}
+      \strng{fullhash}{ad5eaecc2721564034f710ce9a318887}
+      \strng{bibnamehash}{ad5eaecc2721564034f710ce9a318887}
+      \strng{authorbibnamehash}{ad5eaecc2721564034f710ce9a318887}
+      \strng{authornamehash}{ad5eaecc2721564034f710ce9a318887}
+      \strng{authorfullhash}{ad5eaecc2721564034f710ce9a318887}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(dostęp: 07.09.2021)}
+      \field{title}{Implementing the Max RGB filter in OpenCV}
+      \field{year}{2015}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.pyimagesearch.com/2015/09/28/implementing-the-max-rgb-filter-in-opencv/
+      \endverb
+      \verb{url}
+      \verb https://www.pyimagesearch.com/2015/09/28/implementing-the-max-rgb-filter-in-opencv/
+      \endverb
+    \endentry
+    \entry{Lit1}{article}{}
+      \name{author}{1}{}{%
+        {{hash=29109c1cf7d7af6c318e29bcc9b15e55}{%
+           family={Sawerwain},
+           familyi={S\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{29109c1cf7d7af6c318e29bcc9b15e55}
+      \strng{fullhash}{29109c1cf7d7af6c318e29bcc9b15e55}
+      \strng{bibnamehash}{29109c1cf7d7af6c318e29bcc9b15e55}
+      \strng{authorbibnamehash}{29109c1cf7d7af6c318e29bcc9b15e55}
+      \strng{authornamehash}{29109c1cf7d7af6c318e29bcc9b15e55}
+      \strng{authorfullhash}{29109c1cf7d7af6c318e29bcc9b15e55}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PWN}
+      \field{title}{OpenCL. Akceleracja GPU w praktyce}
+      \field{year}{2014}
+      \true{nocite}
+    \endentry
+    \entry{SIMD}{online}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 07.09.2021)}
+      \field{title}{SIMD}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/SIMD
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/SIMD
+      \endverb
+    \endentry
+    \entry{Lit3}{article}{}
+      \name{author}{1}{}{%
+        {{hash=05109d4cead6babbabb6facd9d554976}{%
+           family={Tay},
+           familyi={T\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{05109d4cead6babbabb6facd9d554976}
+      \strng{fullhash}{05109d4cead6babbabb6facd9d554976}
+      \strng{bibnamehash}{05109d4cead6babbabb6facd9d554976}
+      \strng{authorbibnamehash}{05109d4cead6babbabb6facd9d554976}
+      \strng{authornamehash}{05109d4cead6babbabb6facd9d554976}
+      \strng{authorfullhash}{05109d4cead6babbabb6facd9d554976}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PACKT}
+      \field{title}{OpenCL Parallel Programming Development Cookbook}
+      \field{year}{2013}
+      \true{nocite}
+    \endentry
+    \entry{Avg}{online}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 07.09.2021)}
+      \field{title}{Tutorial 1: Image Filtering}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://ai.stanford.edu/~syyeung/cvweb/tutorial1.html
+      \endverb
+      \verb{url}
+      \verb https://ai.stanford.edu/~syyeung/cvweb/tutorial1.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
