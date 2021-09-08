@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.17)  7 SEP 2021 22:29
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.17)  8 SEP 2021 22:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1747,7 +1747,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 17.
 
-(./listings/sample_cl.cpp [10])
+(./listings/sample_cl.cpp
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10])
 Overfull \hbox (2.25119pt too wide) in paragraph at lines 19--27
 []\TU/Arial(0)/m/n/10 Pierwszym krokiem jest zawołanie \TU/Arial(0)/b/n/10 clGe
 tPlatformIDs\TU/Arial(0)/m/n/10 . Podając drugi argument czyli cl_pla-
@@ -1995,12 +1998,25 @@ PGFPlots: reading {charts/Filters.dat}
 PGFPlots: reading {charts/Filters.dat}
 PGFPlots: reading {charts/Filters.dat}
 PGFPlots: reading {charts/Filters.dat}
-
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41])
-[42] (./rozdzialy/6-rozdzial.tex) [43]
-Overfull \hbox (8.05147pt too wide) in paragraph at lines 290--290
+ [41]
+[42] (./rozdzialy/6-rozdzial.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43])
+[44] (./rozdzialy/7-rozdzial.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45])
+Overfull \hbox (2.30888pt too wide) in paragraph at lines 12--284
+[]\TU/Arial(0)/m/n/10 W przypadku kontynuowaniu pracy nad tematem, można by był
+o znaleźć sposób na spraw-
+ []
+
+[46]
+Overfull \hbox (8.05147pt too wide) in paragraph at lines 291--291
 []\TU/Arial(0)/m/n/10 Krishnaraj Bhat. \TU/Arial(0)/m/it/10 libopencl-stub\TU/A
 rial(0)/m/n/10 . 2021. URL: []$[][][][][] [] [] [] [][][][][][] [] [][][] [] []
 [][][][][][][][][][][] [] [][][][][][][][][] [][]
@@ -2009,17 +2025,17 @@ rial(0)/m/n/10 . 2021. URL: []$[][][][][] [] [] [] [][][][][][] [] [][][] [] []
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.290 \newpage
+l.291 \newpage
               
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.290 \newpage
+l.291 \newpage
               
 ? 
 
-Overfull \hbox (22.83241pt too wide) in paragraph at lines 290--290
+Overfull \hbox (22.83241pt too wide) in paragraph at lines 291--291
 []\TU/Arial(0)/m/it/10 https://rocmdocs.amd.com/en/latest/Programming$[]\FML/fu
 tmi/m/it/10 uides\T1/futs/m/n/10 /\FML/futmi/m/it/10 Opencl \FMS/futm/m/n/10 ^^
 @ \FML/futmi/m/it/10 programming \FMS/futm/m/n/10 ^^@ \FML/futmi/m/it/10 guide:
@@ -2027,31 +2043,45 @@ html$\TU/Arial(0)/m/n/10 .
  []
 
 
-Overfull \hbox (10.56845pt too wide) in paragraph at lines 290--290
+Overfull \hbox (10.56845pt too wide) in paragraph at lines 291--291
 []\TU/Arial(0)/m/it/10 Mali (GPU)\TU/Arial(0)/m/n/10 . 2021. URL: []$[][][][][]
  [] [] [] [][] [] [][][][][][][][][] [] [][][] [] [][][][] [] [][][][] [] [][][
 ][][]$[]. (dostęp: 07.09.2021). 
  []
 
-[44] (./PracaMagisterskaMaciejPlewka.lof)
+! Misplaced alignment tab character &.
+<argument> Catching Up with Khronos: Experts’ Q&
+                                                A on OpenCL 3.0 and SYCL 2020
+l.291 \newpage
+              
+? 
+
+Overfull \hbox (165.13834pt too wide) in paragraph at lines 291--291
+[][][][][][][] [][] [][] [][] [][] [][] [][][][][][] [][] [] [] [] [][] [][][] 
+[][] [][][][] [][] [][][][] [] [][][][][][] [] [][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][]$[]\TU/Arial(0)/m/n/10 .
+ []
+
+[47] (./PracaMagisterskaMaciejPlewka.lof)
 \tf@lof=\write8
 \openout8 = `PracaMagisterskaMaciejPlewka.lof'.
 
- [45]
+ [48]
 (./PracaMagisterskaMaciejPlewka.lot)
 \tf@lot=\write9
 \openout9 = `PracaMagisterskaMaciejPlewka.lot'.
 
- [46] (./dodatki/przykladowy_dodatek.tex)
-[47]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 315.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 315.
+ [49] (./dodatki/przykladowy_dodatek.tex)
+[50]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 316.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 316.
  (./PracaMagisterskaMaciejPlewka.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 315.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 315.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 316.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 316.
 Package rerunfilecheck Info: File `PracaMagisterskaMaciejPlewka.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: F90D02BC8AB0BCCA0CBD49A1E25C4DF5;733.
+(rerunfilecheck)             Checksum: 6E6AEC713EB1EB541B757276A0C649E9;766.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2062,12 +2092,12 @@ Package logreq Info: Writing requests to 'PracaMagisterskaMaciejPlewka.run.xml'
 
  ) 
 Here is how much of TeX's memory you used:
- 47657 strings out of 481745
- 1070466 string characters out of 5935956
- 2089579 words of memory out of 5000000
- 63773 multiletter control sequences out of 15000+600000
+ 47665 strings out of 481745
+ 1070702 string characters out of 5935956
+ 2089659 words of memory out of 5000000
+ 63778 multiletter control sequences out of 15000+600000
  561738 words of font info for 77 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
- 68i,18n,102p,2096b,5193s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,18n,102p,2167b,5193s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on PracaMagisterskaMaciejPlewka.pdf (47 pages).
+Output written on PracaMagisterskaMaciejPlewka.pdf (50 pages).

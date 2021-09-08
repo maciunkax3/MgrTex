@@ -239,7 +239,6 @@
       \field{addendum}{(dostęp: 07.09.2021)}
       \field{title}{Even Faster Mobile GPU Inference with OpenCL}
       \field{year}{2020}
-      \true{nocite}
       \verb{urlraw}
       \verb https://blog.tensorflow.org/2020/08/faster-mobile-gpu-inference-with-opencl.html
       \endverb
@@ -260,6 +259,34 @@
       \endverb
       \verb{url}
       \verb https://en.wikipedia.org/wiki/Mali_(GPU)
+      \endverb
+    \endentry
+    \entry{IWOCL}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e3f38b14b64f22da420f4abea95f782b}{%
+           family={McIntosh-Smith},
+           familyi={M\bibinithyphendelim S\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e3f38b14b64f22da420f4abea95f782b}
+      \strng{fullhash}{e3f38b14b64f22da420f4abea95f782b}
+      \strng{bibnamehash}{e3f38b14b64f22da420f4abea95f782b}
+      \strng{authorbibnamehash}{e3f38b14b64f22da420f4abea95f782b}
+      \strng{authornamehash}{e3f38b14b64f22da420f4abea95f782b}
+      \strng{authorfullhash}{e3f38b14b64f22da420f4abea95f782b}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(dostęp: 08.09.2021)}
+      \field{title}{Catching Up with Khronos: Experts’ Q&A on OpenCL 3.0 and SYCL 2020}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.khronos.org/blog/catching-up-with-khronos-experts-qa-on-opencl-3.0-and-sycl-2020?fbclid=IwAR2Z6hhFXwM8LVv8MeTmTlqW8mqTkRzbCNKrntpAQ1EDIgXYGGoOU2VRkpA
+      \endverb
+      \verb{url}
+      \verb https://www.khronos.org/blog/catching-up-with-khronos-experts-qa-on-opencl-3.0-and-sycl-2020?fbclid=IwAR2Z6hhFXwM8LVv8MeTmTlqW8mqTkRzbCNKrntpAQ1EDIgXYGGoOU2VRkpA
       \endverb
     \endentry
     \entry{Lit2}{article}{}
@@ -307,6 +334,33 @@
       \field{title}{Adreno VS Mali | Which is Better for Me?}
       \field{year}{2021}
       \true{nocite}
+    \endentry
+    \entry{OpenCV}{online}{}
+      \name{author}{1}{}{%
+        {{hash=22e0f1e24949acadaa30bf01948f6243}{%
+           family={Pavlenko},
+           familyi={P\bibinitperiod},
+           given={Andrey},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{22e0f1e24949acadaa30bf01948f6243}
+      \strng{fullhash}{22e0f1e24949acadaa30bf01948f6243}
+      \strng{bibnamehash}{22e0f1e24949acadaa30bf01948f6243}
+      \strng{authorbibnamehash}{22e0f1e24949acadaa30bf01948f6243}
+      \strng{authornamehash}{22e0f1e24949acadaa30bf01948f6243}
+      \strng{authorfullhash}{22e0f1e24949acadaa30bf01948f6243}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(dostęp: 08.09.2021)}
+      \field{title}{Use OpenCL in Android camera preview based CV application}
+      \verb{urlraw}
+      \verb https://docs.opencv.org/master/d7/dbd/tutorial_android_ocl_intro.html#gsc.tab=0
+      \endverb
+      \verb{url}
+      \verb https://docs.opencv.org/master/d7/dbd/tutorial_android_ocl_intro.html#gsc.tab=0
+      \endverb
     \endentry
     \entry{MaxRgb}{online}{}
       \name{author}{1}{}{%

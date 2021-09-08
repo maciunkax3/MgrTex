@@ -6,6 +6,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1}Cel pracy}{8}{subsection.1.1}%
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}Zakres pracy}{8}{subsection.1.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Wstęp do api OpenCL}{9}{section.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1}Linkowanie biblioteki OpenCL na platformie Android}{9}{subsection.2.1}%
@@ -18,9 +20,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.5}Współdzielenie obiektów pomiędzy OpenCL i OpenGL}{16}{subsection.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Specyfika testowanych Urządzeń}{17}{section.3}%
+\contentsline {section}{\numberline {3}Specyfika testowanych urządzeń}{17}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Porównanie Graficznych Procesorów Mobilnych}{17}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.1}Porównanie graficznych procesorów mobilnych}{17}{subsection.3.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Urządzenia wykorzystane do testowania}{18}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
@@ -58,17 +60,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.6.4}Filtr uśredniający}{30}{subsubsection.4.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Wyniki, Analiza i Wnioski}{31}{section.5}%
+\contentsline {section}{\numberline {5}Wyniki, analiza i wnioski}{31}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Wyniki Mocy Obliczeniowej}{31}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.1}Wyniki mocy obliczeniowej}{31}{subsection.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Wyniki Przepływu Pamięci}{34}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.2}Wyniki przepływu pamięci}{34}{subsection.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Czas Oczekiwania na wykonanie}{36}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.3}Czas oczekiwania na wykonanie}{36}{subsection.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4}Transfery Pamięci Aplikacja-Urządzenie}{37}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.4}Transfery pamięci aplikacja-urządzenie}{37}{subsection.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5}Mnożenie Macierzy}{39}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.5}Mnożenie macierzy}{39}{subsection.5.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.6}OpenCL z cameraApi}{40}{subsection.5.6}%
 \defcounter {refsection}{0}\relax 
@@ -76,18 +78,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.1}Tensorflow}{43}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Adobe}{43}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.2}OpenCV}{43}{subsection.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}Testy mierzące wydajność i jakość urządzenia}{43}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.3}Adobe}{43}{subsection.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Wykaz literatury}{44}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Testy mierzące wydajność i jakość urządzenia}{44}{subsection.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Wykaz rysunków}{45}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Podsumowanie}{45}{section.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Wykaz tabel}{46}{subsection.6.3}%
+\contentsline {section}{Wykaz literatury}{47}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Wykaz rysunków}{48}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Wykaz tabel}{49}{section.7}%
 \defcounter {refsection}{0}\relax 
 \setcounter {tocdepth}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Dodatek \numberline {A}Przykładowy dodatek}{47}{appendix.1.A}%
+\contentsline {section}{Dodatek \numberline {A}Przykładowy dodatek}{50}{appendix.1.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Rozdzia\PlPrIeC {\l } \numberline {A.1}Sekcja}{47}{subsection.1.A.1}%
+\contentsline {subsection}{Rozdzia\PlPrIeC {\l } \numberline {A.1}Sekcja}{50}{subsection.1.A.1}%

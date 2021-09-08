@@ -1,6 +1,6 @@
-\section[Wyniki, Analiza i Wnioski]{Wyniki, Analiza i Wnioski}
+\section[Wyniki, analiza i wnioski]{Wyniki, analiza i wnioski}
 W tym rozdziale opisane zostały wyniki testów opisanych w rozdziale 4, na urządzeniach opisanych w rozdziale 3. Urządzenie HTC Desire 820 testowane było dla dwóch wersji systemu Android, które posiadały różne wersje sterownika OpenCL. Wyniki dla tych dwóch wersji nie różniły się, dlatego poniżej umieszczone zostały wyniki tylko dla nowszej wersji sterownika.
-\subsection[Wyniki Mocy Obliczeniowej]{Wyniki Mocy Obliczeniowej}
+\subsection[Wyniki mocy obliczeniowej]{Wyniki mocy obliczeniowej}
 Poniższe wykresy prezentują osiągi testowanych urządzeń pod kątem ilości wykonywanych operacji na sekundę. Przetestowane zostały możliwości, dla różnych typów danych.
 \begin{figure}[H]
 \begin{tikzpicture}
@@ -103,7 +103,7 @@ Na umieszczonym poniżej wykresie zaprezentowano ilość możliwych do wykonania
 \end{figure}
 Powyższy wykres prezentuje ilość możliwych do wykonania obliczeń typu half, na sekundę wyrażoną w GDOPS (z ang. Giga double operations per second) dla wektorowyh wersji tego typu. Huawei P20 Lite jako jedyne testowane urządzenie posiada obsługę typów zmiennoprzecinkowych podwójnej precyzji. Ewidentnie użycie typów wektorowych double2 i double4 poprawia wydajność o 100\% w stosunku do typu double. Operacje na typie double8 poprawiają wydajność względem double o 17\%, natomiast operacje na typie double16 pogarszają wydajność o 57\% względem typu double.
 
-\subsection[Wyniki Przepływu Pamięci]{Wyniki Przepływu Pamięci}
+\subsection[Wyniki przepływu pamięci]{Wyniki przepływu pamięci}
 
 \begin{figure}[H]
 \begin{tikzpicture}
@@ -206,7 +206,7 @@ Wyniki przepływu danych dla typów float i int osiągają podobne wartości jak
 \caption{przepływ pamięci dla typu double}
 \end{figure}
 Szybkość transferu pamięci używając typu double nie różni się względem typów half int czy float.
-\subsection[Czas Oczekiwania na wykonanie]{Czas Oczekiwania na wykonanie}
+\subsection[Czas oczekiwania na wykonanie]{Czas oczekiwania na wykonanie}
 
 \begin{figure}[H]
 \begin{tikzpicture}
@@ -233,7 +233,7 @@ Szybkość transferu pamięci używając typu double nie różni się względem 
 
 Powyższy wykres pokazuje średni czas od zakolejkowany do rozpoczęcia wykonania na gpu. Im mniejszy czas tym lepiej. Ku zaskoczeniu najgorzej wypada Samsung Galaxy A70, który był testowany na najnowszym sterowniku OpenCL spośród testowanych urządzeń. Za to drugi najlepszy wynik osiągnął HTC Desire 820, czyli najstarsze urządzenie, z najstarszym sterownikiem. Czas mierzony w tym teście to okres od umieszczenia zadania w kolejce OpenCL, przez sterownik kernela systemu, do urządzenia na którym będzie wykonywane. Zależy więc on bardziej od implementacji poszczególnych sterowników czy kernela systemowego, niż od samego urządzenia.
 
-\subsection[Transfery Pamięci Aplikacja-Urządzenie]{Transfery Pamięci Aplikacja-Urządzenie}
+\subsection[Transfery pamięci aplikacja-urządzenie]{Transfery pamięci aplikacja-Uuządzenie}
 
 \begin{figure}[H]
 \begin{tikzpicture}
@@ -335,7 +335,7 @@ Dla pewności powtórzone zostały pozostałe testy z wykorzystaniem mierzenia c
 
 Powyższy wykres pokazuje czas potrzebny do mapowania pamięci po stronie urządzenia na pamięć po stronie aplikacji. Wartości uzyskane dla procesorów Adreno podobnie jak we wcześniejszym teście wydają się podejrzane, jednak powtórzone z mierzeniem czasu po stronie aplikacji zwróciły podobne rezultaty. Procesory Adreno korzystają ze współdzielonej pamięci systemowej. Najprawdopodobniej  funkcja clEnqueueMapBuffer zwraca bezpośredni wskaźnik na pamięć, która jest wykorzystywana przez urządzenie podczas wykonywania kerneli. Czas potrzebny na mapowanie i od mapowanie pamięci to krótki czas w którym sterownik zwraca wskaźnik na pamięć używaną przez alokację OpenCL. W przypadku Urządzenia Huawei P20 Lite z procesorem Mali T830 MP pamięć nie jest współdzielona. Wyraźnie widać, że procesor Mali znacznie wolniej mapuje pamięć. Mimo braku współdzielenia proces mapowania odbywa się znacznie szybciej niż odczytywanie z bufora za pomocą clEnqueueReadBuffer. Prawdopodobnie wskaźnik, na który mapowany jest bufor, zlokalizowana jest w korzystniejszym miejscu pamięci fizycznej, niż pamięć przydzielona aplikacji przez system.
 
-\subsection[Mnożenie Macierzy]{Mnożenie Macierzy}
+\subsection[Mnożenie macierzy]{Mnożenie macierzy}
 \begin{figure}[H]
 \begin{tikzpicture}
 \begin{axis}[
@@ -443,8 +443,3 @@ Wykres na rysunku 5.17, pokazuje wpływ filtrów wykonanych przez kernele w Open
 \end{tikzpicture}
 \caption{Filtry}
 \end{figure}
-
-
-
-
-
