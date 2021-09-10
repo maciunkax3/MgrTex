@@ -2,7 +2,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Linkowanie biblioteki OpenCL \cite {Loader}\relax }}{10}{figure.caption.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Wielowymiarowe podział kernela \cite {OpenCLProgramingGuide}\relax }}{12}{figure.caption.2}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces N wymiarowy podział kernela\relax }}{12}{figure.caption.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.1}{\ignorespaces SIMD \cite {SIMD}\relax }}{17}{figure.caption.3}%
 \defcounter {refsection}{0}\relax 

@@ -14,7 +14,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2}Typowy przebieg aplikacji OpenCL}{10}{subsection.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Możliwości i ograniczenia sprzętowe}{12}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.3}Możliwości i ograniczenia sprzętowe}{13}{subsection.2.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4}Pomiary czasu wykonywania kerneli}{15}{subsection.2.4}%
 \defcounter {refsection}{0}\relax 

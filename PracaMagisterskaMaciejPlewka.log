@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.17)  8 SEP 2021 22:58
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.17)  10 SEP 2021 23:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1738,6 +1738,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 (./rozdzialy/1-wstep.tex) [8] (./rozdzialy/2-rozdzial.tex
+Overfull \hbox (110.751pt too wide) in paragraph at lines 2--3
+\TU/Arial(0)/m/n/10 cl_intel_mem_force_host_memory, które jest dostępna na urzą
+dzeniach intela lub cl_qcom_android_native_buffer_host_ptr
+ []
+
 File: imgs/icdLoader.png Graphic file (type bmp)
 <imgs/icdLoader.png>
 
@@ -1757,8 +1762,8 @@ tPlatformIDs\TU/Arial(0)/m/n/10 . Podając drugi argument czyli cl_pla-
  []
 
 (./listings/increment.cl)
-File: imgs/WorkDims.jpg Graphic file (type bmp)
-<imgs/WorkDims.jpg>
+File: imgs/KernelDispatch.jpg Graphic file (type bmp)
+<imgs/KernelDispatch.jpg>
  [11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1770,10 +1775,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15]
-(./listings/contextProperties.txt) (./listings/sharedImage)) [16]
+[15] (./listings/contextProperties.txt) (./listings/sharedImage)) [16]
 (./rozdzialy/3-rozdzial.tex
 File: imgs/SIMD2.svg.png Graphic file (type bmp)
 <imgs/SIMD2.svg.png>
@@ -2093,11 +2095,11 @@ Package logreq Info: Writing requests to 'PracaMagisterskaMaciejPlewka.run.xml'
  ) 
 Here is how much of TeX's memory you used:
  47665 strings out of 481745
- 1070702 string characters out of 5935956
- 2089659 words of memory out of 5000000
+ 1070738 string characters out of 5935956
+ 2089615 words of memory out of 5000000
  63778 multiletter control sequences out of 15000+600000
  561738 words of font info for 77 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
- 68i,18n,102p,2167b,5193s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,18n,102p,2177b,5193s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on PracaMagisterskaMaciejPlewka.pdf (50 pages).

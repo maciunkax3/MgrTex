@@ -1,5 +1,5 @@
 \section[Wyniki, analiza i wnioski]{Wyniki, analiza i wnioski}
-W tym rozdziale opisane zostały wyniki testów opisanych w rozdziale 4, na urządzeniach opisanych w rozdziale 3. Urządzenie HTC Desire 820 testowane było dla dwóch wersji systemu Android, które posiadały różne wersje sterownika OpenCL. Wyniki dla tych dwóch wersji nie różniły się, dlatego poniżej umieszczone zostały wyniki tylko dla nowszej wersji sterownika.
+W tym rozdziale opisane zostały wyniki testów opisanych w rozdziale czwartym, na urządzeniach przedstawionych w rozdziale trzecim. Urządzenie HTC Desire 820 testowane było dla dwóch wersji systemu Android, które posiadały różne wersje sterownika OpenCL. Wyniki dla tych dwóch wersji nie różniły się, dlatego poniżej umieszczone zostały wyniki tylko dla nowszej wersji sterownika.
 \subsection[Wyniki mocy obliczeniowej]{Wyniki mocy obliczeniowej}
 Poniższe wykresy prezentują osiągi testowanych urządzeń pod kątem ilości wykonywanych operacji na sekundę. Przetestowane zostały możliwości, dla różnych typów danych.
 \begin{figure}[H]
@@ -27,7 +27,7 @@ Poniższe wykresy prezentują osiągi testowanych urządzeń pod kątem ilości 
 \end{tikzpicture}
 \caption{Moc obliczeniowa dla typu half}
 \end{figure}
-Powyższy wykres prezentuje ilość możliwych do wykonania obliczeń na liczbach typu half na sekundę, wyrażoną w GHOPS (z ang. Giga half operations per second), dla wektorowyh wersji tego typu. Na wykresie widać, że na procesorach Adreno dzięku użyciu wektorowych typów ilość operacji na sekundę rośnie. Dla tych procesorów wyniki układają się według ich numerów. Najgorzej radzi sobie HTC 820 z Adreno 405 a najlepiej Samsung A70 z Adreno 612. W przypadku procesora Mali niezależnie od wielkości typu ilość operacji pozostaje na tym samym poziomie. Dla porównywalnych modeli Xiaomi Mi A2 Lite i Huawei P20 Lite lepiej wpada urządzenie od Xiaomi.
+Powyższy wykres prezentuje ilość możliwych do wykonania obliczeń na liczbach typu half na sekundę, wyrażoną w GHOPS (z ang. Giga Half Operations Per Second), dla wektorowyh wersji tego typu. Na wykresie widać, że na procesorach Adreno dzięku użyciu wektorowych typów ilość operacji na sekundę rośnie. Dla tych procesorów wyniki układają się według ich numerów. Najgorzej radzi sobie HTC 820 z Adreno 405 a najlepiej Samsung A70 z Adreno 612. W przypadku procesora Mali niezależnie od wielkości typu ilość operacji pozostaje na tym samym poziomie. Dla porównywalnych modeli Xiaomi Mi A2 Lite i Huawei P20 Lite lepiej wpada urządzenie od Xiaomi.
 
 \begin{figure}[H]
 \begin{tikzpicture}
@@ -54,10 +54,10 @@ Powyższy wykres prezentuje ilość możliwych do wykonania obliczeń na liczbac
 \end{tikzpicture}
 \caption{Moc obliczeniowa dla typu int}
 \end{figure}
-Na powyższym wykresie zaprezentowano ilość możliwych do wykonania operaji na liczbach typu int na sekundę, wyrażoną w GIOPS(z ang. Giga integer operations per second), dla wersji wektorowych tego typu. W przypadku operacji wykonywanych na liczbach całkowitych najlepiej radzi sobie procesor Mali, użycie typów wektorowych nieznacznie poprawia wydajność, a ta wynosi około 26 GIOPS. W przypadku procesorów Adreno podobnie jak procesor Mali wydajność znacznie poprawia się przy użyciu typów int2 i int4 natomiast przy użyciu typów int8 i int16 wydajność spada. W tym przypadku także kolejność od najgorszego do najlepszego układa się według ich numerów, najlepiej Adreno 612, najgorzej Adreno 405.
+Na powyższym wykresie zaprezentowano ilość możliwych do wykonania operaji na liczbach typu int na sekundę, wyrażoną w GIOPS(z ang. Giga Integer Operations Per Second), dla wersji wektorowych tego typu. W przypadku operacji wykonywanych na liczbach całkowitych najlepiej radzi sobie procesor Mali, użycie typów wektorowych nieznacznie poprawia wydajność, a ta wynosi około 26 GIOPS. W przypadku procesorów Adreno podobnie jak procesor Mali wydajność znacznie poprawia się przy użyciu typów int2 i int4 natomiast przy użyciu typów int8 i int16 wydajność spada. W tym przypadku także kolejność od najgorszego do najlepszego układa się według ich numerów, najlepiej Adreno 612, najgorzej Adreno 405.
 
 
-Na umieszczonym poniżej wykresie zaprezentowano ilość możliwych do wykonania operacji na liczbach typu float na sekundę, wyrażoną w GFLOPS(z ang. Giga floating-point operations per second), dla wersji wekorowych tego typu. W testach wydajności, przy operacjach na typie zmiennoprzecinkowym pojedynczej precyzji float, zdecydowanie najgorzej wypada procesor Mali T830 2MP. Wydajność tego procesora dla typów wektorowych wypada na podobnym poziomie, słabnie jednak dla typu float16 o 40\%. W przypadku procesorów Adreno sytuacja wygląda podobnie jak dla typu half, użycie typów wektorowych zwiększa wydajność. Dla typu float16 widać że wartość operacji na sekundę jest o mniej więcej połowę mniejsza niż dla typu half16.
+Na umieszczonym poniżej wykresie zaprezentowano ilość możliwych do wykonania operacji na liczbach typu float na sekundę, wyrażoną w GFLOPS(z ang. Giga Floating-Point Operations Per Second), dla wersji wekorowych tego typu. W testach wydajności, przy operacjach na typie zmiennoprzecinkowym pojedynczej precyzji float, zdecydowanie najgorzej wypada procesor Mali T830 2MP. Wydajność tego procesora dla typów wektorowych wypada na podobnym poziomie jak w przypadku typu z pojedynzą wartością. Słabnie jednak dla typu float16 o 40\%. W przypadku procesorów Adreno sytuacja wygląda podobnie jak dla typu half, użycie typów wektorowych zwiększa wydajność. Dla typu float16 widać że wartość operacji na sekundę jest o mniej więcej połowę mniejsza niż dla typu half16.
 \begin{figure}[H]
 \begin{tikzpicture}
 \begin{axis}[
@@ -101,7 +101,7 @@ Na umieszczonym poniżej wykresie zaprezentowano ilość możliwych do wykonania
 \end{tikzpicture}
 \caption{Moc obliczeniowa dla typu double}
 \end{figure}
-Powyższy wykres prezentuje ilość możliwych do wykonania obliczeń typu half, na sekundę wyrażoną w GDOPS (z ang. Giga double operations per second) dla wektorowyh wersji tego typu. Huawei P20 Lite jako jedyne testowane urządzenie posiada obsługę typów zmiennoprzecinkowych podwójnej precyzji. Ewidentnie użycie typów wektorowych double2 i double4 poprawia wydajność o 100\% w stosunku do typu double. Operacje na typie double8 poprawiają wydajność względem double o 17\%, natomiast operacje na typie double16 pogarszają wydajność o 57\% względem typu double.
+Powyższy wykres prezentuje ilość możliwych do wykonania obliczeń typu half, na sekundę wyrażoną w GDOPS (z ang. Giga Double Operations Per Second) dla wektorowyh wersji tego typu. Huawei P20 Lite jako jedyne testowane urządzenie posiada obsługę typów zmiennoprzecinkowych podwójnej precyzji. Ewidentnie użycie typów wektorowych double2 i double4 poprawia wydajność o 100\% w stosunku do typu double. Operacje na typie double8 poprawiają wydajność względem double o 17\%, natomiast operacje na typie double16 pogarszają wydajność o 57\% względem typu double.
 
 \subsection[Wyniki przepływu pamięci]{Wyniki przepływu pamięci}
 
