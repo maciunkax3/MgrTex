@@ -37,8 +37,14 @@
 \usepackage{fourier} 
 \usepackage{array}
 \usepackage{makecell}
+\usepackage{url}
 
 \setmainfont{Arial}
+\urlstyle{same}
+\usepackage{polyglossia}
+\setmainlanguage{polish}
+\setotherlanguage{english}
+\usepackage{csquotes}
 
 \newcommand\myicon[1]{{\color{#1}\rule{2ex}{2ex}}}
 \newcommand{\myfolder}[2]{\myicon{#1}\ {#2}}
@@ -287,7 +293,9 @@
 
 \addcontentsline{toc}{section}{Wykaz literatury}
 \nocite{*}
-\printbibliography
+%\printbibliography
+\includepdf{meta/biblio_1.pdf}
+\includepdf{meta/biblio_2.pdf}
 \newpage
 
 \addcontentsline{toc}{section}{\listfigurename}
@@ -310,7 +318,6 @@
 \begin{appendices}
 \addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
 
-\input{dodatki/przykladowy_dodatek.tex} \newpage
 \end{appendices}
 
 \end{document}	% musi być na samiutkim końcu

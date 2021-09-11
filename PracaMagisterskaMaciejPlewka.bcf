@@ -159,7 +159,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortlocale</bcf:key>
-      <bcf:value>english</bcf:value>
+      <bcf:value>polish</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortingtemplatename</bcf:key>
@@ -2182,13 +2182,6 @@
     <bcf:datasource type="file" datatype="bibtex">meta/bibliografia.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Loader</bcf:citekey>
-    <bcf:citekey order="2">Loader</bcf:citekey>
-    <bcf:citekey order="3">SIMD</bcf:citekey>
-    <bcf:citekey order="4">SIMD</bcf:citekey>
-    <bcf:citekey order="5">Tensor</bcf:citekey>
-    <bcf:citekey order="6">OpenCV</bcf:citekey>
-    <bcf:citekey order="7">IWOCL</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
@@ -2221,13 +2214,4 @@
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
-  <bcf:datalist section="0"
-                name="nty/global//global/global"
-                type="entry"
-                sortingtemplatename="nty"
-                sortingnamekeytemplatename="global"
-                labelprefix=""
-                uniquenametemplatename="global"
-                labelalphanametemplatename="global">
-  </bcf:datalist>
 </bcf:controlfile>

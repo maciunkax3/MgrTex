@@ -1,7 +1,7 @@
 \section[Wyniki, analiza i wnioski]{Wyniki, analiza i wnioski}
-W tym rozdziale opisane zostały wyniki testów opisanych w rozdziale czwartym, na urządzeniach przedstawionych w rozdziale trzecim. Urządzenie HTC Desire 820 testowane było dla dwóch wersji systemu Android, które posiadały różne wersje sterownika OpenCL. Wyniki dla tych dwóch wersji nie różniły się, dlatego poniżej umieszczone zostały wyniki tylko dla nowszej wersji sterownika.
+W tym rozdziale opisane zostały wyniki testów z rozdziału czwartego, przeprowadzone na urządzeniach z rozdziału trzeciego. Telefon HTC Desire 820 testowany był dla dwóch wersji systemu Android, które posiadały różne wersje sterownika OpenCL. Wyniki dla nich nie różniły się, dlatego poniżej umieszczone zostały rezultaty tylko dla nowszej wersji sterownika.
 \subsection[Wyniki mocy obliczeniowej]{Wyniki mocy obliczeniowej}
-Poniższe wykresy prezentują osiągi testowanych urządzeń pod kątem ilości wykonywanych operacji na sekundę. Przetestowane zostały możliwości, dla różnych typów danych.
+Poniższe wykresy prezentują osiągi testowanych urządzeń pod kątem ilości wykonywanych operacji na sekundę. Przetestowane zostały możliwości dla różnych typów danych.
 \begin{figure}[H]
 \begin{tikzpicture}
 \begin{axis}[
@@ -27,7 +27,7 @@ Poniższe wykresy prezentują osiągi testowanych urządzeń pod kątem ilości 
 \end{tikzpicture}
 \caption{Moc obliczeniowa dla typu half}
 \end{figure}
-Powyższy wykres prezentuje ilość możliwych do wykonania obliczeń na liczbach typu half na sekundę, wyrażoną w GHOPS (z ang. Giga Half Operations Per Second), dla wektorowyh wersji tego typu. Na wykresie widać, że na procesorach Adreno dzięku użyciu wektorowych typów ilość operacji na sekundę rośnie. Dla tych procesorów wyniki układają się według ich numerów. Najgorzej radzi sobie HTC 820 z Adreno 405 a najlepiej Samsung A70 z Adreno 612. W przypadku procesora Mali niezależnie od wielkości typu ilość operacji pozostaje na tym samym poziomie. Dla porównywalnych modeli Xiaomi Mi A2 Lite i Huawei P20 Lite lepiej wpada urządzenie od Xiaomi.
+Powyższy wykres prezentuje ilość możliwych do wykonania obliczeń na liczbach typu half na sekundę, wyrażoną w GHOPS (z ang. Giga Half Operations Per Second), dla wektorowyh wersji tego typu. Na wykresie widać, że na procesorach Adreno, dzięki użyciu wektorowych typów, ilość operacji na sekundę rośnie. Dla tych procesorów wyniki układają się według ich numerów. Najgorzej radzi sobie HTC 820 z Adreno 405, a najlepiej Samsung A70 z Adreno 612. W przypadku procesora Mali, niezależnie od wielkości typu zmiennej, ilość operacji pozostaje na tym samym poziomie. Dla porównywalnych modeli Xiaomi Mi A2 Lite i Huawei P20 Lite lepiej wypada urządzenie od Xiaomi.
 
 \begin{figure}[H]
 \begin{tikzpicture}
@@ -54,10 +54,10 @@ Powyższy wykres prezentuje ilość możliwych do wykonania obliczeń na liczbac
 \end{tikzpicture}
 \caption{Moc obliczeniowa dla typu int}
 \end{figure}
-Na powyższym wykresie zaprezentowano ilość możliwych do wykonania operaji na liczbach typu int na sekundę, wyrażoną w GIOPS(z ang. Giga Integer Operations Per Second), dla wersji wektorowych tego typu. W przypadku operacji wykonywanych na liczbach całkowitych najlepiej radzi sobie procesor Mali, użycie typów wektorowych nieznacznie poprawia wydajność, a ta wynosi około 26 GIOPS. W przypadku procesorów Adreno podobnie jak procesor Mali wydajność znacznie poprawia się przy użyciu typów int2 i int4 natomiast przy użyciu typów int8 i int16 wydajność spada. W tym przypadku także kolejność od najgorszego do najlepszego układa się według ich numerów, najlepiej Adreno 612, najgorzej Adreno 405.
+Na powyższym wykresie zaprezentowano ilość możliwych do wykonania operacji na liczbach typu int na sekundę, wyrażoną w GIOPS (z ang. Giga Integer Operations Per Second), dla wersji wektorowych tego typu. W przypadku operacji wykonywanych na liczbach całkowitych najlepiej radzi sobie procesor Mali. Użycie typów wektorowych nieznacznie poprawia wydajność, a ta wynosi około 26 GIOPS. W przypadku procesorów Adreno, podobnie jak w procesorze Mali, wydajność znacznie poprawia się przy użyciu typów int2 i int4. Natomiast przy użyciu typów int8 i int16 wydajność spada. W tym przypadku także kolejność od najgorszego do najlepszego układa się według ich numerów, najlepiej Adreno 612, najgorzej Adreno 405.
 
 
-Na umieszczonym poniżej wykresie zaprezentowano ilość możliwych do wykonania operacji na liczbach typu float na sekundę, wyrażoną w GFLOPS(z ang. Giga Floating-Point Operations Per Second), dla wersji wekorowych tego typu. W testach wydajności, przy operacjach na typie zmiennoprzecinkowym pojedynczej precyzji float, zdecydowanie najgorzej wypada procesor Mali T830 2MP. Wydajność tego procesora dla typów wektorowych wypada na podobnym poziomie jak w przypadku typu z pojedynzą wartością. Słabnie jednak dla typu float16 o 40\%. W przypadku procesorów Adreno sytuacja wygląda podobnie jak dla typu half, użycie typów wektorowych zwiększa wydajność. Dla typu float16 widać że wartość operacji na sekundę jest o mniej więcej połowę mniejsza niż dla typu half16.
+Na umieszczonym poniżej wykresie zaprezentowano ilość możliwych do wykonania operacji na liczbach typu float na sekundę, wyrażoną w GFLOPS (z ang. Giga Floating-Point Operations Per Second), dla wersji wektorowych tego typu. W testach wydajności, przy operacjach na typie zmiennoprzecinkowym pojedynczej precyzji float, zdecydowanie najgorzej wypada procesor Mali T830 2MP. Wydajność tego procesora dla typów wektorowych wypada na podobnym poziomie jak w przypadku typu z pojedynzą wartością. Słabnie jednak dla typu float16 o 40\%. W przypadku procesorów Adreno sytuacja wygląda podobnie jak dla typu half, użycie typów wektorowych zwiększa wydajność. Dla typu float16 widać że wartość operacji na sekundę jest o mniej więcej połowę mniejsza niż dla typu half16.
 \begin{figure}[H]
 \begin{tikzpicture}
 \begin{axis}[
@@ -101,7 +101,7 @@ Na umieszczonym poniżej wykresie zaprezentowano ilość możliwych do wykonania
 \end{tikzpicture}
 \caption{Moc obliczeniowa dla typu double}
 \end{figure}
-Powyższy wykres prezentuje ilość możliwych do wykonania obliczeń typu half, na sekundę wyrażoną w GDOPS (z ang. Giga Double Operations Per Second) dla wektorowyh wersji tego typu. Huawei P20 Lite jako jedyne testowane urządzenie posiada obsługę typów zmiennoprzecinkowych podwójnej precyzji. Ewidentnie użycie typów wektorowych double2 i double4 poprawia wydajność o 100\% w stosunku do typu double. Operacje na typie double8 poprawiają wydajność względem double o 17\%, natomiast operacje na typie double16 pogarszają wydajność o 57\% względem typu double.
+Powyższy wykres prezentuje ilość możliwych do wykonania obliczeń typu half, na sekundę wyrażoną w GDOPS (z ang. Giga Double Operations Per Second) dla wektorowyh wersji tego typu. Huawei P20 Lite, jako jedyne spośród testowanych urządzeń, posiada obsługę typów zmiennoprzecinkowych podwójnej precyzji. Ewidentnie użycie typów wektorowych double2 i double4 poprawia wydajność o 100\% w stosunku do typu double. Operacje na typie double8 poprawiają wydajność względem double o 17\%, natomiast operacje na typie double16 pogarszają wydajność o 57\% względem typu double.
 
 \subsection[Wyniki przepływu pamięci]{Wyniki przepływu pamięci}
 
@@ -184,7 +184,7 @@ Powyższy wykres prezentuje ilość możliwych do wykonania obliczeń typu half,
 \end{tikzpicture}
 \caption{Przepływ pamięci dla typu float}
 \end{figure}
-Podobnie jak w przypadku testowania mocy obliczeniowej, testując szybkość przepływu danych między aplikacjami, widać, że procesor dla procesora Mali nie obserwujemy dużych korzyści korzystania z typów wektorowych. Dla typów hlaf1, half2 i half16 osiąga lepsze rezultaty niż urządzenie z procesorem Adreno 405. W pozostałych próbach wypada najgorzej. Spośród urządzeń z procesorami Adreno widać, że najgorsze rezultaty uzyskane są dla typu half a najlepsze dla typu half4. Inaczej niż w przypadku mocy obliczeniowej, najlepiej wypada urządzenie z procesorem Adreno 512. Najprawdopodobniej osiąga lepszy rezultat dzięki zastosowaniu lepszego typu pamięci.
+Podobnie jak w przypadku testowania mocy obliczeniowej, badając szybkość przepływu danych między alokacjami, widać, że dla procesora Mali nie obserwujemy dużych korzyści z wykorzystania typów wektorowych. Dla typów hlaf1, half2 i half16 osiąga lepsze rezultaty niż urządzenie z procesorem Adreno 405. W pozostałych próbach wypada najgorzej. Spośród urządzeń z procesorami Adreno widać, że najgorsze rezultaty uzyskane są dla typu half, a najlepsze dla typu half4. Inaczej niż w przypadku mocy obliczeniowej, najlepiej wypada urządzenie z procesorem Adreno 512. Najprawdopodobniej osiąga lepszy rezultat dzięki zastosowaniu lepszego typu pamięci.
 
 Wyniki przepływu danych dla typów float i int osiągają podobne wartości jak w przypadku wektorowych typów half. Kopiowanie pojedynczych wartości typu half wypada gorzej w porównaniu do typów 32 bitowych. Najlepsze wyniki osiąga urządzenie Xiaomi Redmi Note 7, które posiada procesor graficzny Adreno 512 i najlepszy typ pamięci spośród wszystkich testowanych urządzeń LPDDR4 o częstotliwości 1866MHz i przepu­stowości do 29.8GB/s.
 \begin{figure}[H]
@@ -205,7 +205,7 @@ Wyniki przepływu danych dla typów float i int osiągają podobne wartości jak
 \end{tikzpicture}
 \caption{przepływ pamięci dla typu double}
 \end{figure}
-Szybkość transferu pamięci używając typu double nie różni się względem typów half int czy float.
+Szybkość transferu pamięci, używając typu double, nie różni się względem typów half int czy float.
 \subsection[Czas oczekiwania na wykonanie]{Czas oczekiwania na wykonanie}
 
 \begin{figure}[H]
@@ -231,7 +231,7 @@ Szybkość transferu pamięci używając typu double nie różni się względem 
 \caption{Czas oczekiwania na wykonanie}
 \end{figure}
 
-Powyższy wykres pokazuje średni czas od zakolejkowany do rozpoczęcia wykonania na gpu. Im mniejszy czas tym lepiej. Ku zaskoczeniu najgorzej wypada Samsung Galaxy A70, który był testowany na najnowszym sterowniku OpenCL spośród testowanych urządzeń. Za to drugi najlepszy wynik osiągnął HTC Desire 820, czyli najstarsze urządzenie, z najstarszym sterownikiem. Czas mierzony w tym teście to okres od umieszczenia zadania w kolejce OpenCL, przez sterownik kernela systemu, do urządzenia na którym będzie wykonywane. Zależy więc on bardziej od implementacji poszczególnych sterowników czy kernela systemowego, niż od samego urządzenia.
+Powyższy wykres pokazuje średni czas od zakolejkowania do rozpoczęcia wykonania na GPU. Im mniejszy uzyskany czas tym lepszy osiągnięty rezultat. Ku zaskoczeniu najgorzej wypada Samsung Galaxy A70, który był testowany na najnowszym sterowniku OpenCL spośród testowanych urządzeń. Za to drugi najlepszy wynik osiągnął HTC Desire 820, czyli najstarsze urządzenie, z najstarszym sterownikiem. Czas mierzony w tym teście to okres od umieszczenia zadania w kolejce OpenCL, przez sterownik kernela systemu, do urządzenia na którym będzie wykonywane. Zależy więc on bardziej od implementacji poszczególnych sterowników czy kernela systemowego, niż od samego urządzenia.
 
 \subsection[Transfery pamięci aplikacja-urządzenie]{Transfery pamięci aplikacja-Uuządzenie}
 
@@ -255,9 +255,9 @@ Powyższy wykres pokazuje średni czas od zakolejkowany do rozpoczęcia wykonani
 \addlegendentry{Samsung A70}
 \end{axis}
 \end{tikzpicture}
-\caption{czas wykonywania clEnqueueReadBuffer}
+\caption{Czas wykonywania clEnqueueReadBuffer}
 \end{figure}
-Powyższy wykres pokazuje szybkość transferu danych z urządzenia do aplikacji. Transfery tego typu odbywają się przy pomocy funkcji zdefiniowanych przez biblioteke OpenCL. clEnqueueReadBuffer kopiuje dokładną ilość bajtów, więc transfer najprawdopodobniej odbywa się przy pomocy 8bitowego typu danych. Wykres przedstawia zależności analogiczne do testu z przepływem danych wewnątrz urządzenia.
+Powyższy wykres pokazuje szybkość transferu danych z urządzenia do aplikacji. Transfery tego typu odbywają się przy pomocy funkcji zdefiniowanych przez bibliotekę OpenCL. clEnqueueReadBuffer kopiuje dokładną ilość bajtów, więc transfer najprawdopodobniej odbywa się przy pomocy osmiobitowego typu danych. Wykres przedstawia zależności analogiczne do testu z przepływem danych wewnątrz urządzenia.
 \begin{figure}[H]
 \begin{tikzpicture}
 \begin{axis}[ybar=.7cm,
@@ -279,10 +279,10 @@ Powyższy wykres pokazuje szybkość transferu danych z urządzenia do aplikacji
 \addlegendentry{Samsung A70}
 \end{axis}
 \end{tikzpicture}
-\caption{czas wykonywania clEnqueueWriteBuffer}
+\caption{Czas wykonywania clEnqueueWriteBuffer}
 \end{figure}
 
-Wykres szybkości zapisu danych do alokacji w OpenCL. W przypadku procesorów Adreno pokazuje wartości nie możliwe do osiągnięcia w rodzajach pamięci zastosowanych w urządzeniach. Zakładany maksymalny przepływ pamięci np. Dla Samsunga Galaxy A70 to 14.9GB/s. Wartości te zostały zebrane przy pomocy obiektów clEvent. Ewidentnie wartości zebrane podczas clEnqueueWriteBuffer są błędne. Dla pewności powtórzono test mierząc czas przy pomocy funkcji systemowych po stronie hosta. Uzyskane wyniki prezentują się na poniższym wykresie. Wartości są zbliżone do tych uzyskanych w poprzednich testach z przepływem pamięci w ramach urządzenia.
+Wykres przedstawia szybkości zapisu danych do alokacji w OpenCL. W przypadku procesorów Adreno pokazuje wartości niemożliwe do osiągnięcia w rodzajach pamięci, zastosowanych w urządzeniach. Zakładany maksymalny przepływ pamięci na przykład dla Samsunga Galaxy A70 to 14,9GB/s. Wartości te zostały zebrane przy pomocy obiektów clEvent. Ewidentnie wartości zebrane podczas clEnqueueWriteBuffer są błędne. Dla pewności powtórzono test mierząc czas przy pomocy funkcji systemowych po stronie hosta. Uzyskane wyniki prezentują się na poniższym wykresie. Wartości są zbliżone do tych uzyskanych w poprzednich testach z przepływem pamięci w ramach urządzenia.
 \begin{figure}[H]
 \begin{tikzpicture}
 \begin{axis}[ybar=.7cm,
@@ -304,10 +304,10 @@ Wykres szybkości zapisu danych do alokacji w OpenCL. W przypadku procesorów Ad
 \addlegendentry{Samsung A70}
 \end{axis}
 \end{tikzpicture}
-\caption{czas wykonywania clEnqueueWriteBuffer czas z Aplikacji}
+\caption{Czas wykonywania clEnqueueWriteBuffer czas z Aplikacji}
 \end{figure} 
 
-Dla pewności powtórzone zostały pozostałe testy z wykorzystaniem mierzenia czasu po stronie aplikacji, wszystkie czasy pokrywały się z tymi zmierzonymi przy wykorzystaniu obiektów clEvent.
+Dla pewności powtórzone zostały pozostałe testy z wykorzystaniem mierzenia czasu po stronie aplikacji. wszystkie czasy pokrywały się z tymi zmierzonymi przy wykorzystaniu obiektów clEvent.
 
 \begin{figure}[H]
 \begin{tikzpicture}
@@ -330,10 +330,10 @@ Dla pewności powtórzone zostały pozostałe testy z wykorzystaniem mierzenia c
 \addlegendentry{Samsung A70}
 \end{axis}
 \end{tikzpicture}
-\caption{czas wykonywania Map unMap}
+\caption{Czas wykonywania Map unMap}
 \end{figure}
 
-Powyższy wykres pokazuje czas potrzebny do mapowania pamięci po stronie urządzenia na pamięć po stronie aplikacji. Wartości uzyskane dla procesorów Adreno podobnie jak we wcześniejszym teście wydają się podejrzane, jednak powtórzone z mierzeniem czasu po stronie aplikacji zwróciły podobne rezultaty. Procesory Adreno korzystają ze współdzielonej pamięci systemowej. Najprawdopodobniej  funkcja clEnqueueMapBuffer zwraca bezpośredni wskaźnik na pamięć, która jest wykorzystywana przez urządzenie podczas wykonywania kerneli. Czas potrzebny na mapowanie i od mapowanie pamięci to krótki czas w którym sterownik zwraca wskaźnik na pamięć używaną przez alokację OpenCL. W przypadku Urządzenia Huawei P20 Lite z procesorem Mali T830 MP pamięć nie jest współdzielona. Wyraźnie widać, że procesor Mali znacznie wolniej mapuje pamięć. Mimo braku współdzielenia proces mapowania odbywa się znacznie szybciej niż odczytywanie z bufora za pomocą clEnqueueReadBuffer. Prawdopodobnie wskaźnik, na który mapowany jest bufor, zlokalizowana jest w korzystniejszym miejscu pamięci fizycznej, niż pamięć przydzielona aplikacji przez system.
+Powyższy wykres pokazuje czas potrzebny do mapowania pamięci po stronie urządzenia na pamięć po stronie aplikacji. Wartości uzyskane dla procesorów Adreno podobnie jak we wcześniejszym teście wydają się błędne, jednak powtórzone z mierzeniem czasu po stronie aplikacji zwróciły podobne rezultaty. Procesory Adreno korzystają ze współdzielonej pamięci systemowej. Najprawdopodobniej  funkcja clEnqueueMapBuffer zwraca bezpośredni wskaźnik na pamięć, która jest wykorzystywana przez urządzenie podczas wykonywania kerneli. Czas potrzebny na mapowanie i odmapowanie pamięci to krótki czas w którym sterownik zwraca wskaźnik na pamięć używaną przez alokację OpenCL. W przypadku Urządzenia Huawei P20 Lite z procesorem Mali T830 MP pamięć nie jest współdzielona. Wyraźnie widać, że procesor Mali znacznie wolniej mapuje pamięć. Mimo braku współdzielenia proces mapowania odbywa się znacznie szybciej niż odczytywanie z bufora za pomocą clEnqueueReadBuffer. Prawdopodobnie wskaźnik, na który mapowany jest bufor, zlokalizowana jest w korzystniejszym miejscu pamięci fizycznej, niż pamięć przydzielona aplikacji przez system.
 
 \subsection[Mnożenie macierzy]{Mnożenie macierzy}
 \begin{figure}[H]
@@ -380,18 +380,18 @@ Powyższy wykres pokazuje czas potrzebny do mapowania pamięci po stronie urząd
 \caption{Mnożenie macierzy (Max Lws 256)}
 \end{figure}
 
-Powyższe dwa wykresy pokazują zależność wielkości lokalnej work grupy od czasu w jakim przemnożone zostaną dwie macierze, w tym wypadku obie o rozmiarze 1024x1024. Wyraźnie widać, że rozmiar lokalnej work grupy wpływa na czas wykonania zadania jakim jest mnożenie macierzy. Wszystkie urządzenia osiągają najgorszy czas w przypadku gdy rozmiar lokalnej grupy w wymiarze X wynosi 1, a w wymiarze Y ma maksymalną możliwą dla urządzenia wartość. Słaby rezultat dla takiego ustawienia, najprawdopodobniej spowodowany jest czytaniem odległych od siebie komórek pamięci w ramach work grupy. Pojedynczy wiersz macierzy zajmuje 4 KB, zatem elementy z pod indexu (0,0) i (0,1) są odległe od siebie o 4KB. W dodatku 4KB to odległość adresu wirtualnego, fizycznie w zależności od rozmiaru stron pamięci, te elementy mogą znajdować się w różnych częsciach pamięci fizycznej. Cała macierz zajmuje 4MB pamięci, podczas wykonywania mnożenia używane są trzy takie macierze. Mobilne procesory graficzne nie posiadają tak dużej  pamięci dedykowanej, a tym bardziej pamięci cache, dlatego przeładowywanie każdorazowe pamięci dla każdego elementu lokalnej grupy jest bardzo kosztowne i wydłuża wykonywanie kernela. 
+Powyższe dwa wykresy pokazują zależność wielkości lokalnej work grupy od czasu w jakim przemnożone zostaną dwie macierze, tym wypadku obie o rozmiarze 1024x1024. Wyraźnie widać, że rozmiar lokalnej work grupy wpływa na czas wykonania zadania, jakim jest mnożenie macierzy. Wszystkie urządzenia osiągają najgorszy czas w przypadku gdy rozmiar lokalnej grupy w wymiarze X wynosi 1, a w wymiarze Y ma maksymalną możliwą dla urządzenia wartość. Słaby rezultat dla takiego ustawienia najprawdopodobniej spowodowany jest czytaniem odległych od siebie komórek pamięci w ramach work grupy. Pojedynczy wiersz macierzy zajmuje 4 kB, zatem elementy spod indexu (0,0) i (0,1) są odległe od siebie o 4kB. W dodatku 4kB to odległość adresu wirtualnego, a fizycznie w zależności od rozmiaru stron pamięci, te elementy mogą znajdować się w różnych częsciach pamięci fizycznej. Cała macierz zajmuje 4MB pamięci, a podczas wykonywania mnożenia używane są trzy takie macierze. Mobilne procesory graficzne nie posiadają tak dużej  pamięci dedykowanej, a tym bardziej pamięci cache, dlatego przeładowywanie każdorazowe pamięci dla każdego elementu lokalnej grupy jest bardzo kosztowne i wydłuża wykonywanie kernela. 
 
-Dla urządzeń z procesorami Adreno 405, 506 i 612, najbardziej optymalnym rozmiarem lokalnej work grupy wydaje się rozmiar 32x32. W przypadku gdy mnożymy macierz A razy Macierz B, przemnażamy rząd z pierwszej przez kolumnę z drugiej. Przy dostępowaniu pamięci macierzy B w ramach pojedynczego elementu work grupy, także musimy dostępować odległe od siebie elementy pamięci. Najprawdopodobniej gdy rozmiar grupy  wymiarze y wynosi 32, pamięć używana przez wątek w ramach SIMD jest dostępna w dedykowanej pamięci procesora graficznego. 
+Dla urządzeń z procesorami Adreno 405, 506 i 612, najbardziej optymalnym rozmiarem lokalnej work grupy wydaje się rozmiar 32x32. W przypadku gdy mnożymy macierz A razy macierz B, przemnażamy rząd z pierwszej macierzy przez kolumnę z drugiej. Przy dostępowaniu pamięci macierzy B w ramach pojedynczego elementu work grupy, także musimy dostępować odległe od siebie elementy pamięci. Najprawdopodobniej gdy rozmiar grupy  wymiarze Y wynosi 32, pamięć używana przez wątek w ramach lokalnej grupy jest dostępna w dedykowanej pamięci procesora graficznego. 
 
-Najszybciej mnożenie macierzy wykonało urządzenie Xiaomi Redmi Note 7 najprawdopodobniej to dzięki najlepszemu typowi pamięci spośród testowanych telefonów, koszty dostępu i odczytu pamięci były najmniejsze. Drugim najszybszym urządzeniem jest Huawei P20 Lite z procesorem graficznym od Mali. Test korzystał z macierzy danych o typie całkowitym, jak wcześniej sprawdzono to właśnie te urządzenie może wykonać najwięcej operacji tego typu w określonym czasie.
-\subsection[OpenCL z cameraApi]{OpenCL z cameraApi}
+Najszybciej mnożenie macierzy wykonało urządzenie Xiaomi Redmi Note 7, najprawdopodobniej dzięki najlepszemu typowi pamięci spośród testowanych telefonów.Koszty dostępu i odczytu pamięci były najmniejsze. Drugim najszybszym urządzeniem jest Huawei P20 Lite z procesorem graficznym od Mali. Test korzystał z macierzy danych o typie całkowitym, jak wcześniej sprawdzono, to właśnie te urządzenie może wykonać najwięcej operacji tego typu w określonym czasie.
+\subsection[OpenCL z cameraApi]{OpenCL z CameraApi}
 Wykresy w tym podrozdziale pokazują jak użycie OpenCL do obróbki danych z kamery w czasie rzeczywistym wpływa na ilość wyświetlanych klatek na sekundę.
 
-Pierwsza kolumna (Media), na poniższym wykresie, pokazuje wartości w klatkach na sekundę, jakie osiągają urządzenia przy wyświetlaniu używając środowiska OpenGL, texturę otrzymaną z CameraApi. Textura posiada obrazek zakodowany w formacie mediowym NV21.
+Pierwsza kolumna (Media) na poniższym wykresie pokazuje wartości w klatkach na sekundę, jakie osiągają urządzenia przy wyświetlaniu używając środowiska OpenGL, texturę otrzymaną z CameraApi. Textura posiada obrazek zakodowany w formacie mediowym NV21.
 
-Niestety api OpenCL umożliwia współdzielenie zasobów z OpenGL tylko w formacie RGBA, więc niemożliwe jest dzielenie textury zwróconej przez CameraApi. Potrzebna jest transformacja z formatu NV21 do RGBA. Druga kolumna wykresu pokazuje jak ilość klatek na sekundę wygląda, gdy konwersja do RGBA jest wykonywana po stronie aplikacji. Taka operacja ma duży wpływ na wszystkie urządzenia, widać wyraźny spadek wyświetlanych klatek na sekundę na każdym z nich. 
-Trzecia kolumna opisuje sytuacje gdy konwersja wykonywana jest w środowisku openCL. Wyraźnie poprawia to wydajność na urządzeniach z procesorami graficznymi Adreno. Telefony te osiągają wartości z pierwszej kolumny, uwzględniając błąd pomiaru. Telefon Huawei z procesorem Mali nie poprawia rezultatu. Najprawdopodobniej dla tego urządzenia czas potrzebny na kopiowanie danych do alokacji w OpenCL i przetworzenie kernela jest równie kosztowne co brak zrównoleglenia konwersji po stronie CPU. 
+Niestety api OpenCL umożliwia współdzielenie zasobów z OpenGL tylko w formacie RGBA, więc niemożliwe jest dzielenie textury zwróconej przez CameraApi. Potrzebna jest transformacja z formatu NV21 do RGBA. Druga kolumna wykresu pokazuje jak ilość klatek na sekundę wygląda, gdy konwersja do RGBA jest wykonywana po stronie aplikacji. Taka operacja ma duży negatywny wpływ na wszystkie urządzenia. Widać wyraźny spadek wyświetlanych klatek na sekundę na każdym z nich. 
+Trzecia kolumna opisuje sytuacje gdy konwersja wykonywana jest w środowisku OpenCL. Wyraźnie poprawia to wydajność na urządzeniach z procesorami graficznymi Adreno. Telefony te osiągają wartości z pierwszej kolumny, uwzględniając błąd pomiaru. Telefon Huawei z procesorem Mali nie poprawia rezultatu. Najprawdopodobniej dla tego urządzenia czas potrzebny na kopiowanie danych do alokacji w OpenCL i przetworzenie kernela jest równie kosztowne, co brak zrównoleglenia konwersji po stronie CPU. 
 \begin{figure}[H]
 \begin{tikzpicture}
 \begin{axis}[
@@ -417,9 +417,9 @@ Trzecia kolumna opisuje sytuacje gdy konwersja wykonywana jest w środowisku ope
 \caption{Konwersja do RGB}
 \end{figure}
 
-W ostatniej kolumnie widnieją rezultaty dla przypadku w którym w kernelu OpenCL zapisujemy bezpośrednio do współdzielonego obrazka, który potem jest wyświetlany, zaoszczędzimy w ten sposób czas na dwa kopiowania. Pierwszym, z alokacji w OpenCL do pamięci po stronie aplikacji, i drugim, z aplikacji do textury OpenGL. Na wykresie nie widać,żeby to jakkolwiek wpłynęło na liczbę wyświetlanych klatek. Najprawdopodobniej inne optymalizacje, nie przyniosłoby żadnych poprawek wydajności. Wąskie gardło, które sprawia, że nie można przekroczyć pewnej liczby klatek jest albo po stronie CameraApi, które nie jest w stanie dostarczyć większej ilości klatek na sekundę, albo środowiska OpenGL, które nie jest w stanie wyświetlić więcej klatek.
+W ostatniej kolumnie widnieją rezultaty dla przypadku, w którym w kernelu OpenCL zapisujemy bezpośrednio do współdzielonego obrazka, który potem jest wyświetlany. Zaoszczędzimy w ten sposób czas na dwa kopiowania. Pierwsze z alokacji w OpenCL do pamięci po stronie aplikacji i druge z aplikacji do textury OpenGL. Na wykresie nie widać, żeby to jakkolwiek wpłynęło na liczbę wyświetlanych klatek. Najprawdopodobniej inne optymalizacje nie przyniosłoby żadnych poprawek wydajności. Wąskie gardło, które sprawia, że nie można przekroczyć pewnej liczby klatek, jest albo po stronie CameraApi, które nie jest w stanie dostarczyć większej ilości klatek na sekundę, albo środowiska OpenGL, które nie jest w stanie wyświetlić więcej klatek.
 
-Wykres na rysunku 5.17, pokazuje wpływ filtrów wykonanych przez kernele w OpenCL na ilość wyświetlanych klatek na sekundę. Można zauważyć, że użycie prostych filtrów takich jak max rgb czy transformacja na obrazek w skali szarości, nie wpływają na ilość wyświetlanych klatek. Prawdopodobnie przez wąskie gardło które występuje gdzieś w czasie od zebrania podglądu z kamery do jego wyświetlania. Natomiast zastosowanie filtru uśredniającego, który w kernelu dostępuje wielu pixeli znacząco wpływa na wydajność. W tym wypadku najlepiej wypada telefon z procesorem graficznym Adreno 512, w którym zastosowano najlepszy spośród testowanych typ pamięci.
+Wykres na rysunku 5.17 pokazuje wpływ filtrów wykonanych przez kernele w OpenCL na ilość wyświetlanych klatek na sekundę. Można zauważyć, że użycie prostych filtrów takich jak max rgb czy transformacja na obrazek w skali szarości, nie wpływaa na ilość wyświetlanych klatek, prawdopodobnie przez wąskie gardło, które występuje gdzieś w czasie od zebrania podglądu z kamery do jego wyświetlania. Natomiast zastosowanie filtru uśredniającego, który w kernelu dostępuje wielu pikseli, znacząco wpływa na wydajność. W tym wypadku najlepiej wypada telefon z procesorem graficznym Adreno 512, w którym zastosowano najlepszy spośród testowanych typ pamięci.
 
 \begin{figure}[H]
 \begin{tikzpicture}
@@ -441,5 +441,5 @@ Wykres na rysunku 5.17, pokazuje wpływ filtrów wykonanych przez kernele w Open
 \addlegendentry{Samsung A70}
 \end{axis}
 \end{tikzpicture}
-\caption{Filtry}
+\caption{Wynki filtrowania obrazu}
 \end{figure}

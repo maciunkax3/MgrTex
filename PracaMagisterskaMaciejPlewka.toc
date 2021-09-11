@@ -1,5 +1,7 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
+\selectlanguage *{polish}
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{Wykaz ważniejszych oznaczeń i skrótów}{7}{Doc-Start}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Wprowadzenie}{8}{section.1}%
@@ -74,7 +76,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.6}OpenCL z cameraApi}{40}{subsection.5.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Aplikacje wykorzystujące OpenCl Przypadki Użycia}{43}{section.6}%
+\contentsline {section}{\numberline {6}Aplikacje wykorzystujące OpenCl}{43}{section.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.1}Tensorflow}{43}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
@@ -88,12 +90,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Wykaz literatury}{47}{section.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Wykaz rysunków}{48}{section.7}%
+\contentsline {section}{Spis rysunków}{49}{section.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Wykaz tabel}{49}{section.7}%
-\defcounter {refsection}{0}\relax 
-\setcounter {tocdepth}{1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Dodatek \numberline {A}Przykładowy dodatek}{50}{appendix.1.A}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Rozdzia\PlPrIeC {\l } \numberline {A.1}Sekcja}{50}{subsection.1.A.1}%
+\contentsline {section}{Spis tabel}{50}{section.7}%

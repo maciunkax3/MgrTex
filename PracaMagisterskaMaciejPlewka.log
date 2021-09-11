@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.17)  10 SEP 2021 23:08
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.17)  11 SEP 2021 20:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1477,6 +1477,174 @@ Package fontspec Info: Font family 'Arial(0)' created for font 'Arial' with
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 
+(/usr/share/texlive/texmf-dist/tex/latex/polyglossia/polyglossia.sty
+Package: polyglossia 2020/01/29 v1.47 Modern multilingual typesetting with XeLa
+TeX and LuaLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/makecmds/makecmds.sty
+Package: makecmds 2009/09/03 v1.0a extra command making commands
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks54
+\XKV@tempa@toks=\toks55
+)
+\XKV@depth=\count492
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2020-02-14 LaTeX2e option processing using LaTeX3 keys
+)
+(/usr/share/texlive/texmf-dist/tex/latex/filehook/filehook.sty
+Package: filehook 2020/02/03 v0.7 Hooks for input files
+)
+\xpg@normalclass=\XeTeXcharclass1
+
+(/usr/share/texlive/texmf-dist/tex/latex/polyglossia/gloss-latex.ldf
+File: gloss-latex.ldf polyglossia: module for default language
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
+)
+Package polyglossia Info: Default language is latex.
+Package polyglossia Info: Option: localmarks.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/polyglossia/gloss-polish.ldf
+File: gloss-polish.ldf polyglossia: module for polish
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {polish/script}  =>  {latin}
+>  {polish/lcscript}  =>  {latin}
+>  {polish/scripttag}  =>  {}
+>  {polish/language}  =>  {Polish}
+>  {polish/langtag}  =>  {PLK}
+>  {polish/bcp47}  =>  {pl}
+>  {polish/hyphennames}  =>  {polish}
+>  {polish/direction}  =>  {LR}
+>  {polish/hyphenmins}  =>  {2,2}
+>  {polish/frenchspacing}  =>  {true}
+>  {polish/indentfirst}  =>  {false}
+>  {polish/fontsetup}  =>  {true}
+>  {polish/envname}  =>  {polish}
+>  {polish/babelname}  =>  {polish}
+>  {polish/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {polish/Localnumeral}  =>  {polyglossia@C@localnumeral}.
+)
+Package polyglossia Info: Default language is polish.
+
+(/usr/share/texlive/texmf-dist/tex/latex/polyglossia/gloss-english.ldf
+File: gloss-english.ldf polyglossia: module for english
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {polish/script}  =>  {latin}
+>  {polish/lcscript}  =>  {latin}
+>  {polish/scripttag}  =>  {}
+>  {polish/language}  =>  {Polish}
+>  {polish/langtag}  =>  {PLK}
+>  {polish/bcp47}  =>  {pl}
+>  {polish/hyphennames}  =>  {polish}
+>  {polish/direction}  =>  {LR}
+>  {polish/hyphenmins}  =>  {2,2}
+>  {polish/frenchspacing}  =>  {true}
+>  {polish/indentfirst}  =>  {false}
+>  {polish/fontsetup}  =>  {true}
+>  {polish/envname}  =>  {polish}
+>  {polish/babelname}  =>  {polish}
+>  {polish/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {polish/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/script}  =>  {latin}
+>  {english/lcscript}  =>  {latin}
+>  {english/scripttag}  =>  {}
+>  {english/language}  =>  {English}
+>  {english/langtag}  =>  {ENG}
+>  {english/bcp47}  =>  {en-US}
+>  {english/hyphennames}  =>  {english,american,usenglish,USenglish}
+>  {english/direction}  =>  {LR}
+>  {english/hyphenmins}  =>  {2,3}
+>  {english/frenchspacing}  =>  {false}
+>  {english/indentfirst}  =>  {false}
+>  {english/fontsetup}  =>  {true}
+>  {english/envname}  =>  {english}
+>  {english/babelname}  =>  {english}
+>  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
+Package polyglossia Info: Option: English, variant=american.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
+\csq@reset=\count493
+\csq@gtype=\count494
+\csq@glevel=\count495
+\csq@qlevel=\count496
+\csq@maxlvl=\count497
+\csq@tshold=\count498
+\csq@ltx@everypar=\toks56
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2019-12-06 v5.2j csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
@@ -1487,15 +1655,31 @@ File: lstlang1.sty 2019/09/10 1.8c listings language file
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 )
 \LongtableWidth=\skip138
-\c@definition=\count492
+\c@definition=\count499
 \@indexfile=\write5
 \openout5 = `PracaMagisterskaMaciejPlewka.idx'.
 
 
 Writing index file PracaMagisterskaMaciejPlewka.idx
-\@quotelevel=\count493
-\@quotereset=\count494
+
+! Package biblatex Error: 'polyglossia' loaded after biblatex.
+
+See the biblatex package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.272 \begin{document}
+                         % właściwy początek dokumentu
+? 
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'polyglossia' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'polish'.
 (./PracaMagisterskaMaciejPlewka.aux
+LaTeX Info: Redefining \rmfamily on input line 23.
+LaTeX Info: Redefining \sffamily on input line 23.
+LaTeX Info: Redefining \ttfamily on input line 23.
+
 
 LaTeX Warning: Label `tab:skale' multiply defined.
 
@@ -1508,55 +1692,55 @@ LaTeX Warning: Label `tab:skale' multiply defined.
 )
 \openout1 = `PracaMagisterskaMaciejPlewka.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 266.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 272.
+LaTeX Font Info:    ... okay on input line 272.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 272.
+LaTeX Font Info:    ... okay on input line 272.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 272.
+LaTeX Font Info:    ... okay on input line 272.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 272.
+LaTeX Font Info:    ... okay on input line 272.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 272.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-66.
+72.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 266.
+LaTeX Font Info:    ... okay on input line 272.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 272.
+LaTeX Font Info:    ... okay on input line 272.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 272.
+LaTeX Font Info:    ... okay on input line 272.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 272.
+LaTeX Font Info:    ... okay on input line 272.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 272.
+LaTeX Font Info:    ... okay on input line 272.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 272.
+LaTeX Font Info:    ... okay on input line 272.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 272.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-266.
+272.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 266.
+LaTeX Font Info:    ... okay on input line 272.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 272.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-266.
+272.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 266.
+LaTeX Font Info:    ... okay on input line 272.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 272.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-266.
+272.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 266.
+LaTeX Font Info:    ... okay on input line 272.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1607,8 +1791,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'PracaMagisterskaMaciejPlewka.bbl' found.
 
 (./PracaMagisterskaMaciejPlewka.bbl)
-Package biblatex Info: Reference section=0 on input line 266.
-Package biblatex Info: Reference segment=0 on input line 266.
+Package biblatex Info: Reference section=0 on input line 272.
+Package biblatex Info: Reference segment=0 on input line 272.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -1625,10 +1809,10 @@ Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
 
 \flrow@LT@lasthead=\box127
 \flrow@LT@prelastfoot=\box128
-\c@FBLTpage=\count495
+\c@FBLTpage=\count500
 )
 \AtBeginShipoutBox=\box129
-Package hyperref Info: Link coloring OFF on input line 266.
+Package hyperref Info: Link coloring OFF on input line 272.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1639,11 +1823,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count496
+\c@section@level=\count501
 )
-LaTeX Info: Redefining \ref on input line 266.
-LaTeX Info: Redefining \pageref on input line 266.
-LaTeX Info: Redefining \nameref on input line 266.
+LaTeX Info: Redefining \ref on input line 272.
+LaTeX Info: Redefining \pageref on input line 272.
+LaTeX Info: Redefining \nameref on input line 272.
 
 (./PracaMagisterskaMaciejPlewka.out) (./PracaMagisterskaMaciejPlewka.out)
 \@outlinefile=\write6
@@ -1659,15 +1843,18 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 
 )
-\c@lstlisting=\count497
+\c@lstlisting=\count502
 
 ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
 your preamble.
- on input line 266.
+ on input line 272.
 
+LaTeX Info: Redefining \rmfamily on input line 272.
+LaTeX Info: Redefining \sffamily on input line 272.
+LaTeX Info: Redefining \ttfamily on input line 272.
 File: meta/StronaTytulowa_155170.pdf Graphic file (type pdf)
 <use meta/StronaTytulowa_155170.pdf>
 File: meta/StronaTytulowa_155170.pdf Graphic file (type pdf)
@@ -1706,24 +1893,27 @@ File: meta/Oswiadczenie_155170.pdf Graphic file (type pdf)
 <use meta/Oswiadczenie_155170.pdf, page 1>
  [2] (./meta/streszczenie.tex) [3] (./meta/abstract.tex) [4]
 (./meta/spis_tresci.tex (./PracaMagisterskaMaciejPlewka.toc
+LaTeX Info: Redefining \rmfamily on input line 3.
+LaTeX Info: Redefining \sffamily on input line 3.
+LaTeX Info: Redefining \ttfamily on input line 3.
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 3.
+ 5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 3.
+(Font)              scaled to size 9.19998pt on input line 5.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 3.
+(Font)              scaled to size 6.99199pt on input line 5.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 3.
+(Font)              scaled to size 5.51999pt on input line 5.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 3.
+(Font)              scaled to size 9.19998pt on input line 5.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 3.
+(Font)              scaled to size 6.99199pt on input line 5.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 3.
+(Font)              scaled to size 5.51999pt on input line 5.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1738,9 +1928,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 (./rozdzialy/1-wstep.tex) [8] (./rozdzialy/2-rozdzial.tex
-Overfull \hbox (110.751pt too wide) in paragraph at lines 2--3
+Overfull \hbox (1.40623pt too wide) in paragraph at lines 2--3
 \TU/Arial(0)/m/n/10 cl_intel_mem_force_host_memory, które jest dostępna na urzą
-dzeniach intela lub cl_qcom_android_native_buffer_host_ptr
+dzeniach intela lub cl_qcom_andro-
  []
 
 File: imgs/icdLoader.png Graphic file (type bmp)
@@ -1756,7 +1946,7 @@ nput line 17.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10])
-Overfull \hbox (2.25119pt too wide) in paragraph at lines 19--27
+Overfull \hbox (2.25671pt too wide) in paragraph at lines 19--27
 []\TU/Arial(0)/m/n/10 Pierwszym krokiem jest zawołanie \TU/Arial(0)/b/n/10 clGe
 tPlatformIDs\TU/Arial(0)/m/n/10 . Podając drugi argument czyli cl_pla-
  []
@@ -1800,14 +1990,18 @@ Overfull \hbox (4.47285pt too wide) in paragraph at lines 28--29
 ING_COMMAND_QUEUED
  []
 
-[23] (./listings/MatrixMul) (./listings/createTextureExternal.txt [24])
+
+Underfull \vbox (badness 2503) has occurred while \output is active []
+
+ [23]
+(./listings/MatrixMul) (./listings/createTextureExternal.txt [24])
 (./listings/drawImage.txt) (./listings/shaders.txt [25]) (./listings/yuvToRgba
 [26]) (./listings/UpdateTexture) (./listings/oclConversionDeclaration)
 (./listings/WriteImageF)
 File: imgs/preview.png Graphic file (type bmp)
 <imgs/preview.png>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2237) has occurred while \output is active []
 
  [27]
 (./listings/maxRgb)
@@ -2012,78 +2206,121 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [45])
-Overfull \hbox (2.30888pt too wide) in paragraph at lines 12--284
+Overfull \hbox (2.30981pt too wide) in paragraph at lines 12--290
 []\TU/Arial(0)/m/n/10 W przypadku kontynuowaniu pracy nad tematem, można by był
 o znaleźć sposób na spraw-
  []
 
 [46]
-Overfull \hbox (8.05147pt too wide) in paragraph at lines 291--291
-[]\TU/Arial(0)/m/n/10 Krishnaraj Bhat. \TU/Arial(0)/m/it/10 libopencl-stub\TU/A
-rial(0)/m/n/10 . 2021. URL: []$[][][][][] [] [] [] [][][][][][] [] [][][] [] []
-[][][][][][][][][][][] [] [][][][][][][][][] [][]
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.291 \newpage
-              
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.291 \newpage
-              
-? 
-
-Overfull \hbox (22.83241pt too wide) in paragraph at lines 291--291
-[]\TU/Arial(0)/m/it/10 https://rocmdocs.amd.com/en/latest/Programming$[]\FML/fu
-tmi/m/it/10 uides\T1/futs/m/n/10 /\FML/futmi/m/it/10 Opencl \FMS/futm/m/n/10 ^^
-@ \FML/futmi/m/it/10 programming \FMS/futm/m/n/10 ^^@ \FML/futmi/m/it/10 guide:
-html$\TU/Arial(0)/m/n/10 .
- []
-
-
-Overfull \hbox (10.56845pt too wide) in paragraph at lines 291--291
-[]\TU/Arial(0)/m/it/10 Mali (GPU)\TU/Arial(0)/m/n/10 . 2021. URL: []$[][][][][]
- [] [] [] [][] [] [][][][][][][][][] [] [][][] [] [][][][] [] [][][][] [] [][][
-][][]$[]. (dostęp: 07.09.2021). 
- []
-
-! Misplaced alignment tab character &.
-<argument> Catching Up with Khronos: Experts’ Q&
-                                                A on OpenCL 3.0 and SYCL 2020
-l.291 \newpage
-              
-? 
-
-Overfull \hbox (165.13834pt too wide) in paragraph at lines 291--291
-[][][][][][][] [][] [][] [][] [][] [][] [][][][][][] [][] [] [] [] [][] [][][] 
-[][] [][][][] [][] [][][][] [] [][][][][][] [] [][][][][][][][][][][][][][][][]
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][]$[]\TU/Arial(0)/m/n/10 .
- []
-
-[47] (./PracaMagisterskaMaciejPlewka.lof)
+File: meta/biblio_1.pdf Graphic file (type pdf)
+<use meta/biblio_1.pdf>
+File: meta/biblio_1.pdf Graphic file (type pdf)
+<use meta/biblio_1.pdf>
+File: meta/biblio_1.pdf Graphic file (type pdf)
+<use meta/biblio_1.pdf, page 1>
+File: meta/biblio_1.pdf Graphic file (type pdf)
+<use meta/biblio_1.pdf, page 1>
+File: meta/biblio_1.pdf Graphic file (type pdf)
+<use meta/biblio_1.pdf, page 1>
+File: meta/biblio_1.pdf Graphic file (type pdf)
+<use meta/biblio_1.pdf, page 1>
+File: meta/biblio_1.pdf Graphic file (type pdf)
+<use meta/biblio_1.pdf, page 1>
+ [47]
+File: meta/biblio_2.pdf Graphic file (type pdf)
+<use meta/biblio_2.pdf>
+File: meta/biblio_2.pdf Graphic file (type pdf)
+<use meta/biblio_2.pdf>
+File: meta/biblio_2.pdf Graphic file (type pdf)
+<use meta/biblio_2.pdf, page 1>
+File: meta/biblio_2.pdf Graphic file (type pdf)
+<use meta/biblio_2.pdf, page 1>
+File: meta/biblio_2.pdf Graphic file (type pdf)
+<use meta/biblio_2.pdf, page 1>
+File: meta/biblio_2.pdf Graphic file (type pdf)
+<use meta/biblio_2.pdf, page 1>
+File: meta/biblio_2.pdf Graphic file (type pdf)
+<use meta/biblio_2.pdf, page 1>
+ [48] (./PracaMagisterskaMaciejPlewka.lof
+LaTeX Info: Redefining \rmfamily on input line 3.
+LaTeX Info: Redefining \sffamily on input line 3.
+LaTeX Info: Redefining \ttfamily on input line 3.
+)
 \tf@lof=\write8
 \openout8 = `PracaMagisterskaMaciejPlewka.lof'.
 
- [48]
-(./PracaMagisterskaMaciejPlewka.lot)
+ [49]
+(./PracaMagisterskaMaciejPlewka.lot
+LaTeX Info: Redefining \rmfamily on input line 3.
+LaTeX Info: Redefining \sffamily on input line 3.
+LaTeX Info: Redefining \ttfamily on input line 3.
+)
 \tf@lot=\write9
 \openout9 = `PracaMagisterskaMaciejPlewka.lot'.
 
- [49] (./dodatki/przykladowy_dodatek.tex)
-[50]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 316.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 316.
- (./PracaMagisterskaMaciejPlewka.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 316.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 316.
+ [50]
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {polish/script}  =>  {latin}
+>  {polish/lcscript}  =>  {latin}
+>  {polish/scripttag}  =>  {}
+>  {polish/language}  =>  {Polish}
+>  {polish/langtag}  =>  {PLK}
+>  {polish/bcp47}  =>  {pl}
+>  {polish/hyphennames}  =>  {polish}
+>  {polish/direction}  =>  {LR}
+>  {polish/hyphenmins}  =>  {2,2}
+>  {polish/frenchspacing}  =>  {true}
+>  {polish/indentfirst}  =>  {false}
+>  {polish/fontsetup}  =>  {true}
+>  {polish/envname}  =>  {polish}
+>  {polish/babelname}  =>  {polish}
+>  {polish/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {polish/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/script}  =>  {latin}
+>  {english/lcscript}  =>  {latin}
+>  {english/scripttag}  =>  {}
+>  {english/language}  =>  {English}
+>  {english/langtag}  =>  {ENG}
+>  {english/bcp47}  =>  {en-US}
+>  {english/hyphennames}  =>  {english,american,usenglish,USenglish}
+>  {english/direction}  =>  {LR}
+>  {english/hyphenmins}  =>  {2,3}
+>  {english/frenchspacing}  =>  {false}
+>  {english/indentfirst}  =>  {false}
+>  {english/fontsetup}  =>  {true}
+>  {english/envname}  =>  {english}
+>  {english/babelname}  =>  {american}
+>  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 323.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 323.
+ (./PracaMagisterskaMaciejPlewka.aux
+LaTeX Info: Redefining \rmfamily on input line 23.
+LaTeX Info: Redefining \sffamily on input line 23.
+LaTeX Info: Redefining \ttfamily on input line 23.
+)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 323.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 323.
 Package rerunfilecheck Info: File `PracaMagisterskaMaciejPlewka.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: 6E6AEC713EB1EB541B757276A0C649E9;766.
+(rerunfilecheck)             Checksum: B5B45D4EC5B50B11FB55DD208AAEB2B5;3595.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2094,12 +2331,12 @@ Package logreq Info: Writing requests to 'PracaMagisterskaMaciejPlewka.run.xml'
 
  ) 
 Here is how much of TeX's memory you used:
- 47665 strings out of 481745
- 1070738 string characters out of 5935956
- 2089615 words of memory out of 5000000
- 63778 multiletter control sequences out of 15000+600000
+ 49001 strings out of 481745
+ 1098018 string characters out of 5935956
+ 2141441 words of memory out of 5000000
+ 65066 multiletter control sequences out of 15000+600000
  561738 words of font info for 77 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
- 68i,18n,102p,2177b,5193s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,18n,103p,2179b,3828s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on PracaMagisterskaMaciejPlewka.pdf (50 pages).

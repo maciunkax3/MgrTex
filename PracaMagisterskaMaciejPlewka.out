@@ -1,12 +1,46 @@
 \BOOKMARK [1][-]{Doc-Start}{Wykaz ważniejszych oznaczeń i skrótów}{}% 1
 \BOOKMARK [1][-]{section.1}{Wprowadzenie}{}% 2
-\BOOKMARK [1][-]{section.2}{Wstęp do api OpenCL}{}% 3
-\BOOKMARK [1][-]{section.3}{Specyfika testowanych urządzeń}{}% 4
-\BOOKMARK [1][-]{section.4}{Testy wydajnościowe OpenCL na urządzeniach z systemem Android}{}% 5
-\BOOKMARK [1][-]{section.5}{Wyniki,\040analiza\040i\040wnioski}{}% 6
-\BOOKMARK [1][-]{section.6}{Aplikacje wykorzystujące OpenCl Przypadki Użycia}{}% 7
-\BOOKMARK [1][-]{section.7}{Podsumowanie}{}% 8
-\BOOKMARK [1][-]{section.7}{Wykaz\040literatury}{}% 9
-\BOOKMARK [1][-]{section.7}{Wykaz rysunków}{}% 10
-\BOOKMARK [1][-]{section.7}{Wykaz\040tabel}{}% 11
-\BOOKMARK [1][-]{appendix.1.A}{Dodatek Przykładowy dodatek}{}% 12
+\BOOKMARK [2][-]{subsection.1.1}{Cel\040pracy}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.2}{Zakres\040pracy}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Wstęp do api OpenCL}{}% 5
+\BOOKMARK [2][-]{subsection.2.1}{Linkowanie\040biblioteki\040OpenCL\040na\040platformie\040Android}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.2}{Typowy\040przebieg\040aplikacji\040OpenCL}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.3}{Możliwości i ograniczenia sprzętowe}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.4}{Pomiary\040czasu\040wykonywania\040kerneli}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.5}{Współdzielenie obiektów pomiędzy OpenCL i OpenGL}{section.2}% 10
+\BOOKMARK [1][-]{section.3}{Specyfika testowanych urządzeń}{}% 11
+\BOOKMARK [2][-]{subsection.3.1}{Porównanie graficznych procesorów mobilnych}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.2}{Urządzenia wykorzystane do testowania}{section.3}% 13
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Xiaomi\040Mi\040A2\040Lite}{subsection.3.2}% 14
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Huawei\040P20\040Lite}{subsection.3.2}% 15
+\BOOKMARK [3][-]{subsubsection.3.2.3}{HTC\040Desire\040820}{subsection.3.2}% 16
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Xiaomi\040Redmi\040Note\0407}{subsection.3.2}% 17
+\BOOKMARK [3][-]{subsubsection.3.2.5}{Samsung\040Galaxy\040A70}{subsection.3.2}% 18
+\BOOKMARK [3][-]{subsubsection.3.2.6}{Porównanie}{subsection.3.2}% 19
+\BOOKMARK [1][-]{section.4}{Testy wydajnościowe OpenCL na urządzeniach z systemem Android}{}% 20
+\BOOKMARK [2][-]{subsection.4.1}{Pomiar\040mocy\040obliczeniowej}{section.4}% 21
+\BOOKMARK [2][-]{subsection.4.2}{Przepływ pamięci}{section.4}% 22
+\BOOKMARK [2][-]{subsection.4.3}{Czas\040oczekiwania\040na\040wykonanie\040kernela}{section.4}% 23
+\BOOKMARK [2][-]{subsection.4.4}{Transfer pamięci wbudowanymi funkcjami}{section.4}% 24
+\BOOKMARK [2][-]{subsection.4.5}{Mnożenie macierzy}{section.4}% 25
+\BOOKMARK [2][-]{subsection.4.6}{OpenCL\040do\040filtrowania\040obrazu\040z\040cameraApi}{section.4}% 26
+\BOOKMARK [3][-]{subsubsection.4.6.1}{Konwersja\040obrazu\040z\040kamery\040do\040RGB\040w\040aplikacji}{subsection.4.6}% 27
+\BOOKMARK [3][-]{subsubsection.4.6.2}{Filtr\040max\040Rgb}{subsection.4.6}% 28
+\BOOKMARK [3][-]{subsubsection.4.6.3}{Podgląd w skali szarości}{subsection.4.6}% 29
+\BOOKMARK [3][-]{subsubsection.4.6.4}{Filtr uśredniający}{subsection.4.6}% 30
+\BOOKMARK [1][-]{section.5}{Wyniki,\040analiza\040i\040wnioski}{}% 31
+\BOOKMARK [2][-]{subsection.5.1}{Wyniki\040mocy\040obliczeniowej}{section.5}% 32
+\BOOKMARK [2][-]{subsection.5.2}{Wyniki przepływu pamięci}{section.5}% 33
+\BOOKMARK [2][-]{subsection.5.3}{Czas\040oczekiwania\040na\040wykonanie}{section.5}% 34
+\BOOKMARK [2][-]{subsection.5.4}{Transfery pamięci aplikacja-urządzenie}{section.5}% 35
+\BOOKMARK [2][-]{subsection.5.5}{Mnożenie macierzy}{section.5}% 36
+\BOOKMARK [2][-]{subsection.5.6}{OpenCL\040z\040cameraApi}{section.5}% 37
+\BOOKMARK [1][-]{section.6}{Aplikacje wykorzystujące OpenCl}{}% 38
+\BOOKMARK [2][-]{subsection.6.1}{Tensorflow}{section.6}% 39
+\BOOKMARK [2][-]{subsection.6.2}{OpenCV}{section.6}% 40
+\BOOKMARK [2][-]{subsection.6.3}{Adobe}{section.6}% 41
+\BOOKMARK [2][-]{subsection.6.4}{Testy mierzące wydajność i jakość urządzenia}{section.6}% 42
+\BOOKMARK [1][-]{section.7}{Podsumowanie}{}% 43
+\BOOKMARK [1][-]{section.7}{Wykaz\040literatury}{}% 44
+\BOOKMARK [1][-]{section.7}{Spis rysunków}{}% 45
+\BOOKMARK [1][-]{section.7}{Spis\040tabel}{}% 46

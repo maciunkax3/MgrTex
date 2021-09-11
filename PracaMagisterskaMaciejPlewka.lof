@@ -1,10 +1,12 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Linkowanie biblioteki OpenCL \cite {Loader}\relax }}{10}{figure.caption.1}%
+\selectlanguage *{polish}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Linkowanie biblioteki OpenCL [2]\relax }}{10}{figure.caption.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.2}{\ignorespaces N wymiarowy podział kernela\relax }}{12}{figure.caption.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces SIMD \cite {SIMD}\relax }}{17}{figure.caption.3}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces SIMD [18]\relax }}{17}{figure.caption.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Podgląd kamery\relax }}{28}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
@@ -32,13 +34,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Czas oczekiwania na wykonanie\relax }}{36}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces czas wykonywania clEnqueueReadBuffer\relax }}{37}{figure.caption.21}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Czas wykonywania clEnqueueReadBuffer\relax }}{37}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces czas wykonywania clEnqueueWriteBuffer\relax }}{37}{figure.caption.22}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Czas wykonywania clEnqueueWriteBuffer\relax }}{37}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces czas wykonywania clEnqueueWriteBuffer czas z Aplikacji\relax }}{38}{figure.caption.23}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Czas wykonywania clEnqueueWriteBuffer czas z Aplikacji\relax }}{38}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces czas wykonywania Map unMap\relax }}{38}{figure.caption.24}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Czas wykonywania Map unMap\relax }}{38}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.14}{\ignorespaces Mnożenie macierzy (Max Lws 1024)\relax }}{39}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
@@ -46,4 +48,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.16}{\ignorespaces Konwersja do RGB\relax }}{41}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Filtry\relax }}{42}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Wynki filtrowania obrazu\relax }}{42}{figure.caption.28}%

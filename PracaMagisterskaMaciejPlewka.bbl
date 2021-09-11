@@ -124,38 +124,37 @@
     \endentry
     \entry{Lit4}{article}{}
       \name{author}{4}{}{%
-        {{hash=04aaff0b31eb3a461679ccee78e975ff}{%
+        {{hash=174112236c405d4be7004b99a93b4836}{%
            family={Fang},
            familyi={F\bibinitperiod},
-           given={J},
+           given={Jianbin},
            giveni={J\bibinitperiod}}}%
-        {{hash=044f98dcc344819e103613bbe3ed5abf}{%
+        {{hash=2eca029b16be0b3312696b8860c836a6}{%
            family={Huang},
            familyi={H\bibinitperiod},
-           given={C},
+           given={Chun},
            giveni={C\bibinitperiod}}}%
-        {{hash=d6eab3f022aa676ad7dd8374888863f8}{%
+        {{hash=eb406b96c3102dfd464301beba3a7293}{%
            family={Tang},
            familyi={T\bibinitperiod},
-           given={T},
+           given={Tao},
            giveni={T\bibinitperiod}}}%
-        {{hash=cc4aadc875d7abdbaf96dfa4a83d8b77}{%
+        {{hash=c92fb4d761d5c067a9eb42b2a2cf1521}{%
            family={Wang},
            familyi={W\bibinitperiod},
-           given={Z},
+           given={Zheng},
            giveni={Z\bibinitperiod}}}%
       }
-      \strng{namehash}{ec6374107941b305366b4b974cb0f35e}
-      \strng{fullhash}{04ee708714ef7bbd0e0143265e862a8a}
-      \strng{bibnamehash}{ec6374107941b305366b4b974cb0f35e}
-      \strng{authorbibnamehash}{ec6374107941b305366b4b974cb0f35e}
-      \strng{authornamehash}{ec6374107941b305366b4b974cb0f35e}
-      \strng{authorfullhash}{04ee708714ef7bbd0e0143265e862a8a}
+      \strng{namehash}{b521f3bbb5133cb78e2c898be8e2d3cd}
+      \strng{fullhash}{9b4fc0cd2cfc5b81a52ddc9cefbe11fb}
+      \strng{bibnamehash}{b521f3bbb5133cb78e2c898be8e2d3cd}
+      \strng{authorbibnamehash}{b521f3bbb5133cb78e2c898be8e2d3cd}
+      \strng{authornamehash}{b521f3bbb5133cb78e2c898be8e2d3cd}
+      \strng{authorfullhash}{9b4fc0cd2cfc5b81a52ddc9cefbe11fb}
       \field{sortinit}{F}
       \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{A Survey, preprint,}
       \field{title}{Parallel Programming Models for Heterogeneous Many-Cores}
       \field{year}{2020}
       \true{nocite}
@@ -203,15 +202,6 @@
       \verb{url}
       \verb https://www.tutorialspoint.com/dip/grayscale_to_rgb_conversion.htm
       \endverb
-    \endentry
-    \entry{OpenCLProgramingGuide}{online}{}
-      \field{sortinit}{h}
-      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
-      \field{labeltitlesource}{title}
-      \field{addendum}{(dostęp: 07.09.2021)}
-      \field{journaltitle}{Advanced Micro Devices}
-      \field{title}{https://rocmdocs.amd.com/en/latest/Programming_Guides/Opencl-programming-guide.html}
-      \field{year}{2021}
     \endentry
     \entry{Tensor}{online}{}
       \name{author}{2}{}{%
@@ -283,26 +273,26 @@
       \field{title}{Catching Up with Khronos: Experts’ Q&A on OpenCL 3.0 and SYCL 2020}
       \field{year}{2020}
       \verb{urlraw}
-      \verb https://www.khronos.org/blog/catching-up-with-khronos-experts-qa-on-opencl-3.0-and-sycl-2020?fbclid=IwAR2Z6hhFXwM8LVv8MeTmTlqW8mqTkRzbCNKrntpAQ1EDIgXYGGoOU2VRkpA
+      \verb https://www.khronos.org/blog/catching-up-with-khronos-experts-qa-on-opencl-3.0-and-sycl-2020?fbclid=IwAR2Z6hhFXwM8LVv8MeTmTlqW8mqTkRzbCNK rntpAQ1EDIgXYGGoOU2VRkpA
       \endverb
       \verb{url}
-      \verb https://www.khronos.org/blog/catching-up-with-khronos-experts-qa-on-opencl-3.0-and-sycl-2020?fbclid=IwAR2Z6hhFXwM8LVv8MeTmTlqW8mqTkRzbCNKrntpAQ1EDIgXYGGoOU2VRkpA
+      \verb https://www.khronos.org/blog/catching-up-with-khronos-experts-qa-on-opencl-3.0-and-sycl-2020?fbclid=IwAR2Z6hhFXwM8LVv8MeTmTlqW8mqTkRzbCNK%20rntpAQ1EDIgXYGGoOU2VRkpA
       \endverb
     \endentry
     \entry{Lit2}{article}{}
       \name{author}{1}{}{%
-        {{hash=22c7481fea18e2881175ee813d3bd8c4}{%
+        {{hash=006e2d38396dab0a22e29292154a63b6}{%
            family={Munshi},
            familyi={M\bibinitperiod},
-           given={A},
+           given={Aaftab},
            giveni={A\bibinitperiod}}}%
       }
-      \strng{namehash}{22c7481fea18e2881175ee813d3bd8c4}
-      \strng{fullhash}{22c7481fea18e2881175ee813d3bd8c4}
-      \strng{bibnamehash}{22c7481fea18e2881175ee813d3bd8c4}
-      \strng{authorbibnamehash}{22c7481fea18e2881175ee813d3bd8c4}
-      \strng{authornamehash}{22c7481fea18e2881175ee813d3bd8c4}
-      \strng{authorfullhash}{22c7481fea18e2881175ee813d3bd8c4}
+      \strng{namehash}{006e2d38396dab0a22e29292154a63b6}
+      \strng{fullhash}{006e2d38396dab0a22e29292154a63b6}
+      \strng{bibnamehash}{006e2d38396dab0a22e29292154a63b6}
+      \strng{authorbibnamehash}{006e2d38396dab0a22e29292154a63b6}
+      \strng{authornamehash}{006e2d38396dab0a22e29292154a63b6}
+      \strng{authorfullhash}{006e2d38396dab0a22e29292154a63b6}
       \field{sortinit}{M}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
       \field{labelnamesource}{author}
@@ -312,7 +302,7 @@
       \field{year}{2012}
       \true{nocite}
     \endentry
-    \entry{AdrenoVsMali}{article}{}
+    \entry{AdrenoVsMali}{online}{}
       \name{author}{1}{}{%
         {{hash=2ff19733391542cf848cf05bebf8d16f}{%
            family={Parapathil},
@@ -393,18 +383,18 @@
     \endentry
     \entry{Lit1}{article}{}
       \name{author}{1}{}{%
-        {{hash=29109c1cf7d7af6c318e29bcc9b15e55}{%
+        {{hash=8807512dcce91955ecd88128956357ab}{%
            family={Sawerwain},
            familyi={S\bibinitperiod},
-           given={M},
+           given={Marek},
            giveni={M\bibinitperiod}}}%
       }
-      \strng{namehash}{29109c1cf7d7af6c318e29bcc9b15e55}
-      \strng{fullhash}{29109c1cf7d7af6c318e29bcc9b15e55}
-      \strng{bibnamehash}{29109c1cf7d7af6c318e29bcc9b15e55}
-      \strng{authorbibnamehash}{29109c1cf7d7af6c318e29bcc9b15e55}
-      \strng{authornamehash}{29109c1cf7d7af6c318e29bcc9b15e55}
-      \strng{authorfullhash}{29109c1cf7d7af6c318e29bcc9b15e55}
+      \strng{namehash}{8807512dcce91955ecd88128956357ab}
+      \strng{fullhash}{8807512dcce91955ecd88128956357ab}
+      \strng{bibnamehash}{8807512dcce91955ecd88128956357ab}
+      \strng{authorbibnamehash}{8807512dcce91955ecd88128956357ab}
+      \strng{authornamehash}{8807512dcce91955ecd88128956357ab}
+      \strng{authorfullhash}{8807512dcce91955ecd88128956357ab}
       \field{sortinit}{S}
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
       \field{labelnamesource}{author}
@@ -418,7 +408,7 @@
       \field{sortinit}{S}
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
       \field{labeltitlesource}{title}
-      \field{addendum}{(accessed: 07.09.2021)}
+      \field{addendum}{(dostęp: 07.09.2021)}
       \field{title}{SIMD}
       \field{year}{2021}
       \verb{urlraw}
@@ -430,18 +420,18 @@
     \endentry
     \entry{Lit3}{article}{}
       \name{author}{1}{}{%
-        {{hash=05109d4cead6babbabb6facd9d554976}{%
+        {{hash=01f17b745c65ac40650249fd869d1056}{%
            family={Tay},
            familyi={T\bibinitperiod},
-           given={R},
+           given={Raymond},
            giveni={R\bibinitperiod}}}%
       }
-      \strng{namehash}{05109d4cead6babbabb6facd9d554976}
-      \strng{fullhash}{05109d4cead6babbabb6facd9d554976}
-      \strng{bibnamehash}{05109d4cead6babbabb6facd9d554976}
-      \strng{authorbibnamehash}{05109d4cead6babbabb6facd9d554976}
-      \strng{authornamehash}{05109d4cead6babbabb6facd9d554976}
-      \strng{authorfullhash}{05109d4cead6babbabb6facd9d554976}
+      \strng{namehash}{01f17b745c65ac40650249fd869d1056}
+      \strng{fullhash}{01f17b745c65ac40650249fd869d1056}
+      \strng{bibnamehash}{01f17b745c65ac40650249fd869d1056}
+      \strng{authorbibnamehash}{01f17b745c65ac40650249fd869d1056}
+      \strng{authornamehash}{01f17b745c65ac40650249fd869d1056}
+      \strng{authorfullhash}{01f17b745c65ac40650249fd869d1056}
       \field{sortinit}{T}
       \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
       \field{labelnamesource}{author}
